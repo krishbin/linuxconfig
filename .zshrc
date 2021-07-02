@@ -10,3 +10,5 @@ export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
 export PROMPT_EOL_MARK=''
 export CARGO_HOME=/home/krishbin/.local/lang/rust/cargo
 export RUSTUP_HOME=/home/krishbin/.local/lang/rust/rustup
+
+source /home/krishbin/.config/broot/launcher/bash/br
