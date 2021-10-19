@@ -2,8 +2,8 @@
 [user]
 # Please adapt and uncomment the following lines:
 	name = Krishbin Paudel
-	email = krishbin@onmail.com
-	signingkey = 5C395D9EC0FA9520
+	email = krishbin@outlook.com
+	signingkey = 370B751773E301DC
 [ui "color"]
         ui = always
 [color]
@@ -48,7 +48,7 @@
 [github]
         user = krishbin
 [core]
-	editor = /usr/local/bin/nvim
+	editor = nvim
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

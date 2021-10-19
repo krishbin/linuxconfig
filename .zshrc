@@ -12,4 +12,11 @@ export CARGO_HOME=/home/krishbin/.local/lang/rust/cargo
 export RUSTUP_HOME=/home/krishbin/.local/lang/rust/rustup
 
 source /home/krishbin/.config/broot/launcher/bash/br
-export XDG_DATA_DIRS="${XDG_DATA_DIRS}:/var/lib/flatpak/exports/share:/home/krishbin/.local/share/flatpak/exports/share"
+
+#symbiflow
+export INSTALL_DIR=~/.local/symbiflow
+export FPGA_FAM="xc7"
+export PATH="$INSTALL_DIR/$FPGA_FAM/install/bin:$PATH";
+source "$INSTALL_DIR/$FPGA_FAM/conda/etc/profile.d/conda.sh"
+
+.local/scripts/startde.sh
