@@ -25,6 +25,7 @@ o.expandtab = true -- expand tab into space by default
 o.shortmess = vim.o.shortmess .. 'c'
 o.smartindent = true -- auto indent on new line (brackets for instance) BO
 o.textwidth = 80
+o.pumheight = 20
 o.formatoptions = o.formatoptions:gsub('[cro]', '')
 o.colorcolumn = '100'
 o.completeopt = "menuone,noselect"

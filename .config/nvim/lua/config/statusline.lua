@@ -5,19 +5,19 @@ function statusline.setup()
 
   g.lightline = {
     separator = {
-      left = " ",
-      right = " "
+      left = "",
+      right = ""
     },
     subseparator = {
-      left = " ",
-      right = " "
+      left = "",
+      right = ""
     },
     tabline_separator = {
-      left = " ",
+      left = "",
       right = ""
     },
     tabline_subseparator = {
-      left = " ",
+      left = "",
       right = ""
     },
     colorscheme= require'config.colorscheme'.statusbar_color,
@@ -47,7 +47,7 @@ function statusline.setup()
     },
     tab_component = {
       vim_logo= "",
-      separa = " "
+      separa = ""
     },
     component_type= {
       tabs= 'tabsel',

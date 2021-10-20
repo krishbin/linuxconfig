@@ -91,15 +91,16 @@ map('n','<leader>cs',':silent !tmux send-keys -t 1 "./proj.sh shader" "C-m"<cr>'
 map('n','<leader>rr',':silent !tmux send-keys -t 1 "./proj.sh run" "C-m"<cr>',{})
 end
 
-function keymaps.nvimtree()
-map('n','<leader>gr',":lua require('telescope.builtin').lsp_references{ shorten_path = true }<CR>",{noremap=true,silent=true})
-map('n','<leader>tl',":lua require('telescope.builtin').live_grep()<cr>",{noremap=true,silent=true})
+function keymaps.telescope()
+map('n','<leader>tl',":lua require('telescope.builtin').lsp_references{ shorten_path = true }<CR>",{noremap=true,silent=true})
+map('n','<leader>tg',":lua require('telescope.builtin').live_grep()<cr>",{noremap=true,silent=true})
 map('n','<leader>tq',":lua require('telescope.builtin').quickfix()<cr>",{noremap=true,silent=true})
 map('n','<leader><c-p>',":lua require('telescope.builtin').git_files{}<CR>",{noremap=true,silent=true})
 map('n','<c-p>',":lua require('telescope.builtin').find_files()<CR>",{noremap=true,silent=true})
 map('n',',<c-p>',":lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown({ winblend = 20 }))<CR>",{noremap=true,silent=true})
 map("n", "<Leader>tt", ":lua require('telescope.builtin').treesitter{}<CR>", {silent = true})
-map("n", "<Leader>bb", ":lua require('telescope.builtin').buffers{}<CR>", {silent = true})
+map("n", "<Leader>tb", ":lua require('telescope.builtin').buffers{}<CR>", {silent = true})
+map("n", "<Leader>tf", ":lua require('telescope.builtin').file_browser{}<CR>", {silent = true})
 end
 
 return keymaps

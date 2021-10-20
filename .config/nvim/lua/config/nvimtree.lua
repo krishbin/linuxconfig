@@ -3,20 +3,58 @@ local map = require('utils').map
 local g = vim.g
 
 function nvimtree.setup()
-  g.lua_tree_side = 'left'
-  g.lua_tree_width = 30
+  require'nvim-tree'.setup {
+    disable_netrw       = true,
+    hijack_netrw        = true,
+    open_on_setup       = false,
+    ignore_ft_on_setup  = {},
+    auto_close          = false,
+    open_on_tab         = false,
+    update_to_buf_dir   = {
+      enable = true,
+      auto_open = true,
+    },
+    hijack_cursor       = false,
+    update_cwd          = false,
+    diagnostics = {
+      enable = false,
+      icons = {
+        hint = "",
+        info = "",
+        warning = "",
+        error = "",
+      }
+    },
+    update_focused_file = {
+      enable      = false,
+      update_cwd  = false,
+      ignore_list = {}
+    },
+    system_open = {
+      cmd  = nil,
+      args = {}
+    },
+    view = {
+      width = 30,
+      height = 30,
+      side = 'left',
+      auto_resize = false,
+      mappings = {
+        custom_only = false,
+        list = {}
+      }
+    }
+  }
   g.lua_tree_ignore = { '.git', 'node_modules', '.cache' }
-  g.lua_tree_auto_open = 1
-  g.lua_tree_auto_close = 1
-  g.lua_tree_quit_on_open = 0
-  g.lua_tree_follow = 1
   g.lua_tree_indent_markers = 1
   g.lua_tree_hide_dotfiles = 1
+  g.nvim_tree_highlight_opened_files = 1 
   g.lua_tree_git_hl = 1
   g.lua_tree_show_icons = {
     git= 1,
     folders= 1,
-    files= 1
+    files= 1,
+    folder_arrows = 0
   }
   g.nvim_tree_icons = {
     default= '',
@@ -47,6 +85,17 @@ function nvimtree.setup()
       error= ""
     }
   }
+  g.nvim_tree_window_picker_exclude = {
+    filetype= {
+    "notify",
+    "packer",
+    "qf"
+    },
+    buftype= {
+    "terminal"
+    }
+  }
+  vim.cmd("highlight NvimTreeFolderIcon guibg=blue")
   map('n','<leader>o',':NvimTreeToggle<cr>',{noremap=true})
   map('n','<leader>r',':NvimTreeRefresh<cr>',{noremap=true})
   map('n','<leader>n',':NvimTreeFindFile<CR>',{noremap=true})

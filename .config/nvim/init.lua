@@ -3,7 +3,7 @@ keymaps.set_leader()
 require'config'.setup()
 require'plugins'
 keymaps.priority()
-keymaps.nvimtree()
+keymaps.telescope()
 require'autocommands'.setup()
 keymaps.useful()
 require'lsp_lua'.setup()
