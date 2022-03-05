@@ -32,6 +32,7 @@ o.completeopt = "menuone,noselect"
 o.linebreak = true
 o.foldmethod='expr'
 o.foldexpr='nvim_treesitter#foldexpr()'
+o.clipboard='unnamedplus'
 wo.number=true
 wo.relativenumber=true
 wo.cursorline=true

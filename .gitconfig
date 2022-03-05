@@ -3,7 +3,6 @@
 # Please adapt and uncomment the following lines:
 	name = Krishbin Paudel
 	email = krishbin@outlook.com
-	signingkey = 370B751773E301DC
 [ui "color"]
         ui = always
 [color]
@@ -55,4 +54,3 @@
 	process = git-lfs filter-process
 	required = true
 [commit]
-	gpgsign = true
