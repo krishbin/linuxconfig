@@ -3,13 +3,13 @@ window:
     columns: 180
     lines: 52
   padding:
-    x: 7
-    y: 7
+    x: 0
+    y: 0
   decorations: Full
 scrolling:
   history: 10000
   multiplier: 3
-background_opacity: 0.94
+background_opacity: 1.0
 
 font:
   normal:
@@ -24,103 +24,71 @@ font:
 #  bold_italic:
 #    family: JetBrainsMono Nerd Font
 #    style: Bold Italic
-  size: 10.0
+  size: 6.5
   offset:
     x: 0
     y: 0
   glyph_offset:
     x: 0
     y: 0
-# # Colors (Base16 Default Dark)
-# colors:
-#   primary:
-#     background: '#161e21'
-#     foreground: '#c7c7c7'
-#   cursor:
-#     text: '#000000'
-#     cursor: '#c7c7c7'
-#   selection:
-#     text: '#000000'
-#     background: '#c7c7c7'
-#   # Normal colors
-#   normal:
-#     black:   '0x181818'
-#     red:     '0xab4642'
-#     green:   '0xa1b56c'
-#     yellow:  '0xf7ca88'
-#     blue:    '0x7cafc2'
-#     magenta: '0xba8baf'
-#     cyan:    '0x86c1b9'
-#     white:   '0xd8d8d8'
-
-#   # Bright colors
-#   bright:
-#     black:   '0x585858'
-#     red:     '0xab4642'
-#     green:   '0xa1b56c'
-#     yellow:  '0xf7ca88'
-#     blue:    '0x7cafc2'
-#     magenta: '0xba8baf'
-#     cyan:    '0x86c1b9'
-#     white:   '0xf8f8f8'
-# Colors (One Dark)
+# Colors (Gruvbox dark)
 colors:
   # Default colors
   primary:
-    background: '0x1e2127'
-    foreground: '0xabb2bf'
+    # hard contrast: background = '0x1d2021'
+    background: '0x262626'
+    # soft contrast: background = '0x32302f'
+    foreground: '0xebdbb2'
 
   # Normal colors
   normal:
-    black:   '0x1e2127'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xabb2bf'
+    black:   '0x282828'
+    red:     '0xcc241d'
+    green:   '0x98971a'
+    yellow:  '0xd79921'
+    blue:    '0x458588'
+    magenta: '0xb16286'
+    cyan:    '0x689d6a'
+    white:   '0xa89984'
 
   # Bright colors
   bright:
-    black:   '0x5c6370'
-    red:     '0xe06c75'
-    green:   '0x98c379'
-    yellow:  '0xd19a66'
-    blue:    '0x61afef'
-    magenta: '0xc678dd'
-    cyan:    '0x56b6c2'
-    white:   '0xffffff'
-# colors:
-#   primary:
-#     background: '#272727'
-#     foreground: '#c7c7c7'
-#   cursor:
-#     text: '#000000'
-#     cursor: '#c7c7c7'
-#   selection:
-#     text: '#000000'
-#     background: '#c7c7c7'
-#   normal:
-#     black:   '0x073642'
-#     red:     '0xdc322f'
-#     green:   '0x859900'
-#     yellow:  '0xb58900'
-#     blue:    '0x268bd2'
-#     magenta: '0xd33682'
-#     cyan:    '0x2aa198'
-#     white:   '0xeee8d5'
-
-#   # Bright colors
-#   bright:
-#     black:   '0x002b36'
-#     red:     '0xcb4b16'
-#     green:   '0x586e75'
-#     yellow:  '0x657b83'
-#     blue:    '0x839496'
-#     magenta: '0x6c71c4'
-#     cyan:    '0x93a1a1'
-#     white:   '0xfdf6e3'
+    black:   '0x928374'
+    red:     '0xfb4934'
+    green:   '0xb8bb26'
+    yellow:  '0xfabd2f'
+    blue:    '0x83a598'
+    magenta: '0xd3869b'
+    cyan:    '0x8ec07c'
+    white:   '0xebdbb2'
+    ## Colors (One Dark)
+    #colors:
+    #  # Default colors
+    #  primary:
+    #    background: '0x1e2127'
+    #    foreground: '0xabb2bf'
+    #
+    #  # Normal colors
+    #  normal:
+    #    black:   '0x1e2127'
+    #    red:     '0xe06c75'
+    #    green:   '0x98c379'
+    #    yellow:  '0xd19a66'
+    #    blue:    '0x61afef'
+    #    magenta: '0xc678dd'
+    #    cyan:    '0x56b6c2'
+    #    white:   '0xabb2bf'
+    #
+    #  # Bright colors
+    #  bright:
+    #    black:   '0x5c6370'
+    #    red:     '0xe06c75'
+    #    green:   '0x98c379'
+    #    yellow:  '0xd19a66'
+    #    blue:    '0x61afef'
+    #    magenta: '0xc678dd'
+    #    cyan:    '0x56b6c2'
+    #    white:   '0xffffff'
 
 bell:
   animation: EaseOutExpo
@@ -148,45 +116,9 @@ mouse:
 
 
 key_bindings:
-  - { key: Equals, mods: Command,            action: IncreaseFontSize }
-  - { key: Minus,  mods: Command,            action: DecreaseFontSize }
-  - { key: V,      mods: Command,            action: Paste            }
-  - { key: C,      mods: Command,            action: Copy             }
-  - { key: Q,      mods: Command,            action: Quit             }
-  - { key: W,      mods: Command,            action: Quit             }
-  - { key: N,      mods: Command,            action: SpawnNewInstance }
-  - { key: A,         mods: Alt,       chars: "\x1ba"                       }
-  - { key: B,         mods: Alt,       chars: "\x1bb"                       }
-  - { key: C,         mods: Alt,       chars: "\x1bc"                       }
-  - { key: D,         mods: Alt,       chars: "\x1bd"                       }
-  - { key: E,         mods: Alt,       chars: "\x1be"                       }
-  - { key: F,         mods: Alt,       chars: "\x1bf"                       }
-  - { key: G,         mods: Alt,       chars: "\x1bg"                       }
-  - { key: H,         mods: Alt,       chars: "\x1bh"                       }
-  - { key: I,         mods: Alt,       chars: "\x1bi"                       }
-  - { key: J,         mods: Alt,       chars: "\x1bj"                       }
-  - { key: K,         mods: Alt,       chars: "\x1bk"                       }
-  - { key: L,         mods: Alt,       chars: "\x1bl"                       }
-  - { key: M,         mods: Alt,       chars: "\x1bm"                       }
-  - { key: N,         mods: Alt,       chars: "\x1bn"                       }
-  - { key: O,         mods: Alt,       chars: "\x1bo"                       }
-  - { key: P,         mods: Alt,       chars: "\x1bp"                       }
-  - { key: Q,         mods: Alt,       chars: "\x1bq"                       }
-  - { key: R,         mods: Alt,       chars: "\x1br"                       }
-  - { key: S,         mods: Alt,       chars: "\x1bs"                       }
-  - { key: T,         mods: Alt,       chars: "\x1bt"                       }
-  - { key: U,         mods: Alt,       chars: "\x1bu"                       }
-  - { key: V,         mods: Alt,       chars: "\x1bv"                       }
-  - { key: W,         mods: Alt,       chars: "\x1bw"                       }
-  - { key: X,         mods: Alt,       chars: "\x1bx"                       }
-  - { key: Y,         mods: Alt,       chars: "\x1by"                       }
-  - { key: Z,         mods: Alt,       chars: "\x1bz"                       }
-  - { key: Key1,      mods: Control|Option|Shift|Command,            chars: "\x14\x31" }
-  - { key: Key2,      mods: Control|Option|Shift|Command,            chars: "\x14\x32" }
-  - { key: Key3,      mods: Control|Option|Shift|Command,            chars: "\x14\x33" }
-  - { key: Key4,      mods: Control|Option|Shift|Command,            chars: "\x14\x34" }
-  - { key: Key5,      mods: Control|Option|Shift|Command,            chars: "\x14\x35" }
-  - { key: Key6,      mods: Control|Option|Shift|Command,            chars: "\x14\x36" }
-  - { key: Key7,      mods: Control|Option|Shift|Command,            chars: "\x14\x37" }
-  - { key: Key8,      mods: Control|Option|Shift|Command,            chars: "\x14\x38" }
-  - { key: Key9,      mods: Control|Option|Shift|Command,            chars: "\x14\x39" }
+  - { key: Equals, mods: Control,            action: IncreaseFontSize }
+  - { key: Minus,  mods: Control,            action: DecreaseFontSize }
+  - { key: V,      mods: Control|Shift,            action: Paste            }
+  - { key: C,      mods: Control|Shift,            action: Copy             }
+  - { key: Q,      mods: Control,            action: Quit             }
+  - { key: N,      mods: Control|Shift,            action: SpawnNewInstance }

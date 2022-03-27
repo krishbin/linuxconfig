@@ -1,9 +1,9 @@
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias reset='cd ~;source ~/.zshrc;clear'
 alias grep='grep --color=auto'
-alias fzfp='fzf --preview "bat --style=numbers --color=always --line-range :500 {}"'
 alias ls=exa
 alias ll=ls
+alias wea_today='curl "wttr.in/Kathmandu?0"'
+alias wea_kath='curl "wttr.in/Kathmandu"'
 
 #################
 #  git aliases  #

@@ -18,6 +18,7 @@ SAVEHIST=$HISTSIZE
 setopt appendhistory
 setopt incappendhistory
 setopt extendedhistory
+setopt correctall
 
 export EDITOR=nvim
 KEYTIMEOUT=1

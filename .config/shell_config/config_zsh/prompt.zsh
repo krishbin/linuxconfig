@@ -18,12 +18,17 @@ parse_git_branch() {
 arrow_char="%B%b"
 # An exclamation point if the previous command did not complete successfully
 
+function interactive_hostname() {
+	echo '%(?.%F{143}%m%f.%F{174}%m%f)'
+}
+
 #prompt setup
 NEWLINE=$'\n'
 # PROMPT='${NEWLINE}'
 # PROMPT='%F{172}%n%f ' #username
 # PROMPT+=' at '
-PROMPT='%F{143}${${(%):-%m}#Krishbins-}%f ' #hostname
+#PROMPT='%F{143}${${(%):-%m}}%f ' #hostname
+PROMPT='$(interactive_hostname) ' #hostname
 # PROMPT+=' in '
 PROMPT+='%F{137}${PWD/#$HOME/%B~%b}%f' #directory
 PROMPT+='${vcs_info_msg_0_}$(parse_git_branch) ' #git info
