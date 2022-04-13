@@ -11,6 +11,7 @@ export GPG_TTY=$(tty)
 export FZF_DEFAULT_COMMAND='fd --type file --follow --color=always --hidden --exclude .git'
 export FZF_DEFAULT_OPTS="--ansi"
 export PROMPT_EOL_MARK=''
+export R_LIBS="/home/krishbin/.local/lib/R"
 
 eval "$(zoxide init zsh)"
 

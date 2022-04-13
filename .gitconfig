@@ -3,6 +3,7 @@
 # Please adapt and uncomment the following lines:
 	name = Krishbin Paudel
 	email = krishbin@outlook.com
+	signingkey = 84C243EBDA440532
 [ui "color"]
         ui = always
 [color]

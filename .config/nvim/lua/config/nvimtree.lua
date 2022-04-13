@@ -8,8 +8,7 @@ function nvimtree.setup()
     hijack_netrw        = true,
     open_on_setup       = false,
     ignore_ft_on_setup  = {},
-    auto_close          = false,
-    open_on_tab         = false,
+    open_on_tab         = true,
     update_to_buf_dir   = {
       enable = true,
       auto_open = true,
@@ -98,7 +97,6 @@ function nvimtree.setup()
   vim.cmd("highlight NvimTreeFolderIcon guibg=blue")
   map('n','<leader>o',':NvimTreeToggle<cr>',{noremap=true})
   map('n','<leader>r',':NvimTreeRefresh<cr>',{noremap=true})
-  map('n','<leader>n',':NvimTreeFindFile<CR>',{noremap=true})
 end
 
 return nvimtree

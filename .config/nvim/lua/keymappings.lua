@@ -66,7 +66,7 @@ map('n','<F8>',':TagbarToggle<CR>',{noremap=true,silent=true})
 map('n','<leader>z',':wincmd _<cr>:wincmd \\|<cr>',{noremap=true})
 --minimize focused window
 map('n','<leader>Z',':wincmd =<cr>',{noremap=true})
---move a visual block up or down a line
+  --move a visual block up or down a line
 map('v','<leader>k',':move-2<CR>gv=gv',{noremap=true,silent=true})
 map('v','<leader>j',':move\'>+<CR>gv=gv',{noremap=true,silent=true})
 --add a space below or above the line and come back to the position
@@ -91,16 +91,22 @@ map('n','<leader>cs',':silent !tmux send-keys -t 1 "./proj.sh shader" "C-m"<cr>'
 map('n','<leader>rr',':silent !tmux send-keys -t 1 "./proj.sh run" "C-m"<cr>',{})
 end
 
+
+function git_files_fallback()
+  local opts = {} -- define here if you want to define something
+  local ok = pcall(require"telescope.builtin".git_files, opts)
+  if not ok then require"telescope.builtin".find_files(opts) end
+end
+
 function keymaps.telescope()
 map('n','<leader>tl',":lua require('telescope.builtin').lsp_references{ shorten_path = true }<CR>",{noremap=true,silent=true})
 map('n','<leader>tg',":lua require('telescope.builtin').live_grep()<cr>",{noremap=true,silent=true})
 map('n','<leader>tq',":lua require('telescope.builtin').quickfix()<cr>",{noremap=true,silent=true})
 map('n','<leader><c-p>',":lua require('telescope.builtin').git_files{}<CR>",{noremap=true,silent=true})
-map('n','<c-p>',":lua require('telescope.builtin').find_files()<CR>",{noremap=true,silent=true})
+map('n','<c-p>',":lua git_files_fallback()<CR>",{noremap=true,silent=true})
 map('n',',<c-p>',":lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown({ winblend = 20 }))<CR>",{noremap=true,silent=true})
 map("n", "<Leader>tt", ":lua require('telescope.builtin').treesitter{}<CR>", {silent = true})
 map("n", "<Leader>tb", ":lua require('telescope.builtin').buffers{}<CR>", {silent = true})
-map("n", "<Leader>tf", ":lua require('telescope.builtin').file_browser{}<CR>", {silent = true})
 end
 
 return keymaps
