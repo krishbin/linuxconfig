@@ -12,6 +12,8 @@ export FZF_DEFAULT_COMMAND='fd --type file --follow --color=always --hidden --ex
 export FZF_DEFAULT_OPTS="--ansi"
 export PROMPT_EOL_MARK=''
 export R_LIBS="/home/krishbin/.local/lib/R"
+export GOPATH="$HOME/.local/go"
+export PATH="$PATH:$GOPATH/bin"
 
 eval "$(zoxide init zsh)"
 
