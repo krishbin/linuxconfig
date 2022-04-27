@@ -21,10 +21,10 @@ font:
   italic:
     family: JetBrainsMono Nerd Font
     style: Italic
-#  bold_italic:
-#    family: JetBrainsMono Nerd Font
-#    style: Bold Italic
-  size: 6.5
+  bold_italic:
+    family: JetBrainsMono Nerd Font
+    style: Bold Italic
+  size: 7
   offset:
     x: 0
     y: 0
@@ -32,49 +32,55 @@ font:
     x: 0
     y: 0
 
+
 colors:
-  # Default colors
   primary:
-    background: '0x1e1e20'
-    foreground: '0xfcfcfc'
-
-    dim_foreground: '0xeff0f1'
-    bright_foreground: '0xffffff'
-    dim_background: '0x31363b'
-    bright_background: '0x000000'
-
-  # Normal colors
+    background: '#2e3440'
+    foreground: '#d8dee9'
+    dim_foreground: '#a5abb6'
+  cursor:
+    text: '#2e3440'
+    cursor: '#d8dee9'
+  vi_mode_cursor:
+    text: '#2e3440'
+    cursor: '#d8dee9'
+  selection:
+    text: CellForeground
+    background: '#4c566a'
+  search:
+    matches:
+      foreground: CellBackground
+      background: '#88c0d0'
+    bar:
+      background: '#434c5e'
+      foreground: '#d8dee9'
   normal:
-    black: '0x232627'
-    red: '0xed1515'
-    green: '0x11d116'
-    yellow: '0xf67400'
-    blue: '0x1d99f3'
-    magenta: '0x9b59b6'
-    cyan: '0x1abc9c'
-    white: '0xfcfcfc'
-
-  # Bright colors
+    black: '#3b4252'
+    red: '#bf616a'
+    green: '#a3be8c'
+    yellow: '#ebcb8b'
+    blue: '#81a1c1'
+    magenta: '#b48ead'
+    cyan: '#88c0d0'
+    white: '#e5e9f0'
   bright:
-    black: '0x7f8c8d'
-    red: '0xc0392b'
-    green: '0x1cdc9a'
-    yellow: '0xfdbc4b'
-    blue: '0x3daee9'
-    magenta: '0x8e44ad'
-    cyan: '0x16a085'
-    white: '0xffffff'
-
-  # Dim colors
+    black: '#4c566a'
+    red: '#bf616a'
+    green: '#a3be8c'
+    yellow: '#ebcb8b'
+    blue: '#81a1c1'
+    magenta: '#b48ead'
+    cyan: '#8fbcbb'
+    white: '#eceff4'
   dim:
-    black: '0x31363b'
-    red: '0x783228'
-    green: '0x17a262'
-    yellow: '0xb65619'
-    blue: '0x1b668f'
-    magenta: '0x614a73'
-    cyan: '0x186c60'
-    white: '0x63686d'
+    black: '#373e4d'
+    red: '#94545d'
+    green: '#809575'
+    yellow: '#b29e75'
+    blue: '#68809a'
+    magenta: '#8c738c'
+    cyan: '#6d96a5'
+    white: '#aeb3bb'
 
 bell:
   animation: EaseOutExpo
