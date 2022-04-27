@@ -2,54 +2,33 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
   use {'wbthomason/packer.nvim', opt = true}
-
   use {'mhinz/vim-startify'}
   use {'romgrk/nvim-treesitter-context'}
   use {'mhinz/vim-signify'}
   use {'christoomey/vim-tmux-navigator'}
-
   use 'tpope/vim-surround'
   use 'tpope/vim-commentary'
   use 'tpope/vim-fugitive'
-
   use 'jiangmiao/auto-pairs'
-
-  use {
-    'pangloss/vim-javascript',
-    ft = {'js'}
-  }
-
-  use 'preservim/tagbar'
-
+  use {'pangloss/vim-javascript',ft = {'js'}}
+  use {'preservim/tagbar'}
+  use {'L3MON4D3/LuaSnip'}
+  use {'saadparwaiz1/cmp_luasnip'}
   use {'sainnhe/gruvbox-material'}
-  use {'morhetz/gruvbox'}
+  use {'shaunsingh/nord.nvim'}
+  use {'nvim-lualine/lualine.nvim'}
   use {'nvim-telescope/telescope-packer.nvim'}
-  use({
-    'rose-pine/neovim',
-    as = 'rose-pine',
-    config = function()
-      -- Options (see available options below)
-      vim.g.rose_pine_variant = 'base'
-      vim.g.rose_pine_colors = {
-        punctuation = '#fa8072',
-        comment = '#ffffff',
-        hint = '#9745be',
-        info = '#78ccc5',
-        warn = '#f5c359',
-        error = '#c75c6a',
-      }
-
-    end
-  })
-
-
   use {'tikhomirov/vim-glsl'}
-
+  use {'nvim-orgmode/orgmode'}
   use {
     'neovim/nvim-lspconfig',
-    'hrsh7th/nvim-compe'
+    'hrsh7th/cmp-nvim-lsp',
+    'hrsh7th/cmp-buffer',
+    'hrsh7th/cmp-path',
+    'hrsh7th/cmp-cmdline',
+    'hrsh7th/nvim-cmp'
   }
-
+  use {'numToStr/Comment.nvim'}
   use {'nvim-lua/popup.nvim'}
   use {'nvim-lua/plenary.nvim'}
   use {
@@ -64,20 +43,7 @@ return require('packer').startup(function()
       }
     end
   }
-
-  use 'itchyny/lightline.vim'
-
-  use {
-    'hoob3rt/lualine.nvim',
-    requires = {'kyazdani42/nvim-web-devicons', opt = true}
-  }
-
   use {'kyazdani42/nvim-tree.lua'}
-
   use {'nvim-treesitter/nvim-treesitter'}
-
-  use {'lervag/vimtex',
-    ft = {'tex'}
-  }
-
+  use {'lervag/vimtex',ft = {'tex'} }
 end)

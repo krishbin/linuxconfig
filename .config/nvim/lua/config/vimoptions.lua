@@ -33,6 +33,7 @@ o.linebreak = true
 o.foldmethod='expr'
 o.foldexpr='nvim_treesitter#foldexpr()'
 o.clipboard='unnamedplus'
+o.background='dark'
 wo.number=true
 wo.relativenumber=true
 wo.cursorline=true
