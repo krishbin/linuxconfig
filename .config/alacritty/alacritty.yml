@@ -9,22 +9,15 @@ window:
 scrolling:
   history: 10000
   multiplier: 3
-background_opacity: 1.0
 
 font:
   normal:
-    family: JetBrainsMono Nerd Font
+    family: ComicMono NF
     style: Regular
   bold:
-    family: JetBrainsMono Nerd Font
-    style: Medium
-  italic:
-    family: JetBrainsMono Nerd Font
-    style: Italic
-  bold_italic:
-    family: JetBrainsMono Nerd Font
-    style: Bold Italic
-  size: 7
+    family: ComicMono NF
+    style: Bold
+  size: 11
   offset:
     x: 0
     y: 0
