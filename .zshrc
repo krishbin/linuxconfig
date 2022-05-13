@@ -16,5 +16,3 @@ export GOPATH="$HOME/.local/go"
 export PATH="$PATH:$GOPATH/bin"
 
 eval "$(zoxide init zsh)"
-
-source /home/krishbin/.config/broot/launcher/bash/br
