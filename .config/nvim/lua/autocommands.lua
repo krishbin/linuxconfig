@@ -15,13 +15,6 @@ vim.api.nvim_exec([[
   highlight WinSeparator guifg=#4C566A
   au TextYankPost * silent! lua require'vim.highlight'.on_yank({ timeout=200 })
 
-  au FileType scheme set ft=query
-  autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
-  autocmd FileType cpp setlocal ts=2 sts=2 sw=2 expandtab
-  au FileType python set tabstop=4 shiftwidth=4 noexpandtab
-  au FileType markdown set tabstop=4 shiftwidth=4 conceallevel=2
-  au FileType typescriptreact,typescript,javascript,javascriptreact,lua set tabstop=2 shiftwidth=2
-
   autocmd Filetype help nmap <silent><buffer> q :q<CR>
   autocmd Filetype help wincmd K
 
