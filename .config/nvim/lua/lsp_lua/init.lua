@@ -31,7 +31,7 @@ local function on_attach(client,bufnr)
 end
 
 local servers = {
-  "clangd","rls","dartls","denols","texlab","gopls"
+  "clangd","rls","dartls","denols","texlab","gopls",
 }
 
 local function variableSet()
@@ -76,7 +76,7 @@ local function treeSitter()
 end
 
 function M.setup()
-  local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+  local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
   for _,lsp in ipairs(servers)
     do
     nvim_lsp[lsp].setup({
