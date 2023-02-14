@@ -31,9 +31,16 @@ function corekeymap.setup()
     --delete the contents of file
     map('n', '<leader>da', 'gg0VGd', {})
     --openvimrc
-    map('n', '<leader>vi', ':tabe ~/.config/nvim/lua/init.lua<cr>', {})
+    map('n', '<leader>ni', ':tabe ~/.config/nvim/lua/init.lua<cr>', {})
     --sourcevimr
-    map('n', '<leader>so', ':source $MYVIMRC<cr>', {})
+    map(
+        'n',
+        '<leader>ns',
+        function()
+            require('utils').reload_config()
+        end,
+        { noremap = true, silent = true}
+    )
 
     --select the text even after indentation
     map('v', '<', '<gv', { noremap = true })
@@ -41,8 +48,8 @@ function corekeymap.setup()
     --yank to clipboard
     map('v', '<leader>y', '"*y', { noremap = true, silent = true })
     --split it up
-    map('', '<leader>sh', ':split<cr>', {})
-    map('', '<leader>sv', ':vsplit<cr>', {})
+    map('', '<leader>s-', ':split<cr>', {})
+    map('', '<leader>s|', ':vsplit<cr>', {})
     --savefile
     map('n', '<C-s>', ':w<cr>', {})
     map('i', '<C-s>', '<Esc>:w<cr>', {})

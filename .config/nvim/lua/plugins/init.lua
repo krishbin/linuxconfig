@@ -3,16 +3,19 @@ return {
     'nvim-lua/plenary.nvim',
     'nvim-treesitter/nvim-treesitter',
 
-    'mhinz/vim-signify',
     'tpope/vim-surround',
-    'tpope/vim-commentary',
     'tpope/vim-fugitive',
     'jiangmiao/auto-pairs',
 
-    'christoomey/vim-tmux-navigator',
     'preservim/tagbar',
-    'shaunsingh/nord.nvim',
     'github/copilot.vim',
+
+    {
+        'lewis6991/gitsigns.nvim',
+        config = function()
+            require('gitsigns').setup()
+        end
+    },
 
     {
         'goolord/alpha-nvim',

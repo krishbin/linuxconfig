@@ -13,7 +13,6 @@ vim.api.nvim_exec([[
 
   set list listchars=tab:>\ ,trail:-,eol:󰌑 
   set laststatus=3
-  highlight WinSeparator guifg=#4C566A
   au TextYankPost * silent! lua require'vim.highlight'.on_yank({ timeout=200 })
 
   autocmd Filetype help nmap <silent><buffer> q :q<CR>

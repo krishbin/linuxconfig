@@ -1,6 +1,5 @@
 #zsh_setup
 for f in ~/.config/shell_config/config_zsh/*(.); do source "$f"; done
-
 for file in ~/.config/shell_config/plugins_zsh/*(.); do source "$file"; done
 
 source ~/.config/shell_config/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -11,8 +10,7 @@ export GPG_TTY=$(tty)
 export FZF_DEFAULT_COMMAND='fd --type file --follow --color=always --hidden --exclude .git'
 export FZF_DEFAULT_OPTS="--ansi"
 
-export LIBVA_DRIVER_NAME=radeon
-export VULKAN_SDK=$HOME/EnvSDK/vulkansdk/1.3.231.2/x86_64
+#export VULKAN_SDK=$HOME/EnvSDK/vulkansdk/1.3.231.2/x86_64
 
 export PROMPT_EOL_MARK=''
 export CHROME_EXECUTABLE=chromium
@@ -35,3 +33,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+export DENO_INSTALL="/home/krishbin/.deno"
+export FLUTTER_PATH="/home/krishbin/EnvSDK/flutter"
+export PATH="$DENO_INSTALL/bin:$FLUTTER_PATH/bin:$PATH"

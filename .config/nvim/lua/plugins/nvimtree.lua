@@ -1,6 +1,7 @@
 return {
     {
         'nvim-tree/nvim-tree.lua',
+        lazy = true,
         opts = {
             auto_reload_on_write = true,
             disable_netrw = false,

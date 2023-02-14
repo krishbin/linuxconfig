@@ -1,11 +1,14 @@
 return {
     {
         'pangloss/vim-javascript',
-        ft = { 'js' }
+        ft = { 'javascript', 'typescript' }
     },
     {
         'lervag/vimtex',
         ft = { 'tex' }
     },
-    'tikhomirov/vim-glsl',
+    {
+        'tikhomirov/vim-glsl',
+        ft = {'glsl'}
+    },
 }

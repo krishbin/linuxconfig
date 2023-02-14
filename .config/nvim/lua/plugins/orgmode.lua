@@ -1,6 +1,7 @@
 return {
     {
         "nvim-orgmode/orgmode",
+        ft = { 'org' },
         config = function()
             require('orgmode').setup_ts_grammar()
 
@@ -25,14 +26,37 @@ return {
     },
     {
         'lukas-reineke/headlines.nvim',
+        ft = { 'org' },
         config = function()
             require('headlines').setup()
-        end
+        end,
+        dependencies = {
+            'nvim-orgmode/orgmode',
+        }
     },
     {
         'akinsho/org-bullets.nvim',
+        ft = { 'org' },
         config = function()
             require('org-bullets').setup()
+        end,
+        dependencies = {
+            'nvim-orgmode/orgmode',
+        }
+    },
+    {
+        'dhruvasagar/vim-table-mode',
+        ft = { 'org', 'markdown' },
+        config = function()
+            vim.g.table_mode_corner_corner = '+'
+            vim.g.table_mode_header_fillchar = '-'
+            vim.g.table_mode_header_corner = '+'
+            vim.g.table_mode_header_hline = '-'
+            vim.g.table_mode_header_vline = '|'
+            vim.g.table_mode_vline = '|'
+            vim.g.table_mode_corner_hline = '-'
+            vim.g.table_mode_corner_vline = '|'
+            vim.g.table_mode_corner_corner = '+'
         end
     }
 }
