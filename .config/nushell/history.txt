@@ -1,0 +1,254 @@
+clear
+ls
+cd .config
+ls
+cd
+ls
+cd Pictures/
+ls
+open minimal-gentoo.png
+ls
+open minimal-gentoo.png | into binary
+open minimal-gentoo.png | into binary | skip 16
+open minimal-gentoo.png | into binary | skip 16 | take 4
+open minimal-gentoo.png | into binary | skip 16 | take 4 | into int
+open minimal-gentoo.png | into binary | skip 20 | take 4 | into int
+cd 
+ls
+clear
+ls
+cd .config
+ls
+clear
+ls
+ls | get name
+ls | get name | find *rc
+ls
+exa
+exa -l
+exa -l | from tsv
+exa -l | from ssv
+conda
+which conda
+echo $PATH
+echo $env.PATH
+ls
+cd nushell/ls
+cd nushell/
+ls
+nvim config.nu
+($env.PATH | split row (char esep) | append '/some/path')
+$env.PATH
+nu --version
+ls
+nvim config.nu
+nvim env.nu
+nvim env.nu
+cd ..
+ls
+cd ..
+ls
+cd .config/wezterm/
+ls
+clear
+ls
+ls | get name
+cd ..
+ls
+cd
+ls
+cd Pictures/
+ls
+open minimal-gentoo.png | into binary
+open minimal-gentoo.png | into binary | first 24
+ls
+file minimal-gentoo.png
+open minimal-gentoo.png | into binary | first 24 | skip 16 | first 4
+open minimal-gentoo.png | into binary | first 24 | skip 16 | first 4 | into int
+open minimal-gentoo.png | into binary | first 24 | skip 20 | first 4 | into int
+clear
+ls
+ls | size > 400
+ls
+config nu
+nvim wezterm.lua
+clear
+ls
+clear
+ls
+config nu
+echo $env.PATH
+conda
+ls
+echo $env.PATH
+$env.PATH | split row (char esep) | prepend "$env.HOME/.cargo/bin"
+$env.PATH | split row (char esep) | prepend '$env.HOME'+"/.cargo/bin"
+$env.PATH | split row (char esep) | prepend $env.HOME"/.cargo/bin"
+$env.PATH | split row (char esep) | prepend $env.HOME "/.cargo/bin"
+$env.PATH | split row (char esep) | prepend $env.HOME
+$env.PATH | split row (char esep) | prepend ($env.HOME+".cargo/bin")
+$env.HOME
+$env.HOME + '.cargo/bin'
+$env.HOME + '/.cargo/bin'
+$env.PATH | split row (char esep) | prepend ($env.HOME+'./cargo/bin')
+$env.PATH | split row (char esep) | prepend $env.HOME+'./cargo/bin'
+$env.PATH | split row (char esep) | prepend $env.HOME | path join '.cargo/bin'
+$env.PATH | split row (char esep) | prepend ($env.HOME | path join '.cargo/bin')
+environ_paths = ['.cargo/bin','.local/software/miniconda3/condabin','SDK/flutter/bin','.local/software/Xilinx/Vivado/2022.2/bin','.local/bin']
+let environ_paths = ['.cargo/bin','.local/software/miniconda3/condabin','SDK/flutter/bin','.local/software/Xilinx/Vivado/2022.2/bin','.local/bin']
+def update_env_var [localpath] {<\n>let-env PATH = $env.PATH | split row (char esep) | prepend ($env.HOME | path join $localpath)<\n>}
+$env.PATH
+def update_env_var [localpath] {<\n>let-env PATH = ($env.PATH | split row (char esep) | prepend ($env.HOME | path join $localpath))<\n>}
+$env.PATH
+$environ_paths
+$environ_paths | each { |entry| <\n>print $entry<\n>}
+$environ_paths | each { |entry| <\n>update_env_var $entry<\n>}
+$env.PATH
+update_env_var ".local"
+echo $env.PATH
+ls
+def update_env_var [localpath] {<\n>let-env PATH = ($env.PATH | split row (char esep) | prepend ($env.HOME | path join $localpath))<\n>}
+let-env PATH = ($env.PATH | split row (char esep) | prepend ($env.HOME | path join ".local"))
+$env.PATH
+let environ_paths = ['.cargo/bin','.local/software/miniconda3/condabin','SDK/flutter/bin','.local/software/Xilinx/Vivado/2022.2/bin','.local/bin']
+let-env PATH = ($env.PATH | split row (char esep) | prepend ($env.HOME | path join ".local"))
+$nu.PATH
+$nu.path
+lsblk
+ls
+$env.PATH
+ls
+$env.PATH
+flutter doctor
+cat .zshrc
+tty
+val = tty
+ls
+tty
+sys tty
+(sys tty)
+let-env GPG=(sys tty)
+let-env GPG=tty
+let-env GPG = tty
+zoxide -h
+zoxide init -h
+zoxide init nushell
+nvim .zshrc
+zoxide init nushell | save -f ~/.config/nushell/zoxide.nu
+ls
+conda init
+let-env GPG = tty
+let-env GPG = (tty)
+echo $GPG
+let GPG = (tty)
+echo $GPG
+$env.GPG_TTY
+$nu.path
+env-path
+$nu.env-path
+conda
+conda create -n tf PYTHON=3.11
+conda create -n ml PYTHON=3.11
+conda activate ml
+source conda.nu
+cd .config
+ls
+cd nushell/
+ls
+git submodule add https://github.com/nushell/nu_scripts.git
+alias config = 'git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+config
+config status
+alias config = git --git-dir=$HOME/.cfg/ --work-tree=$HOME
+config
+config status
+alias config = git --git-dir=$env.HOME/.cfg/ --work-tree=$HOME
+alias config = git --git-dir=$env.HOME/.cfg/ --work-tree=$env.HOME
+config status
+alias config = git --git-dir=($env.HOME | path join '.cfg') --work-tree=($env.HOME)
+config status
+alias config = git --git-dir= ($env.HOME | path join '.cfg') --work-tree= ($env.HOME)
+config status
+alias config = git $"--git-dir=($env.HOME | path join '.cfg' )" $"--work-tree=($env.HOME)"
+config status
+ls
+config submodule add https://github.com/nushell/nu_scripts.git
+ls
+conda activate ml
+config
+config status
+nvim .config/nushell/env.nu
+nvim .config/nushell/config.nu
+clear
+ls
+cd VM
+ls
+clear
+ls
+z
+clear
+ls
+z
+conda 
+cd .config/nushell/
+ls
+use conda.nu
+conda activate ml
+clear
+ls
+which python
+which pip
+pip install tensorflow
+pip install torch
+$env.EDITOR
+$nu.config
+config nu
+pip install jupyterlab
+notebook
+jupyter notebook
+cd
+ls
+cd
+cd ..
+ls
+cd
+ls
+cd Community/
+ls
+cd
+ls
+cd play/
+ls
+mkdir test
+cd test/
+ls
+jupyter notebook
+nu --version
+alias "conda activate" = conda activate --no-prompt
+conda deactivate
+cd
+ls
+nvim env.nu
+ls
+cd
+ls
+cd .config
+ls
+cd nushell/
+ls
+nvim aliases.nu
+ls
+cat env.nu
+ls
+nvim
+config
+eixt
+config
+config status
+ls
+config status
+ls
+cd .config
+ls
+cg add wezterm/
+config add wezterm/

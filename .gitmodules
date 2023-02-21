@@ -7,3 +7,6 @@
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
+[submodule ".config/nushell/nu_scripts"]
+	path = .config/nushell/nu_scripts
+	url = https://github.com/nushell/nu_scripts.git
