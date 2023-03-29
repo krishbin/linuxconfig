@@ -73,4 +73,3 @@ let-env FZF_DEFAULT_OPTS = "--height 40% --layout=reverse --border"
 
 source ~/.config/nushell/zoxide.nu
 use ~/.config/nushell/nu_scripts/virtual_environments/conda.nu
-

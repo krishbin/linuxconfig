@@ -650,5 +650,6 @@ let-env config = {
   ]
 }
 
-alias ls = ls --style=full
-alias config = git --bare $"--git-dir=($env.HOME | path join '.cfg' )" $"--work-tree=($env.HOME)"
+alias cg = git --bare $"--git-dir=($env.HOME | path join '.cfg' )" $"--work-tree=($env.HOME)"
+
+source ~/.cache/starship/init.nu

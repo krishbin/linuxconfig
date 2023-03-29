@@ -33,21 +33,4 @@ return {
           }
         end
     },
-    {
-        'lukas-reineke/indent-blankline.nvim',
-        config = function()
-            require('indent_blankline').setup {
-                buftype_exclude = { 'terminal' },
-                filetype_exclude = { 'help', 'packer','alpha'},
-                show_end_of_line = true,
-                show_current_context = true,
-                context_patterns = {
-                    'class', 'function', 'method', '^if', '^while', '^for', '^object', '^table',
-                    'block', 'arguments', 'if_statement', 'else_clause', 'jsx_element',
-                    'jsx_self_closing_element', 'try_statement', 'catch_clause', 'import_statement',
-                    'operation_type'
-                }
-            }
-        end
-    }
 }

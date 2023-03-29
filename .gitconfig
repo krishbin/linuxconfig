@@ -92,3 +92,5 @@
     plus-emph-style = syntax "#691c1c"
     plus-style = syntax "#001a00"
     syntax-theme = zenburn
+[pull]
+	rebase = true

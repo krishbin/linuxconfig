@@ -252,3 +252,113 @@ cd .config
 ls
 cg add wezterm/
 config add wezterm/
+config add nushell/
+config status
+config commit
+config push origin gentoo
+cg
+cg 
+cg status
+cg
+config nu
+clear
+ls
+cargo install startship --locked
+$nu.env-path
+config env
+config nu
+cd .config/nushell/
+ls
+nvim config.nu
+config nu
+config env
+cargo install starship --locked
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+starship preset nerd-font-symbols > ~/.config/starship.toml
+starship preset nerd-font-symbols | save -f ~/.config/starship.toml
+ls
+cd .config
+ls
+cat starship.toml
+config env
+clear
+ls
+cd .config
+ls
+cd .config
+ls
+clear
+ls
+clear
+config nu
+ls
+nvim starship.toml
+eixt
+clear
+ls
+clear
+cd
+ls
+clear
+ls
+cd Projects/
+ls
+cd krishbin/
+clear
+ls
+ls -a
+clear
+ls
+cd .config
+ls
+cd
+ls
+cd .config
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+clear
+ls
+nvim starship.toml
+lsusb
+clear
+ls
+cd Downloads/
+ls
+chmod +x via-2.1.0-linux.AppImage
+ls
+./via-2.1.0-linux.AppImage
+rm via-2.1.0-linux.AppImage
+ls
+rm starship.toml
+rm starship-master.zip
+ls
+lsusb
+cleasr
+clear
+ls
+clear
+ls
+clear
+ls
+nvim
+clear
+ls
+clear
+ls
+clear
+ls
+jfkd
+clear
+ls
+nvim .config/wezterm/wezterm.lua
