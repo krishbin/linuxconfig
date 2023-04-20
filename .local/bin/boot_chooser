@@ -1,0 +1,78 @@
+#!/bin/bash
+
+if ! type "efibootmgr" > /dev/null; then
+    echo "Error: efibootmgr is not installed"
+    exit 1
+fi
+
+if [ "$(id -u)" != "0" ]; then
+    echo "Error: This script must be run as root"
+    exit 1
+fi
+
+options=`efibootmgr | grep Boot\[0-9\] | cut -d ' ' -f 1,2`
+if [ $? -ne 0 ]; then
+    echo "Error: efibootmgr failed"
+    exit 1
+fi
+
+current_boot=`efibootmgr -v | grep BootCurrent | cut -d ' ' -f 2`
+current_boot_name=`echo "$options" | grep "$current_boot" | cut -d ' ' -f 2-`
+echo "Current Boot Device: $current_boot_name"
+current_order=`efibootmgr -v | grep BootOrder | cut -d ' ' -f 2`
+current_order=`echo "$current_order" | sed 's/,/ /g'`
+for boot in $current_order; do
+    boot_name=`echo "$options" | grep "$boot" | cut -d ' ' -f 2-`
+    current_order=`echo "$current_order" | sed "s/$boot/$boot_name,/"`
+done
+echo "Current Boot Order: $current_order"
+
+#swap columns in options
+options=`echo "$options" | awk '{print $2 " " $1}'`
+options=`echo "$options" | sed 's/ Boot/_/'`
+options=`echo "$options" | sed 's/*//'`
+
+if [ "$1" = "windows" ]; then
+    echo "Setting next boot device to Windows"
+    grep "Windows" <<< "$options" > /dev/null
+    if [ $? -ne 0 ]; then
+        echo "Error: Windows Boot Manager not found"
+        exit 1
+    fi
+    chosen=`grep "Windows" <<< "$options" | cut -d ' ' -f 1 | grep -o '[0-9]\+'`
+    echo "You have selected $chosen"
+    efibootmgr -n $chosen
+    if [ $? -ne 0 ]; then
+        echo "Error: efibootmgr failed"
+        exit 1
+    fi
+    exit 0
+fi
+
+if [ "$1" = "bios" ]; then
+    echo "Booting to bios"
+    systemctl reboot --firmware-setup
+    if [ $? -ne 0 ]; then
+        echo "Error: reboot failed"
+        exit 1
+    fi
+    exit 0
+fi
+
+echo "Choose next boot device:"
+select opt in $options; do
+    if [ -z "$opt" ]; then
+        echo "Invalid choice"
+        continue
+    fi
+    chosen=`echo "$opt" | cut -d ' ' -f 1 | grep -o '[0-9]\+'`
+    echo "You have selected $opt"
+    break
+done
+
+echo "Setting next boot device to $chosen"
+efibootmgr -n $chosen
+if [ $? -ne 0 ]; then
+    echo "Error: efibootmgr failed"
+    exit 1
+fi
