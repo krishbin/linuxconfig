@@ -41,7 +41,7 @@ if [ "$1" = "windows" ]; then
     fi
     chosen=`grep "Windows" <<< "$options" | cut -d ' ' -f 1 | grep -o '[0-9]\+'`
     echo "You have selected $chosen"
-    efibootmgr -n $chosen
+    efibootmgr -q -n $chosen
     if [ $? -ne 0 ]; then
         echo "Error: efibootmgr failed"
         exit 1
@@ -71,7 +71,7 @@ select opt in $options; do
 done
 
 echo "Setting next boot device to $chosen"
-efibootmgr -n $chosen
+efibootmgr -q -n $chosen
 if [ $? -ne 0 ]; then
     echo "Error: efibootmgr failed"
     exit 1

@@ -94,3 +94,5 @@
     syntax-theme = zenburn
 [pull]
 	rebase = true
+[safe]
+	directory = *
