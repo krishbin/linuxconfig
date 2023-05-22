@@ -5,6 +5,7 @@ local pluginoptions = require('config.pluginoptions')
 function config.setup()
   options.setup()
   pluginoptions.setup()
+  vim.cmd([[colorscheme catppuccin]])
 end
 
 return config

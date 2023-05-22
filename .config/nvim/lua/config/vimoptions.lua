@@ -34,6 +34,8 @@ function vopt.setup()
     o.foldexpr='nvim_treesitter#foldexpr()'
     o.clipboard='unnamedplus'
     o.background='dark'
+    o.loaded_node_provider = 0
+    o.loaded_perl_provider = 0
     vim.opt.conceallevel = 2
     vim.opt.concealcursor = 'nc'
     wo.number=true
