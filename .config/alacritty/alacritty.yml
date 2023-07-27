@@ -9,7 +9,7 @@ window:
 scrolling:
   history: 10000
   multiplier: 3
-background_opacity: 1.0
+window_opacity: 1.0
 
 font:
   normal:
@@ -24,7 +24,7 @@ font:
   bold_italic:
     family: JetBrainsMono Nerd Font
     style: Bold Italic
-  size: 7
+  size: 12
   offset:
     x: 0
     y: 0
@@ -51,7 +51,7 @@ colors:
     matches:
       foreground: CellBackground
       background: '#88c0d0'
-    bar:
+    footer_bar:
       background: '#434c5e'
       foreground: '#d8dee9'
   normal:
@@ -106,11 +106,14 @@ mouse:
   hints:
     launcher: open
 
+shell:
+  program: tmux
 
 key_bindings:
-  - { key: Equals, mods: Control,            action: IncreaseFontSize }
-  - { key: Minus,  mods: Control,            action: DecreaseFontSize }
-  - { key: V,      mods: Control|Shift,            action: Paste            }
-  - { key: C,      mods: Control|Shift,            action: Copy             }
-  - { key: Q,      mods: Control,            action: Quit             }
-  - { key: N,      mods: Control|Shift,            action: SpawnNewInstance }
+  - { key: Equals, mods: Control,             action: IncreaseFontSize }
+  - { key: Minus,  mods: Control,             action: DecreaseFontSize }
+  - { key: V,      mods: Control|Shift,       action: Paste            }
+  - { key: C,      mods: Control|Shift,       action: Copy             }
+  - { key: Q,      mods: Control,             action: Quit             }
+  - { key: N,      mods: Control|Shift,       action: SpawnNewInstance }
+  - { key: F11,                                 action: ToggleFullscreen }

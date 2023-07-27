@@ -3,7 +3,7 @@
 # Please adapt and uncomment the following lines:
 	name = Krishbin Paudel
 	email = krishbin21@gmail.com
-	signingkey = 84C243EBDA440532
+	signingkey = 5B73790222FF46DA
 [ui "color"]
         ui = always
 [color]
@@ -59,6 +59,7 @@
 	process = git-lfs filter-process
 	required = true
 [commit]
+	gpgsign = true
 [interactive]
     diffFilter = delta --color-only --features=interactive
 [delta]

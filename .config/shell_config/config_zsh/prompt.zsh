@@ -4,7 +4,7 @@ precmd() {
         vcs_info
 }
 zstyle ':vcs_info:*' enable git
-zstyle ':vcs_info:git*' formats "  %F{144}%b%f%F{103}%m%u%c%f"
+zstyle ':vcs_info:git*' formats "  %F{144}%b%f%F{103}%m%u%c%f"
 zstyle ':vcs_info:*' actionformats '%F{96}[%F{61}%F{61}[%F{113}%b%F{8}|%F{110}%a%F{61}]%f'
 setopt PROMPT_SUBST
 
