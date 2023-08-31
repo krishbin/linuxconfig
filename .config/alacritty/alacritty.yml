@@ -10,7 +10,6 @@ scrolling:
   history: 10000
   multiplier: 3
 window_opacity: 1.0
-
 font:
   normal:
     family: JetBrainsMono Nerd Font
@@ -108,6 +107,10 @@ mouse:
 
 shell:
   program: tmux
+  args:
+    - new
+    - -A
+    - -s main
 
 key_bindings:
   - { key: Equals, mods: Control,             action: IncreaseFontSize }
