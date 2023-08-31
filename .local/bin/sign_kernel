@@ -1,0 +1,4 @@
+#! /bin/sh
+# sign_kernel.sh
+
+sudo /usr/bin/python3 /home/krishbin/.local/bin/kernel_signing_tool.py --sign
