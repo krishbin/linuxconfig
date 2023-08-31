@@ -25,3 +25,25 @@ cg() {
 function mcd() {
     mkdir -p "$1" && cd "$1";
 }
+
+
+function srcros() {
+    if [[ -f /opt/ros/humble/setup.zsh ]]; then
+        source /opt/ros/humble/setup.zsh
+        PROMPT="%{$fg[green]%}[ROS2]%{$reset_color%} $PROMPT"
+    else
+        echo "No ROS2 sourced"
+    fi
+}
+
+# lazy load ros2
+function ros2() {
+    if [[ -f /opt/ros/humble/setup.zsh ]]; then
+        unfunction ros2
+        source /opt/ros/humble/setup.zsh
+        PROMPT="%{$fg[green]%}[ROS2]%{$reset_color%} $PROMPT"
+        ros2 "$@"
+    else
+        echo "No ROS2 sourced"
+    fi
+}
