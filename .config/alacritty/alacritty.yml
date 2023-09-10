@@ -16,7 +16,7 @@ font:
     style: Regular
   bold:
     family: JetBrainsMono Nerd Font
-    style: Medium
+    style: Bold
   italic:
     family: JetBrainsMono Nerd Font
     style: Italic
