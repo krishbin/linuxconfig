@@ -5,11 +5,17 @@ return {
 
     'tpope/vim-surround',
     'tpope/vim-fugitive',
-    'jiangmiao/auto-pairs',
 
     'preservim/tagbar',
-    'github/copilot.vim',
+    { "lukas-reineke/indent-blankline.nvim" },
 
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        opts = {
+
+        }
+    },
     {
         'lewis6991/gitsigns.nvim',
         config = function()

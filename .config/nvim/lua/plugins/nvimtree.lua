@@ -4,7 +4,7 @@ return {
         lazy = true,
         opts = {
             auto_reload_on_write = true,
-            disable_netrw = false,
+            disable_netrw = true,
             hijack_cursor = false,
             hijack_netrw = true,
             hijack_unnamed_buffer_when_opening = false,
@@ -18,16 +18,10 @@ return {
                 number = false,
                 relativenumber = false,
                 signcolumn = "yes",
-                mappings = {
-                    custom_only = false,
-                    list = {
-                        -- user mappings go here
-                    },
-                },
             },
             renderer = {
                 indent_markers = {
-                    enable = false,
+                    enable = true,
                     icons = {
                         corner = "└ ",
                         edge = "│ ",
@@ -38,21 +32,8 @@ return {
                     webdev_colors = true,
                 },
             },
-            hijack_directories = {
-                enable = true,
-                auto_open = true,
-            },
-            update_focused_file = {
-                enable = false,
-                update_cwd = false,
-                ignore_list = {},
-            },
-            system_open = {
-                cmd = nil,
-                args = {},
-            },
             diagnostics = {
-                enable = false,
+                enable = true,
                 show_on_dirs = false,
                 icons = {
                     hint = "",
@@ -65,11 +46,6 @@ return {
                 dotfiles = false,
                 custom = {},
                 exclude = {},
-            },
-            git = {
-                enable = true,
-                ignore = true,
-                timeout = 400,
             },
             actions = {
                 use_system_clipboard = true,
@@ -91,25 +67,59 @@ return {
                     },
                 },
             },
-            trash = {
-                cmd = "trash",
-                require_confirm = true,
-            },
-            log = {
-                enable = false,
-                truncate = false,
-                types = {
-                    all = false,
-                    config = false,
-                    copy_paste = false,
-                    diagnostics = false,
-                    git = false,
-                    profile = false,
-                },
-            },
         },
         keys = {
-            { '<leader>[', ':NvimTreeToggle<CR>' },
-        }
+            { 
+                '<leader>[', 
+                function() 
+                    local api = vim.api
+                    local nvimtree = require('nvim-tree.api').tree
+                    local opts = {
+                        api.nvim_get_current_tabpage(),
+                        false
+                    }
+                    if nvimtree.is_tree_buf() then
+                        nvimtree.close()
+                    elseif nvimtree.is_visible(opts) then
+                        nvimtree.focus()
+                    else
+                        nvimtree.open()
+                    end
+                end,
+                desc = 'NvimTree: open or focus view'
+
+            },
+            { 
+                '<leader>q[', 
+                function() require('nvim-tree.api').tree.close() end,
+                desc = 'NvimTree: close view'
+
+            },
+        },
+        config = function(_,opts)
+            require('nvim-tree').setup(opts)
+            -- auto close
+            local function is_modified_buffer_open(buffers)
+                for _, v in pairs(buffers) do
+                    if v.name:match("NvimTree_") == nil then
+                        return true
+                    end
+                end
+                return false
+            end
+
+            vim.api.nvim_create_autocmd("BufEnter", {
+                nested = true,
+                callback = function()
+                    if
+                        #vim.api.nvim_list_wins() == 1
+                        and vim.api.nvim_buf_get_name(0):match("NvimTree_") ~= nil
+                        and is_modified_buffer_open(vim.fn.getbufinfo({ bufmodified = 1 })) == false
+                    then
+                        vim.cmd("quit")
+                    end
+                end,
+            })
+        end
     }
 }

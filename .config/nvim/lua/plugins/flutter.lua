@@ -8,7 +8,7 @@ return {
         },
         config = function()
             require("flutter-tools").setup({
-                flutter_path = "/home/krishbin/SDK/flutter/bin/flutter",
+                flutter_path = "/home/krishbin/.SDK/flutter/bin/flutter",
                 widget_guides = {
                     enabled = true,
                 },
