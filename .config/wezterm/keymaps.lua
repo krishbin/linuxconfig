@@ -38,23 +38,28 @@ return {
     },
     {
         key = 'l',
-        mods = 'LEADER',
+        mods = 'CTRL|SHIFT',
         action = wezterm.action.ActivatePaneDirection 'Right',
     },
     {
         key = 'h',
-        mods = 'LEADER',
+        mods = 'CTRL|SHIFT',
         action = wezterm.action.ActivatePaneDirection 'Left',
     },
     {
         key = 'j',
-        mods = 'LEADER',
+        mods = 'CTRL|SHIFT',
         action = wezterm.action.ActivatePaneDirection 'Down',
     },
     {
         key = 'k',
-        mods = 'LEADER',
+        mods = 'CTRL|SHIFT',
         action = wezterm.action.ActivatePaneDirection 'Up',
+    },
+    {
+        key = 'a',
+        mods = 'LEADER|CTRL',
+        action = wezterm.action.SendKey { key = 'a', mods = 'CTRL' },
     },
     -- session controls
     {
@@ -62,4 +67,39 @@ return {
         mods = 'LEADER',
         action = wezterm.action.ReloadConfiguration,
     },
+    -- toggle fullscreen
+    {
+        key = 'F11',
+        action = wezterm.action.ToggleFullScreen,
+    },
+    -- search
+    {
+        key = '/',
+        mods = 'LEADER',
+        action = wezterm.action.Search("CurrentSelectionOrEmptyString"),
+    },
+    -- close current window
+    {
+        key = 'q',
+        mods = 'SUPER',
+        action = wezterm.action.CloseCurrentPane { confirm = true },
+    },
+    -- activate launcher menu
+    {
+        key = '\\',
+        mods = 'LEADER',
+        action = wezterm.action.ShowLauncher,
+    },
+    {
+        key = '9',
+        mods = 'ALT',
+        action = wezterm.action.ShowLauncherArgs { flags = 'FUZZY|TABS' },
+    },
+    { 
+        key = 'F9', 
+        mods = 'ALT', 
+        action = wezterm.action.ShowTabNavigator 
+    },
+
+
 }
