@@ -1,7 +1,7 @@
 return {
     {
         "folke/zen-mode.nvim",
-        event = "VeryLazy",
+        lazy = true,
         keys = {
             {
                 '<leader><F1>',
@@ -16,10 +16,18 @@ return {
             },
         },
         opts = {
-            kitty = {
-                enabled = true,
-                font = "+2"
-            }
+            plugins = {
+
+                options = {
+                    enabled = true,
+                    ruler = false, -- disables the ruler text in the cmd line area
+                    showcmd = false, -- disables the command in the last line of the screen
+                },
+                wezterm = {
+                    enabled = true,
+                    font = "+0"
+                },
+            },
         },
     },
 }

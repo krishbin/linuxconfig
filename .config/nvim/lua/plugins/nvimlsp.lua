@@ -6,7 +6,6 @@ return {
     'hrsh7th/cmp-cmdline',
     'hrsh7th/nvim-cmp',
     { 'f3fora/cmp-spell', ft = { 'gitcommit', 'NeogitCommitMessage', 'markdown', 'norg', 'org' } },
-    { 'rcarriga/cmp-dap' },
     {
         'L3MON4D3/LuaSnip',
         version = "2.0.0",
@@ -50,14 +49,6 @@ return {
                 auto_close = true, -- automatically close the list when you have no diagnostics
                 auto_preview = false, -- automatically preview the location of the diagnostic. <esc> to close preview and go back to last window
                 auto_fold = false, -- automatically fold a file trouble list at creation
-                signs = {
-                    -- icons / text used for a diagnostic
-                    error = "",
-                    warning = "",
-                    hint = "",
-                    information = "",
-                    other = "﫠"
-                },
                 use_diagnostic_signs = true
             }
         end,

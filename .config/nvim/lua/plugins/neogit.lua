@@ -1,7 +1,7 @@
 return {
     {
         "NeogitOrg/neogit",
-        event = "VeryLazy",
+        lazy = true,
         keys = {
             {
                 '<leader>gg',
@@ -20,6 +20,6 @@ return {
             "sindrets/diffview.nvim",        -- optional
             "ibhagwan/fzf-lua",              -- optional
         },
-        config = true
+        opts = {}
     },
 }

@@ -82,10 +82,12 @@ return {
         },
         dependencies = {
             "nvim-lua/plenary.nvim",
-            "nvim-lua/popup.nvim"
+            "nvim-lua/popup.nvim",
+            "nvim-telescope/telescope-fzf-native.nvim",
         }
     },
     {
+        lazy = true,
         'nvim-telescope/telescope-fzf-native.nvim',
         build = 'make'
     },

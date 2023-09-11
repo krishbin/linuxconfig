@@ -1,12 +1,21 @@
 return {
-    'nvim-lua/popup.nvim',
+    {
+        lazy = true,
+        'nvim-lua/popup.nvim'
+    },
     'nvim-lua/plenary.nvim',
     'nvim-treesitter/nvim-treesitter',
 
     'tpope/vim-surround',
     'tpope/vim-fugitive',
+    {
+        'norcalli/nvim-colorizer.lua',
+        cmd = { 'ColorizerToggle' },
+        config = function()
+            require'colorizer'.setup()
+        end
+    },
 
-    'preservim/tagbar',
     { "lukas-reineke/indent-blankline.nvim" },
 
     {

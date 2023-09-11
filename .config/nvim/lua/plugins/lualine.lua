@@ -1,10 +1,12 @@
 return {
     {
         'nvim-lualine/lualine.nvim',
+        lazy = false,
+        priority = 1000,
         opts = {
             options = {
                 icons_enabled = true,
-                theme = 'auto',
+                theme = 'solarized_light',
                 component_separators = { left = '', right = '' },
                 section_separators = { left = '', right = '' },
                 disabled_filetypes = {},

@@ -32,7 +32,6 @@ function vopt.setup()
     o.linebreak = true
     o.foldmethod='expr'
     o.foldexpr='nvim_treesitter#foldexpr()'
-    o.clipboard='unnamedplus'
     o.background='dark'
     vim.opt.conceallevel = 2
     vim.opt.concealcursor = 'nc'

@@ -2,6 +2,7 @@ local fn = vim.fn
 return {
     {
         'mfussenegger/nvim-dap',
+        lazy = true,
         keys = {
             {
                 '<localleader>dL',
@@ -54,6 +55,7 @@ return {
         dependencies = {
             {
                 {
+                    lazy = true,
                     'rcarriga/nvim-dap-ui',
                     opts = {
                         windows = { indent = 2 },
@@ -72,7 +74,8 @@ return {
                         },
                     },
                 },
-                { 'theHamsta/nvim-dap-virtual-text', opts = { all_frames = true } },
+                { lazy=true,'theHamsta/nvim-dap-virtual-text', opts = { all_frames = true } },
+                { lazy = true, 'rcarriga/cmp-dap' },
             },
         },
     },
