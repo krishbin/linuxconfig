@@ -31,7 +31,7 @@ local function on_attach(client,bufnr)
 end
 
 local servers = {
-  "clangd","rls","dartls","denols","texlab","gopls",
+  "clangd","dartls","denols","texlab","gopls", "pyright", "rust-analyzer"
 }
 
 local function variableSet()

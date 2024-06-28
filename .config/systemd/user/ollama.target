@@ -1,0 +1,5 @@
+[Unit]
+Description=ollama"target for ollama-container quadlet
+
+[Install]
+WantedBy=default.target

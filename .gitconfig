@@ -3,7 +3,8 @@
 # Please adapt and uncomment the following lines:
 	name = Krishbin Paudel
 	email = krishbinp@outlook.com
-	signingkey = 5B73790222FF46DA
+    signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHk6rgKCImAMg/JfHeJbEpkEGQykALc8giVdXMeNiSZK
+
 [ui "color"]
         ui = always
 [color]
@@ -43,16 +44,11 @@
         unstage = reset
         undo = revert
 
-[merge]
-    tool = nvim -d
-    conflictstyle = diff3
 [github]
         user = krishbin
 [core]
 	editor = nvim
     pager = delta
-[diff]
-    colorMoved = default
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -93,7 +89,9 @@
     plus-emph-style = syntax "#691c1c"
     plus-style = syntax "#001a00"
     syntax-theme = zenburn
-[pull]
-	rebase = true
-[safe]
-	directory = *
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = /opt/1Password/op-ssh-sign
