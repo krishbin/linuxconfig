@@ -2,7 +2,6 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias grep='grep --color=auto'
 alias wea_today='curl "wttr.in/Kathmandu?0"'
 alias wea_kath='curl "wttr.in/Kathmandu"'
-alias firefoxupdate='mkdir /tmp/firefox-latest && wget -P /tmp/firefox-latest "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64" && sudo rm -fr /opt/firefox && sudo tar xjf /tmp/firefox-latest/* -C /opt && rm -fr /tmp/firefox-latest'
 
 #################
 #  git aliases  #
@@ -26,3 +25,17 @@ alias gs='g s'
 alias gd='g d'
 alias boot_to_windows='doas efibootmgr -n 0'
 alias minicom='minicom -w -t xterm -l -R UTF-8'
+
+alias ll='eza -l --icons=auto --group-directories-first'
+alias l.='eza -d .*'
+alias ls='eza'
+alias l1='eza -1'
+
+# ugrep for grep
+alias grep='ug'
+alias egrep='ug -E'
+alias fgrep='ug -F'
+alias xzgrep='ug -z'
+alias xzegrep='ug -zE'
+alias xzfgrep='ug -zF'
+

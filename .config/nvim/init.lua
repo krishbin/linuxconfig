@@ -15,5 +15,6 @@ vim.opt.rtp:prepend(lazypath)
 require'keymaps'.setup()
 
 require('lazy').setup("plugins")
+vim.cmd[[colorscheme tokyonight]]
 require('autocommands').setup()
 require('lsp_lua').setup()

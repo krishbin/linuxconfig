@@ -38,9 +38,6 @@ Volume=/var/home/%u:/var/home/%u:rslave
 Volume=%t:%t:rslave
 Volume=/etc/hosts:/etc/hosts:ro
 Volume=/etc/resolv.conf:/etc/resolv.conf:ro
-Volume=/home/linuxbrew:/home/linuxbrew:rslave
-Volume=/usr/etc/profile.d/brew.sh:/etc/profile.d/brew.sh:ro
-Volume=/usr/share/fish/vendor_conf.d/brew.fish:/usr/share/fish/vendor_conf.d/brew.fish:ro
 
 
 [Service]
