@@ -1,0 +1,4032 @@
+: 1720702400:0;sudo pacman -Sy zoxide
+: 1720702424:0;sudo pacman -Sy zoxide starship
+: 1720702459:0;sudo pacman -Sy zoxide starship
+: 1720702490:0;systemctl status systemd-homed
+: 1720702504:0;sudo systemctl enable --now systemd-homed
+: 1720702546:0;su
+: 1720702565:0;systemctl status systemd-homed
+: 1720702569:0;qls
+: 1720702569:0;ls
+: 1720702571:0;cd
+: 1720702571:0;ls
+: 1720702573:0;cd .c
+: 1720702574:0;cd .config
+: 1720702575:0;ls
+: 1720702577:0;fstrim
+: 1720702582:0;sudo pacman -Sy zoxide starship
+: 1720702626:0;journalctl 
+: 1720702701:0;su
+: 1720703899:0;ls
+: 1720703906:0;nvim .zshenv
+: 1720703916:0;exit
+: 1720703921:0;nvim .zshenv
+: 1720703924:0;nvim .zshrc
+: 1720703931:0;exit
+: 1720703945:0;ls
+: 1720703946:0;clear
+: 1720703947:0;ls
+: 1720703953:0;nvim .zshrc
+: 1720703956:0;exit
+: 1720703958:0;ls
+: 1720703959:0;clear
+: 1720703959:0;ls
+: 1720703984:0;journalctl
+: 1720704052:0;cat /etc/pam.d/sudo
+: 1720704179:0;cat /etc/security/faillock.conf
+: 1720704191:0;sudo nvim /etc/security/faillock.conf
+: 1720704263:0;faillock --user krishbin
+: 1720704310:0;killall obs
+: 1720704314:0;cd /etc/modules-load.d
+: 1720704315:0;ls
+: 1720704327:0;sudo nvim v4l2loopback.conf
+: 1720704335:0;sudo modprobe v4l2loopback
+: 1720704365:0;sudo dracut -f /boot/initramfs-linux-lts.img
+: 1720704411:0;sudo pacman -Sy obs-vkcapture
+: 1720704451:0;paru -Sy obs-studio-git
+: 1720704466:0;sudo pacman -Sy ffnvcode-headers
+: 1720704486:0;paru -Sy ffnvcode-headers
+: 1720704506:0;paru -Sy ffnvcode-headers-12-1
+: 1720705586:0;paru -Sy obs-studio-git
+: 1720705647:0;sudo pacman -Sy ffnvcode-headers
+: 1720705654:0;sudo pacman -Sy ffnvcodec-headers
+: 1720705666:0;paru -Sy ffnvcodec-headers
+: 1720705689:0;paru -Sy ffnvcodec-headers-12-1
+: 1720705717:0;paru -Sy obs-studio-git
+: 1720705731:0;paru -R ffnvcodec-headers-12-1
+: 1720705788:0;paru -Sy discord_arch_electron
+: 1720705862:0;sudo pacman -Sy libappindicator-gtk3
+: 1720706091:0;sudo pacman -S grim slurp
+: 1720706108:0;cd .config
+: 1720706109:0;ls
+: 1720706111:0;cd hypr
+: 1720706111:0;ls
+: 1720706119:0;nvim hyprland.conf
+: 1720706138:0;systemctl --user status pipewire wireplumber
+: 1720706218:0;nvim hyprland.conf
+: 1720706535:0;exit
+: 1720706536:0;exit
+: 1720706548:0;killall Hyprland
+: 1720706657:0;Hyprland
+: 1720706665:0;ls
+: 1720706666:0;clear
+: 1720706666:0;ls
+: 1720706832:0;cd .config
+: 1720706833:0;ls
+: 1720706837:0;nvim hypr/hyprland.conf
+: 1720706960:0;ls
+: 1720706961:0;cd hypr
+: 1720706961:0;ls
+: 1720706971:0;touch settings.conf
+: 1720706977:0;touch userSettings.conf
+: 1720706978:0;ls
+: 1720706987:0;touch keyBinds.conf
+: 1720706988:0;ls
+: 1720706993:0;nvim 
+: 1720707303:0;systemctl --user status xdg-desktop-portal-gtk.service
+: 1720707310:0;systemctl --user status xdg-desktop-portal-hyprland.service
+: 1720707313:0;clear
+: 1720707313:0;ls
+: 1720707333:0;cd scripts
+: 1720707333:0;ls
+: 1720707334:0;ls
+: 1720707336:0;cd ..
+: 1720707336:0;ls
+: 1720707345:0;nvim keyBinds.conf
+: 1720707431:0;killall nvim
+: 1720707433:0;exit
+: 1720707434:0;nvim keyBinds.conf
+: 1720707474:0;exit
+: 1720707548:0;blutoothctl
+: 1720707555:0;bluetoothctl
+: 1720707573:0;exit
+: 1720708364:0;cd scripts
+: 1720708364:0;ls
+: 1720708368:0;nvim volume-ctrl.sh
+: 1720708398:0;nvim volume-ctrl.sh
+: 1720708717:0;pactl list sinks
+: 1720708845:0;cd ..
+: 1720708845:0;ls
+: 1720708850:0;nvim hypridle.conf
+: 1720708872:0;nvim hyprlock.conf
+: 1720708876:0;hyrplock
+: 1720708880:0;hyprlock
+: 1720708919:0;ls
+: 1720708920:0;cd scripts
+: 1720708921:0;ls
+: 1720708928:0;hyprlock_status.sh
+: 1720708932:0;nvim hyprlock_status.sh
+: 1720708938:0;chmod +x hyprlock_status.sh
+: 1720708940:0;cd ..
+: 1720708940:0;ls
+: 1720708948:0;nvim hyprlock.conf
+: 1720708974:0;hyrplock
+: 1720708977:0;hyprlock
+: 1720709004:0;ls
+: 1720709126:0;hyprctl dispatch 1 $(((($(hyprctl activeworkspace -j | jq -r .id) - 1)  / 10) * 10 + $2))
+: 1720709135:0;hyprctl dispatch
+: 1720709139:0;hyprctl dispatch --help
+: 1720709165:0;ls
+: 1720709166:0;cd .config
+: 1720709166:0;ls
+: 1720709168:0;cd hypr
+: 1720709168:0;ls
+: 1720709172:0;mkdir hyprland
+: 1720709175:0;ls
+: 1720709209:0;mv {monitors.conf,keyBinds.conf,unsupported.conf,userSettings.conf,settings.conf} hyprland
+: 1720709210:0;ls
+: 1720709218:0;nvim hyprland.conf
+: 1720709266:0;ls
+: 1720709269:0;cd scripts
+: 1720709270:0;ls
+: 1720709274:0;chmod +x volume-ctrl.sh
+: 1720709274:0;ls
+: 1720709276:0;nvim volume-ctrl.sh
+: 1720709289:0;amixer
+: 1720709325:0;cd ..
+: 1720709325:0;ls
+: 1720709327:0;nvim hypridle.conf
+: 1720709346:0;loginctl lock-session
+: 1720709354:0;loginctl unlock-session
+: 1720709360:0;nvim hypridle.conf
+: 1720709394:0;ls
+: 1720709434:0;ls
+: 1720709449:0;cd ..
+: 1720709449:0;ls
+: 1720709451:0;kvantum
+: 1720709458:0;kvantummanager
+: 1720709502:0;ls
+: 1720709505:0;ls
+: 1720709507:0;cd DOwn
+: 1720709508:0;cd Downloads
+: 1720709509:0;ls
+: 1720709511:0;unzip Hyprland-Dots-main.zip
+: 1720709512:0;ls
+: 1720709513:0;cd Hyprland-Dots-main
+: 1720709513:0;ls
+: 1720709515:0;cd config
+: 1720709516:0;ls
+: 1720709534:0;cp -r {qt5ct,qt6ct} ~/.config/
+: 1720709546:0;ls
+: 1720709625:0;ls
+: 1720709631:0;nvim hyprland.conf
+: 1720709652:0;nvim hyprland/settings.conf
+: 1720710514:0;pamixer
+: 1720710520:0;sudo pacman -Sy alsa-utils
+: 1720710541:0;pamixer
+: 1720710678:0;nvim
+: 1720710749:0;./scripts/volume-ctrl.sh +
+: 1720710754:0;nvim
+: 1720710778:0;sudo pacman -Sy ug
+: 1720710781:0;sudo pacman -Sy ugrep
+: 1720710800:0;sudo pacman -Sy csvkit
+: 1720710804:0;ls
+: 1720710822:0;pactl list sinks | grep 'Volume:'
+: 1720710879:0;pactl get-sink-volume
+: 1720710890:0;pactl get-sink-volume @DEFAULT_SINK@
+: 1720710922:0;pactl set-sink-mute @DEFAULT_SINK@ toggle
+: 1720710924:0;pactl set-sink-mute @DEFAULT_SINK@ toggle
+: 1720710930:0;sudo pacman -Sy wl-clipboard
+: 1720710954:0;sudo pacman -Sy wl-copy
+: 1720710961:0;wl-copy
+: 1720710975:0;nvim
+: 1720710994:0;(pactl get-sink-volume @DEFAULT_SINK@ | grep -oP "\d+%" | sed 's/%//'
+: 1720710997:0;pactl get-sink-volume @DEFAULT_SINK@ | grep -oP "\d+%" | sed 's/%//'
+: 1720711186:0;ls
+: 1720711221:0;./hypr/scripts/volume-ctrl.sh +
+: 1720711244:0;a=5
+: 1720711246:0;a+5
+: 1720711277:0;./hypr/scripts/volume-ctrl.sh +
+: 1720711300:0;./hypr/scripts/volume-ctrl.sh +
+: 1720711326:0;./hypr/scripts/volume-ctrl.sh +
+: 1720711328:0;./hypr/scripts/volume-ctrl.sh +
+: 1720711328:0;./hypr/scripts/volume-ctrl.sh +
+: 1720711328:0;./hypr/scripts/volume-ctrl.sh +
+: 1720711329:0;./hypr/scripts/volume-ctrl.sh +
+: 1720711329:0;./hypr/scripts/volume-ctrl.sh +
+: 1720711345:0;./hypr/scripts/volume-ctrl.sh -
+: 1720711346:0;./hypr/scripts/volume-ctrl.sh -
+: 1720711346:0;./hypr/scripts/volume-ctrl.sh -
+: 1720711346:0;./hypr/scripts/volume-ctrl.sh -
+: 1720711347:0;./hypr/scripts/volume-ctrl.sh -
+: 1720711347:0;./hypr/scripts/volume-ctrl.sh -
+: 1720711348:0;./hypr/scripts/volume-ctrl.sh -
+: 1720711452:0;clear
+: 1720711452:0;ls
+: 1720711608:0;exit
+: 1720711616:0;nvim hypr/
+: 1720711660:0;hyprpicker
+: 1720711665:0;sudo pacman -Sy hyprpicker
+: 1720711680:0;paru -Sy hyprpicker
+: 1720711722:0;hyprpicker
+: 1720711730:0;hyprpicker
+: 1720711755:0;ls
+: 1720711757:0;cd hypr
+: 1720711758:0;ls
+: 1720711760:0;nvim
+: 1720711853:0;clear
+: 1720711854:0;ls
+: 1720711861:0;nvim scripts/screenshot.sh
+: 1720711998:0;maim
+: 1720712008:0;grim
+: 1720712011:0;ls
+: 1720712019:0;xdg-open 20240711_21h18m28s_grim.png
+: 1720712031:0;rm 20240711_21h18m28s_grim.png
+: 1720712131:0;grim -g
+: 1720712147:0;grim -g "$(slurp -o)"
+: 1720712157:0;ls
+: 1720712162:0;xdg-open 20240711_21h20m53s_grim.png
+: 1720712170:0;rm 20240711_21h20m53s_grim.png
+: 1720712267:0;grim -h
+: 1720712314:0;slurp -h
+: 1720712584:0;cd .config/hypr/scripts
+: 1720712584:0;ls
+: 1720712590:0;chmod +x screenshot.sh
+: 1720712591:0;./screenshot.sh
+: 1720712593:0;./screenshot.sh -s
+: 1720712640:0;./screenshot.sh -s
+: 1720712647:0;ls
+: 1720712648:0;cd Pictures
+: 1720712648:0;ls
+: 1720712650:0;cd Screenshots
+: 1720712650:0;ls
+: 1720712688:0;./screenshot.sh -s
+: 1720712690:0;ls
+: 1720712698:0;xdg-open 2024-07-11_21-29-00_grim.png.png
+: 1720712707:0;xdg-open 2024-07-11_21-29-48_grim.png
+: 1720712721:0;rm -rf ./*
+: 1720712730:0;./screenshot.sh -w
+: 1720712735:0;ls
+: 1720712738:0;xdg-open 2024-07-11_21-29-48_grim.png
+: 1720712742:0;xdg-open 2024-07-11_21-30-30_grim.png
+: 1720712761:0;./screenshot.sh -c
+: 1720712771:0;ls
+: 1720712855:0;./screenshot.sh -f
+: 1720712860:0;ls
+: 1720712869:0;xdg-open 2024-07-11_21-32-35_grim.png
+: 1720713201:0;nvim scripts/screenshot.sh
+: 1720713242:0;ls
+: 1720713441:0;sudo pacman -Sy zed
+: 1720713491:0;zed
+: 1720713495:0;Zed
+: 1720713497:0;which zed
+: 1720713499:0;sudo zed
+: 1720713503:0;exit
+: 1720713506:0;zed
+: 1720713519:0;zed .
+: 1720713530:0;sudo pacman -Sy zed
+: 1720713557:0;cd /usr/local/bin
+: 1720713557:0;ls
+: 1720713561:0;chmod +x dracut-remove.sh
+: 1720713564:0;sudo chmod +x dracut-remove.sh
+: 1720713565:0;ls
+: 1720713568:0;cat dracut-install.sh
+: 1720713572:0;ls
+: 1720713573:0;clear
+: 1720713573:0;ls
+: 1720713574:0;cd
+: 1720713574:0;ls
+: 1720713625:0;cat /usr/share/applications/dev.zed.Zed.desktop
+: 1720713632:0;zeditor
+: 1720714359:0;bc
+: 1720714363:0;sudo pacman -Sy bc
+: 1720714374:0;bc
+: 1720714381:0;bc --help
+: 1720714396:0;playerctl position `bc <<< "100 * $(playerctl metadata mpris:length) / 1000000 / 100"
+: 1720714405:0;playerctl position `bc <<< "100 * $(playerctl metadata mpris:length) / 1000000 / 100"`
+: 1720714406:0;playerctl position `bc <<< "100 * $(playerctl metadata mpris:length) / 1000000 / 100"`
+: 1720714420:0;playerctl position `bc <<< "100 * $(playerctl metadata mpris:length) / 1000000 / 100"`
+: 1720714421:0;playerctl position `bc <<< "100 * $(playerctl metadata mpris:length) / 1000000 / 100"`
+: 1720714424:0;playerctl position `bc <<< "100 * $(playerctl metadata mpris:length) / 1000000 / 100"`
+: 1720714482:0;bc <<< "100 * $(playerctl metadata mpris:length) / 1000000 / 100"
+: 1720714510:0;playerctl next
+: 1720714676:0;cliphist
+: 1720714682:0;sudo pacman -Sy cliphist
+: 1720714696:0;sudo pacman -Sy fuzzel
+: 1720714759:0;sudo pacman -Sy tessarct
+: 1720714770:0;sudo pacman -Sy tesseract
+: 1720715302:0;btop
+: 1720715307:0;htop
+: 1720715371:0;sudo pacman -Sy foot
+: 1720715382:0;foot
+: 1720715383:0;ls
+: 1720715383:0;clear
+: 1720715384:0;ls
+: 1720715385:0;clear
+: 1720715385:0;ls
+: 1720715386:0;eixt
+: 1720715392:0;ls
+: 1720715393:0;clear
+: 1720715393:0;ls
+: 1720715397:0;clear
+: 1720715397:0;ls
+: 1720715399:0;htop
+: 1720715405:0;exit
+: 1720715445:0;ls
+: 1720715446:0;clear
+: 1720715447:0;ls
+: 1720715452:0;fkfdkj
+: 1720715453:0;exit
+: 1720715538:0;sudo pacman -Sy signal-desktop
+: 1720715574:0;signal
+: 1720715581:0;cat /usr/share/applications/signal-desktop.desktop
+: 1720715591:0;signal-desktop
+: 1720715754:0;ls
+: 1720715757:0;bluetoothctl
+: 1720715815:0;clear
+: 1720715815:0;ls
+: 1720715816:0;exit
+: 1720715863:0;exit
+: 1720715864:0;clear
+: 1720715864:0;ls
+: 1720715865:0;clear
+: 1720715866:0;ls
+: 1720715868:0;clear
+: 1720715869:0;ls
+: 1720715869:0;exit
+: 1720716458:0;ls
+: 1720716467:0;nvim hyprland/settings.conf
+: 1720716474:0;nvim hyprland/userSettings.conf
+: 1720716479:0;ls
+: 1720716484:0;nvim hyprland.conf
+: 1720719074:0;exit
+: 1720719086:0;ls
+: 1720719090:0;cd hyprland
+: 1720719090:0;ls
+: 1720719096:0;nvim userSettings.conf
+: 1720719100:0;nvim settings.conf
+: 1720719108:0;nvim monitors.conf
+: 1720719115:0;ls
+: 1720719122:0;cat unsupported.conf
+: 1720719124:0;cat keyBinds.conf
+: 1720719129:0;rg windowruile
+: 1720719131:0;rg windowrule
+: 1720719141:0;nvim rules.conf
+: 1720719348:0;cd ..
+: 1720719348:0;ls
+: 1720719352:0;nvim hyprland.conf
+: 1720719380:0;nvim hyprland/rules.conf
+: 1720719404:0;ls
+: 1720719418:0;nvim hyprland/rules.conf
+: 1720719489:0;ls
+: 1720719539:0;cd ..
+: 1720719539:0;ls
+: 1720719542:0;cat chromium
+: 1720719544:0;cat chromium-flags.conf
+: 1720719581:0;foot
+: 1720719582:0;exit
+: 1720719585:0;mkdir foot
+: 1720719587:0;cd foot
+: 1720719588:0;ls
+: 1720719590:0;nvim foot.ini
+: 1720719593:0;foot
+: 1720719597:0;nvim foot.ini
+: 1720719605:0;foot
+: 1720719609:0;nvim foot.ini
+: 1720719618:0;foot
+: 1720719620:0;clear
+: 1720719620:0;ls
+: 1720719622:0;clear
+: 1720719623:0;ls
+: 1720719623:0;ls
+: 1720719624:0;clear
+: 1720719625:0;ls
+: 1720719625:0;tree
+: 1720719642:0;sudo pacman -Sy tree
+: 1720719650:0;tree
+: 1720719651:0;ls
+: 1720719652:0;clear
+: 1720719652:0;ls
+: 1720719654:0;nvim
+: 1720719662:0;nvim foot.ini
+: 1720719679:0;foot
+: 1720719681:0;nvim foot.ini
+: 1720719687:0;exit
+: 1720719688:0;clear
+: 1720719688:0;ls
+: 1720719738:0;fuzzel
+: 1720719768:0;fuzzel
+: 1720719774:0;ls
+: 1720719775:0;cd ..
+: 1720719775:0;ls
+: 1720719778:0;mkdir fuzzel
+: 1720719779:0;ls
+: 1720719780:0;cd fuzzel
+: 1720719780:0;ls
+: 1720719784:0;nvim fuzzel.ini
+: 1720719811:0;fuzzel
+: 1720719821:0;nvim fuzzel.ini
+: 1720719828:0;fuzzel
+: 1720719832:0;nvim fuzzel.ini
+: 1720719837:0;fuzzel
+: 1720719843:0;nvim fuzzel.ini
+: 1720719857:0;fuzzel
+: 1720719860:0;nvim fuzzel.ini
+: 1720719866:0;fuzzel
+: 1720719872:0;nvim fuzzel.ini
+: 1720719877:0;fuzzel
+: 1720719898:0;fuzzel
+: 1720719953:0;sudo pacman -Sy thorium
+: 1720720008:0;paru -Sy thorium-browser-bin
+: 1720720154:0;ls
+: 1720720155:0;cd ..
+: 1720720156:0;ls
+: 1720720189:0;nvim thorium-flags.conf
+: 1720720200:0;thorium-browser
+: 1720720249:0;paru -R thorium-browser-bin
+: 1720720251:0;ls
+: 1720720257:0;sudo pacman -Sy libnotify
+: 1720720262:0;ls
+: 1720720405:0;cd h
+: 1720720407:0;cd hypr
+: 1720720407:0;ls
+: 1720720411:0;cd hyprland
+: 1720720411:0;ls
+: 1720720418:0;cd ..
+: 1720720418:0;ls
+: 1720720422:0;nvim hyprland.conf
+: 1720720500:0;clear
+: 1720720501:0;ls
+: 1720720506:0;cd hyprland
+: 1720720506:0;ls
+: 1720720508:0;nvim monitors.conf
+: 1720720545:0;ls
+: 1720720553:0;hyprctl monitors
+: 1720720559:0;exit
+: 1720720576:0;nvim monitors.conf
+: 1720720582:0;cd ..
+: 1720720582:0;ls
+: 1720720583:0;cd ..
+: 1720720584:0;ls
+: 1720721597:0;systemctl suspend
+: 1720721628:0;ls
+: 1720721629:0;clear
+: 1720721629:0;ls
+: 1720721640:0;bluetoothctl
+: 1720721695:0;bluetoothctl paired-devices
+: 1720721712:0;bluetoothctl
+: 1720721776:0;clear
+: 1720721776:0;ls
+: 1720721931:0;ls
+: 1720721934:0;cd hypr
+: 1720721935:0;ls
+: 1720721939:0;nvim hyprlock.conf
+: 1720721991:0;sudo pacman -S typescript npm meson gjs gtk3 gtk-layer-shell gnome-bluetooth-3.0 upower networkmanager gobject-introspection libdbusmenu-gtk3 libsoup3
+: 1720722023:0;paru -S aylurs-gtk-shell
+: 1720724788:0;ls
+: 1720724789:0;clear
+: 1720724790:0;ls
+: 1720724810:0;ls
+: 1720724814:0;nvim hypridle.conf
+: 1720724818:0;nvim hypridle.conf
+: 1720724827:0;hyprlock
+: 1720724947:0;wayshot
+: 1720724996:0;sudo pacman -R dolphin
+: 1720725013:0;pacman -Qdtq | pacman -Rns -
+: 1720725016:0;sudo su
+: 1720725120:0;ags
+: 1720725122:0;ls
+: 1720725124:0;cd Downloads
+: 1720725125:0;ls
+: 1720725128:0;unzip dots-hyprland-main.zip
+: 1720725129:0;ls
+: 1720725130:0;cd dots-hyprland-main
+: 1720725130:0;ls
+: 1720725139:0;cd .config
+: 1720725140:0;ls
+: 1720725148:0;mv ags ~/.config
+: 1720725163:0;mv code-flags.conf ~/.config/
+: 1720725170:0;ls
+: 1720725176:0;ls
+: 1720725178:0;clear
+: 1720725178:0;ls
+: 1720725181:0;cd
+: 1720725181:0;ls
+: 1720725189:0;ags
+: 1720725206:0;sudo pacman -Sy gnome-bluetooth
+: 1720725215:0;ags
+: 1720725223:0;ls
+: 1720725233:0;nvim hyprlock.conf
+: 1720725241:0;nvim hyprland.conf
+: 1720725267:0;sudo pacman -Sy polkit-kde-agent 
+: 1720725275:0;sudo su
+: 1720725301:0;sudo pacman -R polkit-kde-agent dolphin
+: 1720725305:0;sudo pacman -R polkit-kde-agent
+: 1720725309:0;sudo su
+: 1720725328:0;sudo pacman -Sy polkit-gnome-agent
+: 1720725374:0;systemctl status polkit
+: 1720725382:0;sudo pacman -Sy polkit-gnome
+: 1720725449:0;ags --help
+: 1720725461:0;ags 
+: 1720725508:0;sudo pacman -Sy gnome-keyring
+: 1720725520:0;exit
+: 1720725817:0;paru -Sy visual-studio-code-bin
+: 1720726064:0;probe-rs
+: 1720726070:0;probe-rs
+: 1720726073:0;which probe-rs
+: 1720726078:0;ls
+: 1720726079:0;exit
+: 1720726160:0;gnome-keyring
+: 1720726168:0;clear
+: 1720726168:0;ls
+: 1720726169:0;exit
+: 1720726174:0;gnome-keyring-3
+: 1720726180:0;exit
+: 1720726347:0;sudo pacman -Sy gdm
+: 1720726376:0;sudo nvim /etc/pam.d/login
+: 1720726463:0;sudo nvim /etc/greetd/hyprland.conf
+: 1720726472:0;sudo pacman -Sy qtgreet
+: 1720726515:0;ls
+: 1720726518:0;ags
+: 1720726521:0;ls
+: 1720726591:0;lsmod
+: 1720726637:0;cd .config/
+: 1720726637:0;ls
+: 1720726647:0;systemctl reboot
+: 1720726696:0;Hyprland
+: 1720726769:0;ls
+: 1720726773:0;clear
+: 1720726780:0;ps -aux | grep ags
+: 1720726786:0;ags
+: 1720726820:0;cd .config
+: 1720726820:0;ls
+: 1720726823:0;cd h
+: 1720726824:0;cd hypr
+: 1720726825:0;ls
+: 1720726830:0;nvim hyprland.conf
+: 1720726854:0;1password
+: 1720726893:0;1password
+: 1720726907:0;1password
+: 1720726937:0;killall 1password
+: 1720726938:0;ls
+: 1720726999:0;clear
+: 1720727000:0;ls
+: 1720727010:0;nvim hyprland.conf
+: 1720727029:0;which hypridle
+: 1720727031:0;clear
+: 1720727031:0;ls
+: 1720727167:0;sudo nvim /etc/pam.d/login
+: 1720727389:0;reboot
+: 1720727435:0;ls
+: 1720727437:0;Hyprland
+: 1720727448:0;ls
+: 1720727452:0;sudo pacman -R monospace
+: 1720727457:0;clear
+: 1720727457:0;ls
+: 1720727475:0;systemctl --user status xdg-desktop-portal-hyprland.service
+: 1720727477:0;clear
+: 1720727477:0;ls
+: 1720727486:0;sudo pacman -Sy nautilius
+: 1720727494:0;sudo pacman -Sy nautilus
+: 1720727502:0;sudo pacman -Sy thunar
+: 1720755974:0;ls
+: 1720755976:0;cd .config
+: 1720755976:0;ls
+: 1720755978:0;nvim chromium
+: 1720755985:0;nvim chromium-flags.conf
+: 1720756624:0;ls
+: 1720756625:0;cd .config
+: 1720756626:0;ls
+: 1720756631:0;nvim ags
+: 1720756639:0;cd ags
+: 1720756639:0;ls
+: 1720756640:0;nvim
+: 1720759061:0;sudo pacman -Sy bun
+: 1720759073:0;sudo pacman -Syu
+: 1720759115:0;systemctl status ags
+: 1720760648:0;ls
+: 1720760649:0;clera
+: 1720760650:0;ls
+: 1720760754:0;paru -Sy bun-bin
+: 1720760824:0;bun
+: 1720760826:0;clear
+: 1720760827:0;ls
+: 1720760834:0;paru -Syu
+: 1720760852:0;sudo pacman -R cachyos-v3-mirrorlist
+: 1720760856:0;paru -Syu
+: 1720761388:0;ls
+: 1720761389:0;clear
+: 1720761389:0;ls
+: 1720761390:0;cd
+: 1720761391:0;ls
+: 1720761392:0;cd .config
+: 1720761392:0;ls
+: 1720761396:0;cd hypr
+: 1720761397:0;ls
+: 1720761401:0;nvim hyprland.conf
+: 1720762267:0;systemctl logout
+: 1720762283:0;exit
+: 1720762289:0;reboot
+: 1720762349:0;Hyprland
+: 1720762383:0;code
+: 1720762410:0;gnome-keyring
+: 1720762416:0;clear
+: 1720762416:0;ls
+: 1720762443:0;ls
+: 1720762445:0;cd .config
+: 1720762445:0;ls
+: 1720762449:0;nvim chromium-flags.conf
+: 1720762472:0;chromium
+: 1720762645:0;secret-tool lookup
+: 1720762659:0;secret-tool lookup search chrome
+: 1720762662:0;secret-tool lookup search vs
+: 1720762738:0;sudo pacman -Sy seahorse
+: 1720762753:0;seahorse
+: 1720762838:0;sudo nvim /etc/pam.d/passwd
+: 1720764371:0;sudo pacman -Sy dolphin
+: 1720764964:0;paru -R ags
+: 1720765004:0;paru -R aylurs-gtk-shell
+: 1720765007:0;ls
+: 1720765009:0;cd .config
+: 1720765010:0;ls
+: 1720765013:0;rm -rf ags
+: 1720765014:0;ls
+: 1720765016:0;cd waybar
+: 1720765016:0;ls
+: 1720765021:0;clear
+: 1720765280:0;ls
+: 1720765307:0;pw-cli i all
+: 1720765325:0;pw-cli i all | rg running -q
+: 1720765363:0;pw-cli i all | rg running -q
+: 1720765364:0;pw-cli i all | rg running -q
+: 1720765365:0;pw-cli i all | rg running -q
+: 1720765365:0;pw-cli i all | rg running -q
+: 1720765365:0;pw-cli i all | rg running -q
+: 1720765366:0;pw-cli i all | rg running -q
+: 1720765366:0;pw-cli i all | rg running -q
+: 1720765395:0;pw-cli i all | rg running -q
+: 1720765406:0;pw-cli i all 2>&1 | rg running
+: 1720765409:0;pw-cli i all 2>&1 | rg running -1
+: 1720765411:0;pw-cli i all 2>&1 | rg running -q
+: 1720765421:0;pw-cli i all 2>&1 | rg running -q
+: 1720765422:0;pw-cli i all 2>&1 | rg running -q
+: 1720765423:0;pw-cli i all 2>&1 | rg running -q
+: 1720765424:0;pw-cli i all 2>&1 | rg running -q
+: 1720765424:0;pw-cli i all 2>&1 | rg running -q
+: 1720765425:0;pw-cli i all 2>&1 | rg running -q
+: 1720765425:0;pw-cli i all 2>&1 | rg running -q
+: 1720765428:0;pw-cli i all 2>&1 | rg running -q
+: 1720765429:0;pw-cli i all 2>&1 | rg running -q
+: 1720765430:0;pw-cli i all 2>&1 | rg running -q
+: 1720765431:0;pw-cli i all 2>&1 | rg running -q
+: 1720765432:0;pw-cli i all 2>&1 | rg running -q
+: 1720765434:0;pw-cli i all 2>&1 | rg running -q
+: 1720765435:0;pw-cli i all 2>&1 | rg running -q
+: 1720765435:0;pw-cli i all 2>&1 | rg running -q
+: 1720765435:0;pw-cli i all 2>&1 | rg running -q
+: 1720765436:0;pw-cli i all 2>&1 | rg running -q
+: 1720765436:0;pw-cli i all 2>&1 | rg running -q
+: 1720765436:0;pw-cli i all 2>&1 | rg running -q
+: 1720765437:0;pw-cli i all 2>&1 | rg running -q
+: 1720765437:0;pw-cli i all 2>&1 | rg running -q
+: 1720765437:0;pw-cli i all 2>&1 | rg running -q
+: 1720765438:0;pw-cli i all 2>&1 | rg running -q
+: 1720765439:0;pw-cli i all 2>&1 | rg running -q
+: 1720765439:0;pw-cli i all 2>&1 | rg running -q
+: 1720765439:0;pw-cli i all 2>&1 | rg running -q
+: 1720765440:0;pw-cli i all 2>&1 | rg running -q
+: 1720765440:0;pw-cli i all 2>&1 | rg running -q
+: 1720765441:0;pw-cli i all 2>&1 | rg running -q
+: 1720765441:0;pw-cli i all 2>&1 | rg running -q
+: 1720765442:0;pw-cli i all 2>&1 | rg running -q
+: 1720765457:0;ls
+: 1720765458:0;cd ..
+: 1720765458:0;ls
+: 1720765460:0;cd hypr
+: 1720765460:0;ls
+: 1720765461:0;cd hyprland
+: 1720765461:0;ls
+: 1720765463:0;cd ..
+: 1720765463:0;ls
+: 1720765464:0;cd scripts
+: 1720765465:0;ls
+: 1720765470:0;nvim suspend.sh
+: 1720765501:0;chmod +x suspend.sh
+: 1720765502:0;nvim suspend.sh
+: 1720765533:0;./suspend.sh
+: 1720765537:0;./suspend.sh
+: 1720765540:0;nvim suspend.sh
+: 1720765748:0;nvim suspend.sh
+: 1720765754:0;cd ..
+: 1720765754:0;ls
+: 1720765757:0;nvim hypridle.conf
+: 1720765774:0;pidof steam
+: 1720765787:0;cat hypridle.conf
+: 1720765800:0;nvim scripts/suspend.sh
+: 1720765814:0;nvim scripts/suspend.sh
+: 1720765834:0;nvim hypridle.conf
+: 1720765975:0;hyprctl dispatch dpms off
+: 1720765988:0;hyprctl dispatch dpms on
+: 1720766175:0;systemctl enable hypridle
+: 1720766198:0;systemctl status hypridle
+: 1720766250:0;ls
+: 1720766290:0;cd .config
+: 1720766290:0;ls
+: 1720766293:0;cd hypr
+: 1720766293:0;ls
+: 1720766296:0;nvim hyprlock.conf
+: 1720766332:0;sudo pacman -Sy swww
+: 1720766404:0;swww query
+: 1720766417:0;sudo systemctl enable swww-daemon
+: 1720766420:0;sudo systemctl enable swwwd
+: 1720766619:0;sudo pacman -R swww
+: 1720766626:0;hyprpaper
+: 1720766741:0;ls
+: 1720766762:0;nvim hyprpaper.conf
+: 1720766817:0;hyprctl hyprpaper listloaded
+: 1720766824:0;hyprpaper
+: 1720766827:0;hyprctl hyprpaper listloaded
+: 1720766829:0;exit
+: 1720766839:0;ls
+: 1720766840:0;cd Pictures
+: 1720766841:0;ls
+: 1720766844:0;mkdir Wallpapers
+: 1720766845:0;ls
+: 1720767907:0;hyprctl monitors
+: 1720767936:0;clear
+: 1720767937:0;ls
+: 1720767937:0;cd
+: 1720767938:0;ls
+: 1720767939:0;cd .config
+: 1720767939:0;ls
+: 1720767941:0;cd waybar
+: 1720767941:0;ls
+: 1720768034:0;nvim hyprpaper.conf
+: 1720768073:0;ls
+: 1720768075:0;waybar
+: 1720768079:0;ls
+: 1720768081:0;rm -rf ./*
+: 1720768083:0;ls
+: 1720768090:0;ls
+: 1720768092:0;cd Downloads
+: 1720768093:0;ls
+: 1720768099:0;unzip dotfiles-main.zip
+: 1720768101:0;cd dotfiles-main
+: 1720768102:0;ls
+: 1720768117:0;cp -r rofi ~/.config/rofi
+: 1720768140:0;cp -r waybar ~/.config/waybar
+: 1720768142:0;waybar
+: 1720768159:0;ls
+: 1720768198:0;sudo pacman -Sy wlogout
+: 1720768211:0;paru -Sy wlogout
+: 1720768341:0;weston
+: 1720768432:0;exit
+: 1720768434:0;cd ..
+: 1720768434:0;cd
+: 1720768436:0;cd Downloads
+: 1720768436:0;ls
+: 1720768438:0;rm -rf ./*
+: 1720768440:0;ls
+: 1720768441:0;clear
+: 1720768441:0;ls
+: 1720768443:0;exit
+: 1720768501:0;wlogout
+: 1720768529:0;hyprlock
+: 1720768542:0;nvim hyprlock.conf
+: 1720768814:0;sudo pacman -Sy swaync
+: 1720768858:0;fc-list | grep Rubik
+: 1720768860:0;fc-list | grep Rubik
+: 1720768862:0;nvim hyprlock.conf
+: 1720768901:0;sudo pacman -Sy gvfs-mtp
+: 1720768909:0;dolphin
+: 1720768916:0;sudo pacman -Sy dolphin
+: 1720768925:0;sudo pacman -Sy nautilus
+: 1720768946:0;sudo pacman -Sy nautilus gvfs-mtp gvfs-smb
+: 1720769046:0;fc-list | grep Geist
+: 1720769055:0;nvim hyprlock.conf
+: 1720769268:0;hyprlock
+: 1720769285:0;hyprlock
+: 1720769310:0;hyprlock
+: 1720769445:0;hyprlock
+: 1720769488:0;hyprlock
+: 1720769533:0;hyprlock
+: 1720769565:0;hyprlock
+: 1720769601:0;fc-list | grep GeistMono Nerd Font
+: 1720769608:0;fc-list | grep "GeistMono Nerd Font"
+: 1720769687:0;fc-list | grep "GeistMono Nerd Font"
+: 1720769689:0;hyprlock
+: 1720769742:0;hyprlock
+: 1720769789:0;hyprlock
+: 1720769817:0;hyprlock
+: 1720769871:0;hyprlock
+: 1720769961:0;hyprlock
+: 1720769982:0;hyprlock
+: 1720770005:0;hyprlock
+: 1720770051:0;cd .config
+: 1720770051:0;ls
+: 1720770052:0;cd h
+: 1720770053:0;cd hypr
+: 1720770054:0;ls
+: 1720770056:0;cd hyprland
+: 1720770056:0;ls
+: 1720770071:0;cd ..
+: 1720770071:0;ls
+: 1720770072:0;cd scripts
+: 1720770073:0;ls
+: 1720770081:0;nvim hyprlock_status.sh
+: 1720770238:0;nmcli -t -f
+: 1720770246:0;nmcli -t -f wlan0
+: 1720770291:0;nmcli -t -f DEVICE,STATE dev
+: 1720770316:0;nmcli -t -f DEVICE,STATE dev | grep -E '^wlp|^wlan'
+: 1720770331:0;nmcli -t -f DEVICE,STATE dev | grep -E '^wlp|^wlan' | cut -d':' -f2
+: 1720770563:0;ls
+: 1720770565:0;cd scripts
+: 1720770565:0;ls
+: 1720770594:0;./hyprlock_status.sh left
+: 1720770598:0;./hyprlock_status.sh right
+: 1720770613:0;./hyprlock_status.sh right
+: 1720770626:0;nmcli -t -f NAME,DEVICE connection show --active | grep -E '^enp|^eth|^eno' | cut -d':' -f2
+: 1720770633:0;nmcli -t -f NAME,DEVICE connection show --active
+: 1720770646:0;nmcli -t -f NAME,DEVICE connection show --active | grep -E '^enp|^eth|^eno' |
+: 1720770648:0;nmcli -t -f NAME,DEVICE connection show --active | grep -E '^enp|^eth|^eno'
+: 1720770658:0;nmcli -t -f NAME,DEVICE connection show --active | grep -E 'enp|eth|eno'
+: 1720770693:0;nmcli -t -f NAME,DEVICE connection show --active | grep -E 'enp|eth|eno' | cut -d':' -f2
+: 1720770778:0;nmcli -t -f NAME,DEVICE connection show --active | grep -E 'enp|eth|eno' | cut -d':' -f1
+: 1720770798:0;./hyprlock_status.sh right
+: 1720770802:0;./hyprlock_status.sh right
+: 1720770805:0;./hyprlock_status.sh left
+: 1720770820:0;nvim battery.sh
+: 1720770917:0;curl -O https://cszach.github.io/battery/battery\
+chmod +x battery
+: 1720770921:0;./battery
+: 1720770925:0;./battery --help
+: 1720771270:0;./hyprlock_status.sh left
+: 1720771291:0;./hyprlock_status.sh left
+: 1720771292:0;./hyprlock_status.sh left
+: 1720771293:0;./hyprlock_status.sh left
+: 1720771294:0;./hyprlock_status.sh left
+: 1720771294:0;./hyprlock_status.sh left
+: 1720771581:0;./hyprlock_status.sh left
+: 1720771585:0;./hyprlock_status.sh left
+: 1720771654:0;./hyprlock_status.sh left
+: 1720771662:0;./hyprlock_status.sh left
+: 1720771666:0;./hyprlock_status.sh left
+: 1720771669:0;./hyprlock_status.sh right
+: 1720771672:0;./hyprlock_status.sh left
+: 1720771809:0;ls /sys/class/power_supply/ACAD/type 
+: 1720771813:0;ca /sys/class/power_supply/ACAD/type 
+: 1720771817:0;cat /sys/class/power_supply/ACAD/type 
+: 1720771825:0;cat /sys/class/power_supply/ACAD/online
+: 1720771841:0;cat /sys/class/power_supply/ACAD/device
+: 1720771847:0;cat /sys/class/power_supply/ACAD/device/status
+: 1720771867:0;./hyprlock_status.sh left
+: 1720771869:0;./hyprlock_status.sh left
+: 1720771870:0;./hyprlock_status.sh left
+: 1720771871:0;./hyprlock_status.sh left
+: 1720771879:0;./hyprlock_status.sh left
+: 1720771880:0;./hyprlock_status.sh left
+: 1720771881:0;./hyprlock_status.sh left
+: 1720771885:0;./hyprlock_status.sh right
+: 1720771917:0;./hyprlock_status.sh left
+: 1720771918:0;./hyprlock_status.sh left
+: 1720771919:0;./hyprlock_status.sh left
+: 1720771920:0;./hyprlock_status.sh left
+: 1720771921:0;./hyprlock_status.sh left
+: 1720771921:0;./hyprlock_status.sh left
+: 1720772015:0;./hyprlock_status.sh left
+: 1720772018:0;./hyprlock_status.sh right
+: 1720772024:0;./hyprlock_status.sh right
+: 1720772025:0;./hyprlock_status.sh right
+: 1720772084:0;./hyprlock_status.sh right
+: 1720772085:0;./hyprlock_status.sh right
+: 1720772092:0;./hyprlock_status.sh right
+: 1720772093:0;./hyprlock_status.sh right
+: 1720772093:0;./hyprlock_status.sh right
+: 1720772094:0;./hyprlock_status.sh right
+: 1720772095:0;./hyprlock_status.sh right
+: 1720772095:0;./hyprlock_status.sh right
+: 1720772096:0;./hyprlock_status.sh right
+: 1720772096:0;./hyprlock_status.sh right
+: 1720772122:0;./hyprlock_status.sh right
+: 1720772122:0;./hyprlock_status.sh right
+: 1720772173:0;./hyprlock_status.sh right
+: 1720772176:0;./hyprlock_status.sh left
+: 1720772191:0;cd ..
+: 1720772191:0;ls
+: 1720772197:0;nvim hyprlock.conf
+: 1720772229:0;hyprlock
+: 1720772286:0;pacman -Ss material
+: 1720772322:0;pacman -Ss material
+: 1720772324:0;hyprlock
+: 1720772370:0;hyprlock
+: 1720772410:0;hyprlock
+: 1720772431:0;hyprlock
+: 1720772455:0;hyprlock
+: 1720772489:0;hyprlock
+: 1720772614:0;sudo pacman -Sy kdeconnect
+: 1720772639:0;sudo pacman -R nautilus
+: 1720772645:0;su
+: 1720772678:0;sudo pacman -Sy kde-polkit-agent
+: 1720772687:0;sudo pacman -Sy polkit-kde-agent
+: 1720772697:0;sudo pacman -R polkit-gnome
+: 1720772775:0;sudo pacman -Sy dolphin kdeconnect
+: 1720772875:0;sudo pacman -R dolphin kdeconnect
+: 1720772885:0;sudo pacman -R dolphin
+: 1720772895:0;sudo pacman -Sy polkit-gnome
+: 1720772904:0;sudo pacman -Sy nautilus
+: 1720772908:0;ls
+: 1720772913:0;sudo pacman -Syu
+: 1720772929:0;su
+: 1720772947:0;sudo pacman -Sy gvfs-mtp
+: 1720772951:0;sudo pacman -Sy gvfs-smb
+: 1720772957:0;sudo pacman -Sy loupe
+: 1720773085:0;sudo pacman -Sy imagemagick
+: 1720773122:0;exit
+: 1720773131:0;ls
+: 1720773132:0;cd Pictures
+: 1720773132:0;ls
+: 1720773134:0;cd Wallpapers
+: 1720773135:0;ls
+: 1720773143:0;convert wall1.jpg wall1.png
+: 1720773150:0;ls
+: 1720773167:0;magick convert wall2.jpg wall2.png
+: 1720773182:0;ls
+: 1720773187:0;magick convert wall2.jpeg wall2.png
+: 1720773222:0;hyprlock
+: 1720773292:0;hyprlock
+: 1720773376:0;loginctl lock-session
+: 1720773438:0;sudo pacman -Q monospace
+: 1720773805:0;dunst
+: 1720773827:0;killall dunst
+: 1720773828:0;dunst
+: 1720773864:0;cd ..
+: 1720773864:0;ls
+: 1720773866:0;rg dunst
+: 1720773875:0;sudo pacman -R dunst
+: 1720773916:0;dunst
+: 1720773920:0;notify-send
+: 1720773923:0;notify-send "jkfdjkfjd"
+: 1720773926:0;notify-send "jkfdjkfjd"
+: 1720773928:0;notify-send "jkfdjkfjd"
+: 1720773932:0;notify-send "jkfdjkfjd"
+: 1720773943:0;wlogout
+: 1720773955:0;wlogout
+: 1720774087:0;dunst &
+: 1720774090:0;ls
+: 1720774091:0;clear
+: 1720774092:0;ls
+: 1720774093:0;cd
+: 1720774094:0;ls
+: 1720774095:0;cd Downloads
+: 1720774095:0;ls
+: 1720774098:0;unz
+: 1720774101:0;unzip Linux-master.zip
+: 1720774102:0;ls
+: 1720774103:0;cd Linux-master
+: 1720774103:0;ls
+: 1720774105:0;cd dotfiles
+: 1720774105:0;ls
+: 1720774107:0;cd swayConfig
+: 1720774107:0;ls
+: 1720774121:0;cp -r wlogout ~/.config/
+: 1720774125:0;wlogout
+: 1720774148:0;cp -r waybar ~/.config/waybar
+: 1720774152:0;ls
+: 1720774153:0;cd
+: 1720774155:0;cd .config
+: 1720774156:0;ls
+: 1720774157:0;cd waybar
+: 1720774158:0;ls
+: 1720774160:0;ls
+: 1720774162:0;cd waybar
+: 1720774163:0;ls
+: 1720774170:0;mv ./* ../
+: 1720774171:0;ls
+: 1720774172:0;cd ..
+: 1720774172:0;ls
+: 1720774176:0;rm -rf waybar
+: 1720774176:0;ls
+: 1720774179:0;nvim config
+: 1720774187:0;nvim modules.json
+: 1720774218:0;nvim modules.json
+: 1720774231:0;nvim config
+: 1720774244:0;waybar
+: 1720774366:0;killall dunst
+: 1720774400:0;killall waybar
+: 1720774402:0;waybar
+: 1720774417:0;ls
+: 1720774420:0;nvim modules.json
+: 1720774484:0;kitty -e bluetoothctl
+: 1720774576:0;kitty -e bluetoothctl
+: 1720774585:0;iwctl
+: 1720774617:0;sudo systemctl disable --now NetworkManager
+: 1720774631:0;sudo pacman -R networkmanager
+: 1720774637:0;su
+: 1720774654:0;sudo systemctl enable --now iwd
+: 1720774659:0;sudo systemctl enable --now dhcpcd
+: 1720774662:0;ls
+: 1720774673:0;iwctl --help
+: 1720774690:0;iwctl station wlan0
+: 1720774695:0;iwctl station list
+: 1720774721:0;sudo systemctl disable --now dhcpcd
+: 1720774726:0;sudo systemctl iwd --now dhcpcd
+: 1720774733:0;sudo systemctl disable --now iwd
+: 1720774741:0;sudo pacman -Sy networkmanager
+: 1720774754:0;cat /etc/NetworkManager/conf.d/wifi_backend.conf
+: 1720774770:0;sudo systemctl enable --now NetworkManager
+: 1720774776:0;nmcli
+: 1720774785:0;nmcli device show
+: 1720774797:0;nmcli device wifi connect binman
+: 1720774817:0;cd ..
+: 1720774817:0;ls
+: 1720774827:0;nvim hypr/hyprland.conf
+: 1720774838:0;cat hyprpaper.conf
+: 1720774848:0;reboot
+: 1720774973:0;Hyprland
+: 1720774981:0;ls
+: 1720774983:0;hyprpaper
+: 1720774995:0;ls
+: 1720775040:0;hyprctl hyprpaper listloaded
+: 1720775041:0;hyprctl hyprpaper listloaded
+: 1720775064:0;hyprctl hyprpaper wallpaper "eDP-1,/home/krishbin/Pictures/Wallpapers/wall1.jpg"
+: 1720775074:0;hyprctl hyprpaper wallpaper ",/home/krishbin/Pictures/Wallpapers/wall1.jpg"
+: 1720775084:0;cd .config
+: 1720775084:0;ls
+: 1720775085:0;cd hypr
+: 1720775085:0;ls
+: 1720775088:0;nvim hyprpaper.conf
+: 1720775109:0;killall hyprpaer
+: 1720775111:0;killall hyprpaper
+: 1720775115:0;hyprpaper
+: 1720775127:0;nvim hyprpaper.conf
+: 1720775134:0;hyprpaper
+: 1720775139:0;nvim hyprpaper.conf
+: 1720775159:0;hyprpaper
+: 1720775200:0;ls
+: 1720775203:0;cd .config
+: 1720775203:0;ls
+: 1720775293:0;ls
+: 1720775297:0;cd hypr
+: 1720775297:0;ls
+: 1720775300:0;cd
+: 1720775300:0;ls
+: 1720775302:0;cd Downloads
+: 1720775303:0;ls
+: 1720775306:0;unzip HyprNova-master.zip
+: 1720775308:0;cd HyprNova-master
+: 1720775308:0;ls
+: 1720775316:0;cd .config
+: 1720775322:0;rm -rf ~/.config/wlogout
+: 1720775323:0;ls
+: 1720775331:0;mv wlogout ~/.config/
+: 1720775334:0;wlogout
+: 1720775344:0;ls
+: 1720775345:0;cd .config
+: 1720775346:0;ls
+: 1720775347:0;cd w
+: 1720775351:0;cd wlogout
+: 1720775353:0;ls
+: 1720775356:0;cat layout
+: 1720775362:0;wlogout
+: 1720775392:0;sudo pacman -R dunst
+: 1720775401:0;sudo pacman -Sy swaync
+: 1720775410:0;ls
+: 1720775423:0;ls
+: 1720775434:0;ls
+: 1720775438:0;cd ..
+: 1720775439:0;ls
+: 1720775456:0;mv swaync ~/.config/
+: 1720775461:0;swaync
+: 1720775467:0;killall dunst
+: 1720775469:0;swaync
+: 1720775475:0;ls
+: 1720775481:0;sudo nvim hyprland.conf
+: 1720775499:0;sudo nvim hyprland.conf
+: 1720775540:0;wlogout
+: 1720775558:0;ls
+: 1720775560:0;Hyprland
+: 1720775575:0;swaync-client
+: 1720775592:0;ls
+: 1720775593:0;cd .config
+: 1720775594:0;ls
+: 1720775596:0;cd swaync
+: 1720775597:0;ls
+: 1720775600:0;nvim config.json
+: 1720775661:0;pactl set-source-mute @DEFAULT_SOURCE@ toggle
+: 1720775665:0;pactl set-source-mute @DEFAULT_SOURCE@ toggle
+: 1720775668:0;pavucontrol
+: 1720775679:0;pactl set-source-mute @DEFAULT_SOURCE@ toggle
+: 1720775681:0;pactl set-source-mute @DEFAULT_SOURCE@ toggle
+: 1720775770:0;sudo pacman -Sy nm-connection-editor
+: 1720775796:0;nm-connection-editor
+: 1720775869:0;blueman-manager
+: 1720775873:0;sudo pacman -Sy blueman
+: 1720775879:0;blueman-manager
+: 1720775942:0;nvim .config/swaync/config.json
+: 1720775997:0;exit
+: 1720776054:0;killall blueman-applet
+: 1720776140:0;cd ~/.config/autostart
+: 1720776142:0;ls
+: 1720776144:0;cd .config
+: 1720776144:0;ls
+: 1720776150:0;mkdir autostart
+: 1720776163:0;gksu nautilus /etc/xdg/autostart
+: 1720776186:0;blueman-manager
+: 1720776237:0;killall blueman-applet
+: 1720776239:0;blueman-manager
+: 1720776243:0;killall blueman-applet
+: 1720776261:0;exit
+: 1720776295:0;hyprctl monitors
+: 1720776299:0;hyprctl reload
+: 1720779672:0;Hyprland
+: 1720779679:0;clear
+: 1720779679:0;ls
+: 1720779680:0;clear
+: 1720779680:0;ls
+: 1720779693:0;nmcli device wifi connect ramjikarki1
+: 1720779747:0;nmcli device wifi connect ramjikarki1 password CLB2777E29
+: 1720779756:0;clear
+: 1720779757:0;ls
+: 1720779759:0;clear
+: 1720779759:0;ls
+: 1720779760:0;clear
+: 1720779761:0;ls
+: 1720779765:0;ls
+: 1720779768:0;cd .config
+: 1720779768:0;ls
+: 1720779780:0;clear
+: 1720779780:0;ls
+: 1720779785:0;cd waybar
+: 1720779785:0;ls
+: 1720779786:0;clear
+: 1720779786:0;ls
+: 1720779789:0;nvim launch.sh
+: 1720779798:0;ls
+: 1720779807:0;nvim config
+: 1720779867:0;exit
+: 1720779915:0;waybar -r
+: 1720779919:0;waybar --reload
+: 1720779930:0;killall waybar
+: 1720779932:0;waybar &
+: 1720779966:0;ls
+: 1720779978:0;cd ..
+: 1720779978:0;ls
+: 1720779984:0;nvim hypr/hyprland.conf
+: 1720779988:0;cd h
+: 1720779990:0;cd hypr
+: 1720779990:0;ls
+: 1720780006:0;nvim hyprland/settings.conf
+: 1720780120:0;hyprpicker
+: 1720780160:0;hyprpicker
+: 1720780192:0;exit
+: 1720780223:0;hyprpicker
+: 1720780263:0;hyprpicker
+: 1720780329:0;hyprpicker
+: 1720780386:0;ls
+: 1720780392:0;ls
+: 1720780393:0;ls
+: 1720780399:0;ls
+: 1720780405:0;cd ..
+: 1720780405:0;ls
+: 1720780410:0;cd waybar
+: 1720780410:0;ls
+: 1720780422:0;rm themeswitcher.sh
+: 1720780422:0;ls
+: 1720780426:0;rm -rf themes
+: 1720780427:0;ls
+: 1720780431:0;cat toggle.sh
+: 1720780482:0;rm toggle.sh
+: 1720780482:0;ls
+: 1720780487:0;nvim owm_config.json
+: 1720780493:0;nvim owm_config.json.template
+: 1720780497:0;rm owm_config.json.template
+: 1720780498:0;ls
+: 1720780664:0;nvim owm_config.json
+: 1720780674:0;cat modules.json
+: 1720780681:0;ls
+: 1720780683:0;cd scripts
+: 1720780684:0;ls
+: 1720780688:0;ls
+: 1720780690:0;cd ..
+: 1720780690:0;ls
+: 1720780693:0;rm launch.sh
+: 1720780694:0;ls
+: 1720780697:0;nvim config
+: 1720780716:0;killall waybar 
+: 1720780718:0;waybar &
+: 1720780735:0;ls
+: 1720780736:0;cd scripts
+: 1720780737:0;ls
+: 1720780745:0;./openWeatherMap.py
+: 1720780748:0;python3 openWeatherMap.py
+: 1720780753:0;ls
+: 1720780755:0;cd ...
+: 1720780757:0;cd ..
+: 1720780757:0;ls
+: 1720780759:0;nvim owm_config.json
+: 1720780788:0;python3 scripts/openWeatherMap.py
+: 1720780798:0;nvim config
+: 1720780812:0;killall waybar 
+: 1720780816:0;waybar &
+: 1720780818:0;ls
+: 1720780827:0;nvim style.css
+: 1720780856:0;killall waybar && waybar &
+: 1720780897:0;killall waybar && waybar &
+: 1720780908:0;killall waybar && waybar &
+: 1720780965:0;ls
+: 1720780969:0;nvim modules.json
+: 1720780995:0;killall waybar && waybar &
+: 1720781036:0;killall waybar && waybar &
+: 1720781193:0;ls
+: 1720781196:0;cd scripts
+: 1720781197:0;ls
+: 1720781199:0;nvim airplaneMode.sh
+: 1720781211:0;cd ..
+: 1720781212:0;ls
+: 1720781214:0;nvim config
+: 1720781230:0;nvim modules.json
+: 1720781305:0;exitit
+: 1720781306:0;exit
+: 1720781363:0;exit
+: 1720781365:0;exit
+: 1720781378:0;killall waybar && waybar &
+: 1720781387:0;waybar &
+: 1720781526:0;killall waybar && waybar &
+: 1720781560:0;pactl set-sink-mute @DEFAULT_SINK@ toggle
+: 1720781562:0;pactl set-sink-mute @DEFAULT_SINK@ toggle
+: 1720781563:0;pactl set-sink-mute @DEFAULT_SINK@ toggle
+: 1720781564:0;pactl set-sink-mute @DEFAULT_SINK@ toggle
+: 1720781565:0;pactl set-sink-mute @DEFAULT_SINK@ toggle
+: 1720781566:0;pactl set-sink-mute @DEFAULT_SINK@ toggle
+: 1720781579:0;exit
+: 1720781589:0;killall waybar && waybar &
+: 1720781741:0;killall waybar && waybar &
+: 1720781818:0;ls
+: 1720781820:0;cd scripts
+: 1720781820:0;ls
+: 1720781824:0;python3 headsetcontrol.sh
+: 1720781829:0;./headsetcontrol.sh
+: 1720781833:0;cd ..
+: 1720781834:0;ls
+: 1720781837:0;nvim modules.json
+: 1720781998:0;ls
+: 1720782000:0;cd scripts
+: 1720782000:0;ls
+: 1720782007:0;rm airplaneMode.sh
+: 1720782013:0;cat bluetooth-toggle.py
+: 1720782019:0;nvim bluetooth-toggle.py
+: 1720782023:0;ls
+: 1720782028:0;chmod +x bluetooth-toggle.py
+: 1720782031:0;./bluetooth-toggle.py
+: 1720782037:0;rm bluetooth-toggle.py
+: 1720782038:0;ls
+: 1720782040:0;rm gamemode.py
+: 1720782040:0;ls
+: 1720782043:0;rm bluetooth.sh
+: 1720782043:0;ls
+: 1720782045:0;rm openWeatherMap.py
+: 1720782045:0;ls
+: 1720782048:0;rm headsetcontrol.sh
+: 1720782049:0;ls
+: 1720782055:0;nvim toggle-wifi.sh
+: 1720782111:0;chmod +x toggle-wifi.sh
+: 1720782113:0;./toggle-wifi.sh
+: 1720782121:0;./toggle-wifi.sh
+: 1720782152:0;ls
+: 1720782153:0;cd ..
+: 1720782153:0;ls
+: 1720782160:0;nvim config
+: 1720782167:0;killall waybar && waybar &
+: 1720782187:0;nvim modules.json
+: 1720782242:0;killall waybar && waybar &
+: 1720782427:0;sudo pacman -Sy tailscale
+: 1720782467:0;sudo tailscale up
+: 1720782479:0;sudo systemctl enable --now tailscaled
+: 1720782484:0;sudo tailscale login
+: 1720782500:0;sudo tailscale up
+: 1720782564:0;tailscale status
+: 1720782573:0;nvim modules.json
+: 1720782622:0;ls
+: 1720782623:0;cd scripts
+: 1720782624:0;ls
+: 1720782629:0;nvim tailscale.sh
+: 1720782694:0;tailscale status
+: 1720782699:0;tailscale
+: 1720782707:0;tailscale status
+: 1720782794:0;ip addr
+: 1720782805:0;ls
+: 1720782806:0;cd ..
+: 1720782807:0;ls
+: 1720782809:0;nvim modules.json
+: 1720782878:0;killall waybar && waybar &
+: 1720782999:0;killall waybar && waybar &
+: 1720783072:0;killall waybar && waybar &
+: 1720783211:0;killall waybar && waybar &
+: 1720783220:0;killall waybar && waybar &
+: 1720783289:0;killall waybar && waybar &
+: 1720783396:0;sudo pacman -Sy power-profiles-daemon
+: 1720783415:0;powerprofilesctl
+: 1720783445:0;sudo systemctl status power-profiles-daemon.service
+: 1720783460:0;sudo systemctl enable power-profiles-daemon.service
+: 1720783473:0;exit
+: 1720783476:0;powerprofilesctl
+: 1720783479:0;powerprofilesctl -h
+: 1720783483:0;powerprofilesctl get
+: 1720783489:0;powerprofilesctl set performance
+: 1720783491:0;powerprofilesctl get
+: 1720783495:0;powerprofilesctl set balanced
+: 1720783505:0;exit
+: 1720783509:0;cd .config/waybar
+: 1720783509:0;ls
+: 1720783513:0;nvim modules.json
+: 1720783576:0;killall waybar && waybar &
+: 1720783616:0;killall waybar && waybar &
+: 1720783893:0;killall waybar && waybar &
+: 1720783918:0;ip addr
+: 1720784134:0;sudo pacman -Sy mpd
+: 1720784160:0;hyprlock
+: 1720784170:0;ls
+: 1720784176:0;journalctl
+: 1720784217:0;sudo pacman -Sy mpd
+: 1720784254:0;cp /usr/share/doc/mpd/mpdconf.example ~/.config/mpd/
+: 1720784259:0;mkdir ../mpd
+: 1720784260:0;cp /usr/share/doc/mpd/mpdconf.example ~/.config/mpd/
+: 1720784267:0;cd ../mpd
+: 1720784268:0;ls
+: 1720784277:0;mv mpdconf.example mpd.conf
+: 1720784280:0;nvim mpd.conf
+: 1720784381:0; mkdir -p ~/.local/state/mpd
+: 1720784383:0; mkdir -p ~/.local/state/mpd
+: 1720784386:0;nvim mpd.conf
+: 1720784424:0;systemctl --user enable --now mpd
+: 1720784432:0;systemctl --user status mpd
+: 1720784444:0;cd
+: 1720784444:0;ls
+: 1720784447:0;mkdir .mpd
+: 1720784454:0;systemctl --user restart mpd
+: 1720784460:0;systemctl --user status mpd
+: 1720784478:0;ls
+: 1720784479:0;mkdir Music
+: 1720784485:0;systemctl --user restart mpd
+: 1720784487:0;systemctl --user status mpd
+: 1720784509:0;mpd
+: 1720784526:0;sudo pacman -Sy timidity
+: 1720784544:0;mpd
+: 1720784559:0;nvim .config/mpd/mpd.conf
+: 1720784613:0;mpd
+: 1720784624:0;cd .mpd
+: 1720784624:0;ls
+: 1720784637:0;mkdir playlists
+: 1720784638:0;ls
+: 1720784641:0;mpd
+: 1720784651:0;systemctl --user restart mpd
+: 1720784656:0;systemctl --user status mpd
+: 1720784673:0;killall mpd
+: 1720784675:0;systemctl --user restart mpd
+: 1720784677:0;systemctl --user status mpd
+: 1720784683:0;mpd
+: 1720796185:0;mpd
+: 1720796217:0;sudo pacman -Sy mpc
+: 1720796232:0;mpc
+: 1720796236:0;mpc update
+: 1720796241:0;mpc update
+: 1720796264:0;cd
+: 1720796266:0;cd .config
+: 1720796266:0;ls
+: 1720796270:0;cd waybar
+: 1720796270:0;ls
+: 1720796273:0;nvim modules.json
+: 1720796396:0;1password
+: 1720796462:0;killall waybar && waybar &
+: 1720796537:0;killall waybar && waybar &
+: 1720796669:0;killall waybar && waybar &
+: 1720796818:0;exit
+: 1720796822:0;clear
+: 1720796822:0;ls
+: 1720796835:0;ls
+: 1720796841:0;nvim config
+: 1720796869:0;clear
+: 1720796869:0;ls
+: 1720796876:0;cd ..
+: 1720796876:0;ls
+: 1720796878:0;cd swaync
+: 1720796879:0;ls
+: 1720796881:0;nvim config.json
+: 1720796902:0;killall swaync && swaync &
+: 1720797023:0;ls
+: 1720797027:0;nvim config.json
+: 1720797043:0;cat /etc/xdg/swaync/config
+: 1720797045:0;cat /etc/xdg/swaync/configSchema.json
+: 1720797049:0;ls
+: 1720797060:0;nvim config.json
+: 1720797073:0;killall swaync && swaync &
+: 1720797104:0;ls
+: 1720797105:0;cat /etc/xdg/swaync/configSchema.json
+: 1720797182:0;ls /sys/class/backlight` or `ls /sys/class/leds
+: 1720797197:0;ls /sys/class/backlight/amdgpu_bl1
+: 1720797249:0;killall swaync && swaync &
+: 1720797287:0;ls
+: 1720797290:0;ls icons
+: 1720797295:0;ls themes
+: 1720797299:0;rm themes
+: 1720797299:0;ls
+: 1720797302:0;rm -rf themes
+: 1720797303:0;ls
+: 1720797304:0;nvim style.css
+: 1720797313:0;rm style.css
+: 1720797313:0;ls
+: 1720797315:0;ls
+: 1720797316:0;cd icons
+: 1720797316:0;ls
+: 1720797319:0;loupe .
+: 1720797328:0;loupe bolt.png
+: 1720797352:0;exit
+: 1720797353:0;exit
+: 1720797356:0;exit
+: 1720797358:0;clear
+: 1720797358:0;ls
+: 1720797360:0;exit
+: 1720797365:0;exit
+: 1720797371:0;ls
+: 1720797373:0;cd .config
+: 1720797373:0;ls
+: 1720797388:0;cd hypr
+: 1720797389:0;ls
+: 1720797398:0;nvim hyprland.conf
+: 1720797414:0;ls
+: 1720797421:0;cat /etc/modprobe.d/nvidia-drm-nomodeset.conf
+: 1720797431:0;cat /etc/modprobe.d/nvidia.conf
+: 1720797438:0;clear
+: 1720797439:0;ls
+: 1720797442:0;exit
+: 1720797445:0;reboot
+: 1720797489:0;Hyprland
+: 1720797497:0;clear
+: 1720797548:0;exit
+: 1720801091:0;ls
+: 1720801095:0;cd .config
+: 1720801095:0;ls
+: 1720801096:0;cd waybar
+: 1720801097:0;ls
+: 1720801100:0;nvim style.css
+: 1720801290:0;ls
+: 1720801291:0;cd ..
+: 1720801291:0;ls
+: 1720801293:0;cd swaync
+: 1720801294:0;ls
+: 1720801305:0;cp ~/Downloads/mocha.css styple.css
+: 1720801305:0;ls
+: 1720801312:0;mv styple.css style.css
+: 1720801313:0;ls
+: 1720801322:0;swaync-client -rs
+: 1720801347:0;nvim style.css
+: 1720801362:0;swaync-client -rs
+: 1720801415:0;nvim style.css
+: 1720801426:0;nvim config.json
+: 1720801509:0;swaync-client -rs
+: 1720801518:0;killall swaync && swaync &
+: 1720801576:0;swaync-client -rs
+: 1720801578:0;ls
+: 1720801581:0;nvim style.css
+: 1720801599:0;nvim config.json
+: 1720801609:0;nvim style.css
+: 1720801617:0;nvim config.json
+: 1720801651:0;killall swaync && swaync &
+: 1720801663:0;nvim config.json
+: 1720801674:0;killall swaync && swaync &
+: 1720801685:0;nvim config.json
+: 1720801695:0;killall swaync && swaync &
+: 1720801742:0;ls
+: 1720801744:0;ls
+: 1720801746:0;nvim config.json
+: 1720801750:0;ls
+: 1720801946:0;ls
+: 1720801962:0;ls
+: 1720801962:0;cd ..
+: 1720801963:0;ls
+: 1720801966:0;cd waybar
+: 1720801966:0;ls
+: 1720801971:0;nvim modules.json
+: 1720802079:0;killall waybar && waybar &
+: 1720802092:0;nvim modules.json
+: 1720802385:0;killall waybar && waybar &
+: 1720802417:0;nvim modules.json
+: 1720802478:0;killall waybar && waybar &
+: 1720802511:0;killall waybar && waybar &
+: 1720803002:0;cd ..
+: 1720803002:0;ls
+: 1720803005:0;nvim mimeapps.list
+: 1720803428:0;distrobox
+: 1720803467:0;distrobox-create --unshare-netns --nvidia --image ghcr.io/ublue-os/bazzite-arch --name bazzite-arch -Y
+: 1720803671:0;sudo pacman -Sy samba
+: 1720803718:0;distrobox enter steam
+: 1720803726:0;distrobox enter bazzite-arch
+: 1720803756:0;sudo pacman -Sy zoxide
+: 1720803772:0;exit
+: 1720803772:0;ls
+: 1720803780:0;pacman -Sy eza zoxide
+: 1720803783:0;sudo pacman -Sy eza zoxide
+: 1720803790:0;ls
+: 1720803792:0;steam
+: 1720804409:0;ls
+: 1720804411:0;cd .config
+: 1720804411:0;ls
+: 1720804412:0;clezar
+: 1720804413:0;clear
+: 1720804414:0;ls
+: 1720804418:0;cd waybar
+: 1720804419:0;ls
+: 1720804424:0;nvim modules.json
+: 1720804445:0;nvim config
+: 1720804463:0;nvim modules.json
+: 1720804722:0;killall waybar && waybar &
+: 1720804774:0;killall waybar && waybar &
+: 1720804820:0;killall waybar && waybar &
+: 1720804850:0;ls
+: 1720804852:0;nvim style.css
+: 1720805197:0;ls
+: 1720805203:0;cp style.css style.css.bak
+: 1720805203:0;ls
+: 1720805988:0;ls
+: 1720805992:0;ls
+: 1720805994:0;cd ..
+: 1720805994:0;ls
+: 1720805996:0;cd hypr
+: 1720805996:0;ls
+: 1720805999:0;cd scripts
+: 1720805999:0;ls
+: 1720806016:0;rm battery
+: 1720806017:0;ls
+: 1720806019:0;nvim screenshot.sh
+: 1720806084:0;ls
+: 1720806086:0;cd Pictures
+: 1720806086:0;ls
+: 1720806089:0;cd Wallpapers
+: 1720806090:0;ls
+: 1720806103:0;notify-send -i wall2.png "kfdkfjdk"
+: 1720806136:0;notify-send -i wall1.png "kfdkfjdk"
+: 1720806188:0;notify-send -i ~/Pictures/Wallpapers/wall1.png "kfdkfjdk"
+: 1720806902:0;ls
+: 1720806908:0;cd .config
+: 1720806909:0;ls
+: 1720806913:0;cd hypr
+: 1720806913:0;ls
+: 1720806918:0;cd scripts
+: 1720806919:0;ls
+: 1720806921:0;nvim gamemode.sh
+: 1720806929:0;chmod +x gamemode.sh
+: 1720806929:0;ls
+: 1720806932:0;cd ..
+: 1720806932:0;ls
+: 1720806943:0;nvim hyprland/keyBinds.conf
+: 1720806967:0;rg terminal
+: 1720806979:0;nvim hyprland/userSettings.conf
+: 1720807023:0;rg file
+: 1720807066:0;nvim hyprland/userSettings.conf
+: 1720807074:0;nvim hyprland/keyBinds.conf
+: 1720807331:0;powerprofilesctl set performance
+: 1720807470:0;exit
+: 1720807878:0;exit
+: 1720807879:0;clear
+: 1720807880:0;ls
+: 1720807880:0;cd
+: 1720807880:0;ls
+: 1720807885:0;cd .local/share/containers
+: 1720807886:0;ls
+: 1720807887:0;cd storage
+: 1720807888:0;ls
+: 1720807893:0;cd volumes
+: 1720807893:0;ls
+: 1720807900:0;podman ps -a
+: 1720807910:0;podman ps -a
+: 1720808558:0;btop
+: 1720808568:0;exit
+: 1720808569:0;exit
+: 1720808571:0;exit
+: 1720808579:0;exit
+: 1720808580:0;exit
+: 1720808582:0;exit
+: 1720808643:0;radeontop
+: 1720809541:0;ls
+: 1720809547:0;cd .config/hypr/
+: 1720809548:0;ls
+: 1720809554:0;nvim hyprland.conf
+: 1720809585:0;sudo pacman -Sy ytdl
+: 1720809818:0;fc-list | grep Monospace
+: 1720809823:0;fc-list | grep Mono
+: 1720809856:0;sudo pacman -Sy yt-dlp
+: 1720810043:0;ls
+: 1720810043:0;cd
+: 1720810044:0;ls
+: 1720810045:0;cd Music
+: 1720810045:0;ls
+: 1720810060:0;mkdir "Mr. And Mrs Mahi"
+: 1720810061:0;cd Mr.\ And\ Mrs\ Mahi
+: 1720810062:0;ls
+: 1720810064:0;yt-dlp  OLAK5uy_m55pnTSruGSepAlZPFO708yz1HIQZhYRA -f "bestaudio[ext=m4a]" --embed-thumbnail --convert-thumbnail jpg --exec-before-download "ffmpeg -i %(thumbnails.-1.filepath)q -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\" _%(thumbnails.-1.filepath)q" --exec-before-download "rm %(thumbnails.-1.filepath)q" --exec-before-download "mv _%(thumbnails.-1.filepath)q %(thumbnails.-1.filepath)q" --output "%(artist)s - %(title)s.%(ext)s"
+: 1720810088:0;ls
+: 1720810092:0;ls
+: 1720810097:0;nautilus
+: 1720810134:0;mpc update
+: 1720810139:0;waybar
+: 1720810225:0;mpc next
+: 1720810229:0;mpc play
+: 1720810247:0;mpc update
+: 1720810275:0;mpc play  
+: 1720810351:0;systemctl status mpd
+: 1720810358:0;sudo systemctl start mpd
+: 1720810365:0;systemctl status mpd
+: 1720810400:0;ss
+: 1720810404:0;ss | grep 6600
+: 1720810408:0;ls
+: 1720810411:0;systemctl status mpd
+: 1720810449:0;ps aux | grep mpd
+: 1720810473:0;nvim .config/mpd/mpd.conf
+: 1720810481:0;systemctl --user status mpd
+: 1720810488:0;nvim .config/mpd/mpd.conf
+: 1720810516:0;systemctl --user restart mpd
+: 1720810518:0;systemctl --user status mpd
+: 1720810523:0;mpc update
+: 1720810527:0;mpc play
+: 1720810578:0;nvim .config/mpd/mpd.conf
+: 1720810631:0;systemctl --user restart mpd
+: 1720810633:0;systemctl --user status mpd
+: 1720810636:0;mpc update
+: 1720810638:0;mpc play
+: 1720810646:0;nvim .config/mpd/mpd.conf
+: 1720810781:0;mpc playlist
+: 1720810783:0;mpc play
+: 1720810787:0;mpc play
+: 1720810796:0;systemctl --user stop mpd
+: 1720810800:0;systemctl --user start mpd
+: 1720810804:0;mpc update
+: 1720810808:0;mpc play
+: 1720810958:0;sudo pacman -Sy ncmpcpp
+: 1720810973:0;ncmpcpp
+: 1720810978:0;ls
+: 1720810979:0;cd Music
+: 1720810980:0;ls
+: 1720810981:0;cd Mr.\ And\ Mrs\ Mahi
+: 1720810982:0;ls
+: 1720810985:0;cd ..
+: 1720810985:0;ls
+: 1720810987:0;cd ..
+: 1720810987:0;ls
+: 1720811000:0;nvim .config/mpd/mpd.conf
+: 1720811046:0;nvim .config/mpd/mpd.conf
+: 1720811159:0;systemctl --user stop mpd
+: 1720811163:0;systemctl --user start mpd
+: 1720811169:0;systemctl --user status mpd
+: 1720811180:0;mkdir .local/share/mpd
+: 1720811183:0;mkdir .local/share/mpd/playlists
+: 1720811185:0;systemctl --user start mpd
+: 1720811188:0;systemctl --user status mpd
+: 1720811194:0;mpc play
+: 1720811216:0;ncmpcpp
+: 1720811227:0;mpc update
+: 1720811228:0;ncmpcpp
+: 1720811242:0;systemctl --user status mpd
+: 1720811294:0;sudo pacman -Sy libfdk-aac
+: 1720811308:0;systemctl --user stop mpd
+: 1720811312:0;systemctl --user start mpd
+: 1720811315:0;systemctl --user status mpd
+: 1720811324:0;mpc update
+: 1720811326:0;mpc play
+: 1720811328:0;ncmpcpp
+: 1720811361:0;mpc
+: 1720811362:0;mpc
+: 1720811424:0;nvim .config/mpd/mpd.conf
+: 1720811441:0;systemctl --user stop mpd
+: 1720811444:0;systemctl --user start mpd
+: 1720811447:0;systemctl --user status mpd
+: 1720811451:0;mpc update
+: 1720811453:0;mpc play
+: 1720811457:0;ncmpcpp
+: 1720811464:0;nvim .config/mpd/mpd.conf
+: 1720811479:0;systemctl --user stop mpd
+: 1720811481:0;systemctl --user start mpd
+: 1720811485:0;systemctl --user status mpd
+: 1720811488:0;mpc update
+: 1720811493:0;ncmpcpp
+: 1720811511:0;mpc ls
+: 1720811527:0;mpc play "Mr. And Mrs Mahi"
+: 1720811533:0;cd Music
+: 1720811533:0;ls
+: 1720811534:0;cd Mr.\ And\ Mrs\ Mahi
+: 1720811534:0;ls
+: 1720811539:0;mv ./* ../
+: 1720811539:0;ls
+: 1720811540:0;cd ..
+: 1720811541:0;ls
+: 1720811544:0;rm -rf Mr.\ And\ Mrs\ Mahi
+: 1720811545:0;ls
+: 1720811545:0;cd
+: 1720811546:0;ls
+: 1720811547:0;mpc update
+: 1720811551:0;mpc play
+: 1720811556:0;ncmpcpp
+: 1720811565:0;mpc list
+: 1720811569:0;mpc ls
+: 1720811600:0;mpc play "Achint, YÃ�VA, Arushi Kaushal - Junoon Hain (From ＂Mr. And Mrs. Mahi＂).m4a"
+: 1720811650:0;mpc update Music
+: 1720811653:0;ncmpcpp
+: 1720811656:0;mpc ls
+: 1720811659:0;mpc play
+: 1720811678:0;mpc add Achint,\ YÃ�VA,\ Arushi\ Kaushal\ -\ Junoon\ Hain\ \(From\ ＂Mr.\ And\ Mrs.\ Mahi＂\).m4a
+: 1720811680:0;mpc play
+: 1720811692:0;mpc play
+: 1720811696:0;mpc pause
+: 1720811706:0;mpc add Tanishk\ Bagchi,\ Kausar\ Munir\ -\ Agar\ Ho\ Tum\ \(From\ ＂Mr.\ And\ Mrs.\ Mahi＂\).m4a
+: 1720811709:0;mpc play 
+: 1720811712:0;mpc next
+: 1720811723:0;ncmpcpp
+: 1720811732:0;clear
+: 1720811733:0;ls
+: 1720811734:0;clear
+: 1720811734:0;ls
+: 1720811794:0;ncmpcpp
+: 1720811987:0;ls
+: 1720811989:0;nvim .config/mpd/mpd.conf
+: 1720812023:0;cd .config
+: 1720812025:0;ls
+: 1720812032:0;nvim ncmpcpp
+: 1720812038:0;ls
+: 1720812039:0;cd ncmpcpp
+: 1720812039:0;ls
+: 1720812085:0;nvim config
+: 1720812130:0;ls
+: 1720812137:0;cat .config/mpd/mpd.conf| grep lyrics
+: 1720812164:0;ncmpcpp
+: 1720812192:0;ncmpcpp
+: 1720812215:0;ncmpcpp
+: 1720812433:0;paru -Sy mpd-mpris
+: 1720812484:0;systemctl --user --now enable mpd-mpris
+: 1720812503:0;systemctl --user status mpd-mpris
+: 1720812525:0;mpd-mpris -no-instance
+: 1720812562:0;systemctl --user status mpd-mpris
+: 1720812573:0;nvim ~/.config/mpd/mpd.conf
+: 1720812597:0;systemctl --user restart mpd
+: 1720812601:0;systemctl --user status mpd-
+: 1720812603:0;systemctl --user status mpd
+: 1720812612:0;systemctl --user status mpd-mpris.service 
+: 1720812617:0;mpd-mpris
+: 1720812630:0;ls /run/user/1000/mpd/socket
+: 1720812635:0;ls -lh /run/user/1000/mpd/socket
+: 1720812645:0;ls ~/.mpd/socket
+: 1720812671:0;mpd-mpris -port 6600
+: 1720812705:0;mpd-mpris
+: 1720812779:0;paru -R mpd-mpris
+: 1720812806:0;systemctl --user --now disable mpd-mpris
+: 1720812815:0;sudo pacman -R mpd-mpris
+: 1720812820:0;sudo pacman -R mpd-mpris-bin
+: 1720812830:0;paru -Sy mpdris2
+: 1720812909:0;cp /usr/share/doc/mpdris2/mpDris2.conf ~/.config/mpDris2/mpDris2.conf
+: 1720812919:0;mkdir -p ~/.config/mpDris2
+: 1720812921:0;cp /usr/share/doc/mpdris2/mpDris2.conf ~/.config/mpDris2/mpDris2.conf
+: 1720812931:0;nvim ~/.config/mpDris2/mpDris2.conf
+: 1720812964:0;systemctl --user --now enable mpDris2
+: 1720812973:0;systemctl --user status mpDris2
+: 1720812979:0;ncmpcpp
+: 1720813026:0;ncmpcpp
+: 1720813066:0;ls
+: 1720813067:0;ls
+: 1720813069:0;nvim config
+: 1720813094:0;cd
+: 1720813094:0;ls
+: 1720813096:0;ncmpcpp
+: 1720813117:0;cd .config
+: 1720813117:0;ls
+: 1720813120:0;cd waybar
+: 1720813121:0;ls
+: 1720813123:0;nvim modules.json
+: 1720813156:0;ls
+: 1720813160:0;killall waybar && waybar &
+: 1720813272:0;killall waybar && waybar &
+: 1720813343:0;killall waybar && waybar &
+: 1720813355:0;killall waybar && waybar &
+: 1720813412:0;killall waybar && waybar &
+: 1720813439:0;killall waybar && waybar &
+: 1720813450:0;ncmpcpp
+: 1720813475:0;ncmpcpp
+: 1720813547:0;ls
+: 1720813552:0;nvim .config/ncmpcpp/config
+: 1720813588:0;ncmpcpp
+: 1720813660:0;nvim .config/ncmpcpp/config
+: 1720813668:0;ncmpcpp
+: 1720813678:0;clear
+: 1720813678:0;ls
+: 1720813706:0;swaync-client -rs
+: 1720813712:0;swaync-client 
+: 1720813720:0;killall swaync && swaync &
+: 1720813785:0;paru -R mpDris2
+: 1720813802:0;sudo pacman  -R mpDris2
+: 1720813819:0;systemctl --user --now disable mpDris2
+: 1720813830:0;paru -R mpDris2
+: 1720813844:0;paru -R mpdris2
+: 1720813847:0;clera
+: 1720813849:0;sudo su
+: 1720813855:0;clera
+: 1720813855:0;ls
+: 1720813856:0;clear
+: 1720813856:0;ls
+: 1720813857:0;ncmpcpp
+: 1720813868:0;killall swaync && swaync &
+: 1720813904:0;loginctl terminate-session
+: 1720813912:0;loginctl terminate-session 1
+: 1720813919:0;ls
+: 1720813921:0;Hyprland
+: 1720814064:0;mpc pause
+: 1720814066:0;clear
+: 1720814067:0;ls
+: 1720814068:0;cd Music
+: 1720814069:0;ls
+: 1720814071:0;mpv
+: 1720814074:0;sudo pacman -Sy mpv
+: 1720814087:0;mpv .
+: 1720814100:0;mpv 
+: 1720814115:0;mpv  --no-video ./*
+: 1720814146:0;sudo pacman -Sy mpv-mpris
+: 1720814196:0;ls /etc/mpv/scripts/mpris.so
+: 1720814198:0;mpv  --no-video ./*
+: 1720838370:0;env -u WAYLAND_DISPLAY 1password
+: 1720838379:0;1password
+: 1720838387:0;ls
+: 1720838425:0;sudo pacman -Sy bitwarden bitwarden-cli
+: 1720838542:0;tailscale status
+: 1720838548:0;ls
+: 1720838556:0;cd .config
+: 1720838557:0;ls
+: 1720838558:0;cd waybar
+: 1720838558:0;ls
+: 1720838560:0;cd scripts
+: 1720838560:0;ls
+: 1720838569:0;nvim tailscale.sh
+: 1720838637:0;tailscale status --json
+: 1720838658:0;tailscale status --json | jq -r '.Peer[]\
+'
+: 1720838827:0;tailscale status --json | jq -r ".Peer[] | select(.AllowedIPs[0])" 
+: 1720838833:0;tailscale status --json | jq -r ".Peer[] | select(.AllowedIPs[0])" 
+: 1720838909:0;cd ..
+: 1720838909:0;ls
+: 1720838914:0;nvim modules.json
+: 1720839054:0;killall waybar && waybar &
+: 1720839399:0;ncmpcpp
+: 1720839708:0;ncmpcpp
+: 1720839795:0;sudo pacman -Sy bitwarden-cli
+: 1720839836:0;sudo pacman -Sy bitwarden-cli bitwarden
+: 1720839880:0;sudo su
+: 1720840031:0;mpc pause
+: 1720840395:0;sudo pacman -Sy discord
+: 1720840476:0;pacman -Q discord_arch_electron
+: 1720840479:0;sudo pacman -Sy discord
+: 1720840494:0;ls
+: 1720840672:0;btop
+: 1720840777:0;ps -e -o pid,vsz,comm= | sort -n -k 2
+: 1720840810:0;ps aux  | awk '{print $6/1024 " MB\t\t" $11}'  | sort -n
+: 1720840951:0;foot
+: 1720840953:0;ls
+: 1720840954:0;clear
+: 1720840955:0;ls
+: 1720840956:0;nvim
+: 1720840963:0;cd .config
+: 1720840963:0;ls
+: 1720840972:0;nvim hypr/hyprland.conf
+: 1720840981:0;exit
+: 1720841005:0;systemctl --user --now disable mpd
+: 1720841020:0;nvim .config/waybar/config
+: 1720841029:0;nvim .config/waybar/config
+: 1720841068:0;killall waybar && waybar &
+: 1720841139:0;nvim .config/waybar/modules.json
+: 1720841166:0;killall waybar && waybar &
+: 1720841172:0;nvim .config/waybar/modules.json
+: 1720841185:0;killall waybar && waybar &
+: 1720841252:0;nvim .config/waybar/style.css
+: 1720841263:0;killall waybar && waybar &
+: 1720841287:0;nvim .config/waybar/style.css
+: 1720841298:0;nvim .config/waybar/modules.json
+: 1720841331:0;killall waybar && waybar &
+: 1720841338:0;nvim .config/waybar/modules.json
+: 1720841407:0;killall waybar && waybar &
+: 1720841515:0;ls
+: 1720841763:0;fc-list | grep sans
+: 1720841814:0;sudo pacman -Sy ttf-liberation
+: 1720841851:0;sudo pacman -Sy ttf-liberation
+: 1720842222:0;sudo pacman -Sy ttf-liberation
+: 1720842248:0;fc-match
+: 1720842319:0;fc-match Sans
+: 1720842381:0;cd .config/hypr
+: 1720842381:0;ls
+: 1720842384:0;rg font
+: 1720842391:0;cd ..
+: 1720842391:0;ls
+: 1720842393:0;cd waybar
+: 1720842397:0;rg font
+: 1720842420:0;fc-list | grep FontAwesome
+: 1720842428:0;fc-list | grep Awesome
+: 1720842525:0;sudo pacman -Sy adobe-source-sans-fonts
+: 1720842653:0;fc-match "nonexistingfont"
+: 1720842662:0;fc-match monospace
+: 1720842708:0;cd /etc/fonts
+: 1720842708:0;ls
+: 1720842709:0;cd conf.d
+: 1720842710:0;ls
+: 1720842711:0;ls -lh
+: 1720842815:0;cd ..
+: 1720842816:0;cd
+: 1720842816:0;ls
+: 1720842817:0;cd .config
+: 1720842818:0;rg font
+: 1720842833:0;cd hypr
+: 1720842834:0;rg font
+: 1720842868:0;cd ..
+: 1720842868:0;ls
+: 1720842871:0;cd kitty
+: 1720842872:0;ls
+: 1720842873:0;rg font
+: 1720842882:0;nvim kitty.conf
+: 1720842893:0;exit
+: 1720842895:0;exit
+: 1720842897:0;exit
+: 1720842901:0;killall waybar && waybar &
+: 1720842905:0;waybar &
+: 1720842907:0;ls
+: 1720845039:0;fc-match monospace
+: 1720845088:0;grep -i awesome /etc/fonts/conf.d/*
+: 1720845112:0;fc-list : family
+: 1720845136:0;cd .config/f
+: 1720845138:0;cd .config/
+: 1720845138:0;ls
+: 1720845201:0;fontconfig
+: 1720845208:0;sudo pacman -Sy fontconfig
+: 1720845266:0;cd waybar
+: 1720845267:0;ls
+: 1720845269:0;nvim modules.json
+: 1720845281:0;ls
+: 1720845288:0;nvim style.css
+: 1720845297:0;fc-list : family
+: 1720845355:0;killall waybar && waybar &
+: 1720845414:0;nvim style.css
+: 1720845429:0;killall waybar && waybar &
+: 1720845494:0;nvim style.css
+: 1720845507:0;killall waybar && waybar &
+: 1720845526:0;clear
+: 1720845527:0;ls
+: 1720845538:0;cd //
+: 1720845539:0;cd
+: 1720845540:0;ls
+: 1720845541:0;cd .config
+: 1720845542:0;ls
+: 1720845548:0;cd hypr
+: 1720845548:0;ls
+: 1720845553:0;nvim hyprland.conf
+: 1720845563:0;rg dim
+: 1720845570:0;nvim hyprland/settings.conf
+: 1720845600:0;ls
+: 1720845608:0;cd
+: 1720845609:0;ls
+: 1720845662:0;ls
+: 1720845665:0;cd .config
+: 1720845665:0;ls
+: 1720845670:0;nvim waybar/modules.json
+: 1720845759:0;killall waybar && waybar &
+: 1720845821:0;nvim waybar/modules.json
+: 1720845842:0;killall waybar && waybar &
+: 1720845853:0;nvim waybar/modules.json
+: 1720845863:0;killall waybar && waybar &
+: 1720846014:0;nvim waybar/modules.json
+: 1720846038:0;killall waybar && waybar &
+: 1720846118:0;nvim waybar/modules.json
+: 1720846143:0;killall waybar && waybar &
+: 1720846149:0;nvim waybar/modules.json
+: 1720846175:0;killall waybar && waybar &
+: 1720846222:0;nvim waybar/modules.json
+: 1720846229:0;nvim waybar/config
+: 1720846241:0;killall waybar && waybar &
+: 1720846245:0;nvim waybar/config
+: 1720846249:0;nvim waybar/config
+: 1720846254:0;killall waybar && waybar &
+: 1720846289:0;fc-cache
+: 1720846294:0;fc-match monospace
+: 1720846309:0;pacman -Q awesome
+: 1720846316:0;pacman -Ss font-awesome
+: 1720846324:0;sudo pacman -R otf-font-awesome
+: 1720846334:0;clear
+: 1720846334:0;ls
+: 1720846336:0;fc-match monospace
+: 1720846340:0;fc-match
+: 1720846816:0;paru -Sy hyprcursor-dracula-kde-git
+: 1720846868:0;hyprctl setcursor hyprcursor_Dracula
+: 1720846872:0;hyprctl setcursor hyprcursor_Dracula 24
+: 1720846901:0;hyprctl setcursor hyprcursor_Dracula 24
+: 1720846949:0;nvim hypr/hyprland/settings.conf
+: 1720846952:0;rg env
+: 1720846955:0;cd hypr
+: 1720846957:0;rg env
+: 1720847065:0;paru -Sy catppuccin-cursors-macchiato
+: 1720849143:0;cd /usr/share/icons
+: 1720849143:0;ls
+: 1720849205:0;sudo pacman -Sy nwg-look
+: 1720849216:0;nwg-look
+: 1720849334:0;cd
+: 1720849335:0;ls
+: 1720849351:0;nwg-look
+: 1720849375:0;nvim .config/gtk-4.0
+: 1720849399:0;nvim .config/hypr/hyprland/userSettings.conf
+: 1720849475:0;gsettings set org.gnome.desktop.interface cursor-theme "catppuccin-macchiato-dark-cursors"
+: 1720849490:0;gsettings set org.gnome.desktop.interface cursor-theme "Catppuccin-Macchiato-Dark"
+: 1720849503:0;flatpak override --filesystem=~/.themes:ro --filesystem=~/.icons:ro --user
+: 1720849533:0;hyprctl dispatch moveworkspacetomonitor "1 1"
+: 1720849573:0;socat
+: 1720849577:0;sudo pacman -Sy socat
+: 1720849680:0;socat - "UNIX-CONNECT:$XDG_RUNTIME_DIR/hypr/${HYPRLAND_INSTANCE_SIGNATURE}/.socket2.sock" | while read -r line; do handle "$line"; done
+: 1720849697:0;handle() {\
+  case $1 in monitoradded*)\
+    hyprctl dispatch moveworkspacetomonitor "1 1"\
+    hyprctl dispatch moveworkspacetomonitor "2 1"\
+    hyprctl dispatch moveworkspacetomonitor "4 1"\
+    hyprctl dispatch moveworkspacetomonitor "5 1"\
+  esac\
+}
+: 1720849701:0;socat - "UNIX-CONNECT:$XDG_RUNTIME_DIR/hypr/${HYPRLAND_INSTANCE_SIGNATURE}/.socket2.sock" | while read -r line; do handle "$line"; done
+: 1720849783:0;tailscale status --json | jq -r ".Peer[] | select(.AllowedIPs[0])" ls
+: 1720849784:0;clear
+: 1720849785:0;ls
+: 1720849806:0;cd .config
+: 1720849806:0;ls
+: 1720850120:0;socat - "UNIX-CONNECT:$XDG_RUNTIME_DIR/hypr/${HYPRLAND_INSTANCE_SIGNATURE}/.socket2.sock"
+: 1720850135:0;cd hypr
+: 1720850136:0;ls
+: 1720850137:0;cd scripts
+: 1720850137:0;ls
+: 1720850146:0;nvim handle_monitor_connect.sh
+: 1720850208:0;hyprctl monitors
+: 1720850211:0;hyprctl monitors --json
+: 1720850214:0;hyprctl monitors
+: 1720850223:0;hyprctl monitors | grep description
+: 1720850312:0;hyprctl monitors | grep | grep -E 54TF193
+: 1720850317:0;hyprctl monitors | grep -E 54TF193
+: 1720850363:0;hyprctl monitors | grep serial | grep -E 54TF193
+: 1720850387:0;hyprctl monitors | grep serial | grep -E 54TF193 | cut -d ':' -f 2
+: 1720850394:0;hyprctl monitors | grep serial | grep -E 54TF193 | cut -d ':' -f 2 | tr -d ' '
+: 1720851581:0;ls
+: 1720851585:0;chmod +x handle_monitor_connect.sh
+: 1720851586:0;ls
+: 1720851588:0;cd ..
+: 1720851588:0;ls
+: 1720851593:0;nvim hyprland.conf
+: 1720851953:0;cd
+: 1720851953:0;ls
+: 1720851958:0;mkdir .icons
+: 1720851958:0;ls
+: 1720851998:0;cp -r /usr/share/icons/catppuccin-macchiato-dark-cursors ~/.icons/default
+: 1720852024:0;ls
+: 1720852037:0;nvim .config/hypr/hyprland/userSettings.conf
+: 1720852053:0;ndg-look
+: 1720852156:0;Hyprland
+: 1720852162:0;ls
+: 1720852186:0;ls
+: 1720852191:0;cd .config/hypr/scripts
+: 1720852191:0;ls
+: 1720852193:0;./handle_monitor_connect.sh
+: 1720852210:0;cd ..
+: 1720852210:0;ls
+: 1720852214:0;nvim hyprland.conf
+: 1720852283:0;ls
+: 1720852295:0;nvim hyprland/userSettings.conf
+: 1720852307:0;nvim hyprland/userSettings.conf
+: 1720852349:0;nvim hyprland/userSettings.conf
+: 1720852654:0;sudo pacman -Sy udiskie
+: 1720852671:0;nvim hyprland.conf
+: 1720853146:0;cd
+: 1720853147:0;ls
+: 1720853158:0;nvim steam_launcher
+: 1720853174:0;ls
+: 1720853176:0;chmod +x steam_launcher
+: 1720853182:0;sudo pacman -Sy gamescope
+: 1720853202:0;distrobox enter bazzite-arch
+: 1720853209:0;sudo pacman -Sy gamescope
+: 1720853279:0;clear
+: 1720853280:0;ls
+: 1720853298:0;cd .steam
+: 1720853299:0;ls
+: 1720853300:0;cd
+: 1720853300:0;ls
+: 1720853340:0;exit
+: 1720853359:0;sudo nvim /etc/pacman.conf
+: 1720853377:0;sudo pacman -Sy
+: 1720853381:0;sudo pacman -Sy steam
+: 1720853449:0;steam
+: 1720855260:0;exit
+: 1720855261:0;exit
+: 1720855273:0;ndg-look
+: 1720855281:0;sudo pacman -Sy ndg-look
+: 1720855307:0;nwg-look
+: 1720855351:0;exit
+: 1720855363:0;ls
+: 1720855365:0;ls
+: 1720855366:0;cat steam_launcher
+: 1720855373:0;./steam_launcher
+: 1720855393:0;nvim steam_launcher
+: 1720855408:0;./steam_launcher
+: 1720855413:0;nvim steam_launcher
+: 1720855428:0;./steam_launcher
+: 1720855433:0;nvim steam_launcher
+: 1720855460:0;./steam_launcher
+: 1720855465:0;gamescope --help
+: 1720855477:0;./steam_launcher
+: 1720855481:0;gamescope --help
+: 1720855484:0;nvim steam_launcher
+: 1720855503:0;./steam_launcher
+: 1720860153:0;ls
+: 1720860157:0;ls
+: 1720860159:0;Hyprland
+: 1720860183:0;tree
+: 1720860224:0;ls
+: 1720860225:0;clear
+: 1720860225:0;ls
+: 1720860226:0;cd .config
+: 1720860226:0;ls
+: 1720860227:0;cd h
+: 1720860229:0;cd hypr
+: 1720860230:0;ls
+: 1720860231:0;ls
+: 1720860234:0;cd scripts
+: 1720860234:0;ls
+: 1720861142:0;nvim handle_monitor.sh
+: 1720861174:0;cat handle_monitor_connect.sh > handle_monitor.sh
+: 1720861177:0;nvim handle_monitor.sh
+: 1720861258:0;rm handle_monitor.sh
+: 1720861258:0;ls
+: 1720861260:0;cat handle_monitor_connect.sh
+: 1720861269:0;hyprctl dispatch moveworkspacetomonitor "2 1"
+: 1720861273:0;hyprctl dispatch moveworkspacetomonitor "3 1"
+: 1720861288:0;cd ..
+: 1720861289:0;ls
+: 1720861294:0;nvim hyprland.conf
+: 1720861634:0;xdg-open .
+: 1720861751:0;dub
+: 1720861842:0;ls
+: 1720861843:0;cd ..
+: 1720861843:0;ls
+: 1720861846:0;cat mimeapps.list
+: 1720861848:0;cd ..
+: 1720861849:0;ls
+: 1720861853:0;cd .local/share/applications
+: 1720861853:0;ls
+: 1720861855:0;cat mimeapps.list
+: 1720861919:0;ls
+: 1720861922:0;cd
+: 1720861924:0;cd .config
+: 1720861925:0;ls
+: 1720861928:0;nvim mimeapps.list
+: 1720861948:0;ls
+: 1720861952:0;ls /usr/share/applications
+: 1720862274:0;xdg-open .
+: 1720862326:0;ls
+: 1720862333:0;xdg-open mimeapps.list
+: 1720862345:0;nvim mimeapps.list
+: 1720862381:0;file --mime-type mimeapps.list
+: 1720862387:0;nvim mimeapps.list
+: 1720862432:0;xdg-open mimeapps.list
+: 1720862435:0;ls
+: 1720862469:0;sudo pacman -Sy neovide
+: 1720862519:0;nvim mimeapps.list
+: 1720862574:0;cd /usr/share/applications
+: 1720862574:0;ls
+: 1720862575:0;cat nvim.desktop
+: 1720862587:0;cat nvim.desktop | grep Exec
+: 1720863329:0;clear
+: 1720863329:0;ls
+: 1720863338:0;sudo pacman -Sy lf
+: 1720863346:0;lf
+: 1720863357:0;clear
+: 1720863357:0;sl
+: 1720863358:0;cd
+: 1720863358:0;sl
+: 1720863359:0;ls
+: 1720863360:0;clear
+: 1720863360:0;ls
+: 1720863363:0;rm steam_launcher
+: 1720863364:0;ls
+: 1720863871:0;paru -Sy vesktop-bin
+: 1720863916:0;exit
+: 1720863925:0;vesktop
+: 1720864129:0;discord
+: 1720864223:0;vesktop
+: 1720864332:0;sudo pacman -R discord
+: 1720864339:0;sudo pacman -R discord_arch_electron
+: 1720864342:0;sudosu
+: 1720864343:0;sudo su
+: 1720864368:0;cd
+: 1720864369:0;ls
+: 1720864370:0;cd .config
+: 1720864370:0;ls
+: 1720864375:0;cd hypr
+: 1720864375:0;ls
+: 1720864378:0;nvim hyprland.conf
+: 1720864395:0;nvim hyprland/userSettings.conf
+: 1720864450:0;ls
+: 1720864456:0;nvim hyprland/userSettings.conf
+: 1720864756:0;ls
+: 1720864758:0;cd .config
+: 1720864760:0;cd autostart
+: 1720864761:0;ls
+: 1720864948:0;vesktop --start-minimized
+: 1720864993:0;eixt
+: 1720864994:0;exit
+: 1720864995:0;ls
+: 1720865185:0;ls
+: 1720865228:0;cd /home/krishbin/.steam/steam/steamapps/compatdata/813780/pfx/drive_c/windows
+: 1720865232:0;cd system32
+: 1720865232:0;ls
+: 1720865238:0;sudo pacman -Sy cabextract
+: 1720865252:0;cabextract vc_redist.x64.exe
+: 1720865263:0;cabextract a10
+: 1720865265:0;ls
+: 1720865267:0;exit
+: 1720868431:0;ps aux  | awk '{print $6/1024 " MB\t\t" $11}'  | sort -n
+: 1720868455:0;killall zeditor
+: 1720868457:0;killall zed
+: 1720868462:0;which zed
+: 1720868465:0;zed
+: 1720868514:0;zed --help
+: 1720868542:0;ls
+: 1720868610:0;greetd
+: 1720868618:0;sudo nvim /etc/greetd/hyprland.conf
+: 1720868815:0;cd /etc/greetd
+: 1720868815:0;ls
+: 1720868816:0;nvim config.toml
+: 1720868853:0;paru -Sy greetd-qtgreet
+: 1720868867:0;paru -Sy greetd-qtgreet
+: 1720868886:0;sudo pacman -Sy greetd-tuigreet
+: 1720868926:0;sudo nvim config.toml
+: 1720868959:0;sudo systemctl enable greetd
+: 1720868963:0;reboot
+: 1720869158:0;sudo nvim /etc/greetd/config.toml
+: 1720869340:0;ls
+: 1720869342:0;cd .config
+: 1720869342:0;ls
+: 1720869345:0;cd hypr
+: 1720869345:0;ls
+: 1720869349:0;nvim hyprland/userSettings.conf
+: 1720869597:0;paru -Sy vmware-workstation
+: 1720869783:0;vmware
+: 1720873702:0;cd .local/share
+: 1720873703:0;ls
+: 1720873707:0;mkdir vmware
+: 1720873707:0;ls
+: 1720873710:0;cd vmware
+: 1720873710:0;ls
+: 1720873711:0;ls
+: 1720873832:0;systemctl status vmware-networks.path
+: 1720873840:0;systemctl status vmware-usbarbitrator.service
+: 1720873897:0;ls
+: 1720873898:0;cd Windows\ 10\ x64
+: 1720873899:0;ls
+: 1720874011:0;ls
+: 1720881400:0;sudo modprobe vmmon
+: 1720881431:0;sudo modprobe vmware_vmmemctl
+: 1720881438:0;sudo modprobe vmw_ballon
+: 1720881571:0;cat /proc/config.gz| grep VMW
+: 1720881575:0;cat /proc/config.gz| grep BALOON
+: 1720881581:0;cat /proc/config.gz
+: 1720881616:0;cat /proc/config.gz | gunzip > running.config
+: 1720881618:0;ls
+: 1720881624:0;cat running.config| grep VMW
+: 1720881716:0;sudo modprobe vmware_balloon
+: 1720881729:0;cd /lib/modules/6.6.38-1-lts
+: 1720881730:0;ls
+: 1720881734:0;fd | vmw
+: 1720881739:0;fd | grep vmw
+: 1720881763:0;sudo modprobe vmw_vmci
+: 1720881776:0;sudo modprobe vmw_balloon
+: 1720881801:0;sudo modprobe vmw_balloon
+: 1720881873:0;sudo modprobe vmnet
+: 1720881881:0;ip addr
+: 1720881899:0;nvidia-smi
+: 1720881999:0;cd /usr/lib/systemd/system-sleep
+: 1720881999:0;ls
+: 1720882007:0;sudo nvim vmware_suspend_all.sh
+: 1720882015:0;sudo chmod +x vmware_suspend_all.sh
+: 1720882052:0;ls
+: 1720882054:0;cd
+: 1720882054:0;ls
+: 1720882059:0;cd /etc/dracut.conf.d
+: 1720882060:0;ls
+: 1720882061:0;cd ..
+: 1720882064:0;sudo nvim dracut.conf
+: 1720882133:0;sudo modprobe vmxnet3
+: 1720882140:0;lsmod | grep vm
+: 1720882173:0;sudo nvim dracut.conf
+: 1720882184:0;lsmod | grep vm
+: 1720882188:0;sudo nvim dracut.conf
+: 1720882258:0;sudo systemctl enable vmware-usbarbitrator.service
+: 1720882267:0;sudo systemctl enable vmware-networks.service
+: 1720882307:0;sudo nvim dracut.conf
+: 1720882353:0;systemctl status vmware
+: 1720882367:0;cd /usr/lib/modules/6.6.38-1-lts/
+: 1720882367:0;ls
+: 1720882373:0;fd | grep vmmon
+: 1720882376:0;cd updates
+: 1720882377:0;ls
+: 1720882378:0;cd dkms
+: 1720882379:0;ls
+: 1720882389:0;sudo dracut -f /boot/initramfs-linux-lts.img
+: 1720882422:0;sudo pacman -Sy lsinitrd
+: 1720882503:0;sudo nvim /etc/dracut.conf
+: 1720882509:0;sudo dracut -f /boot/initramfs-linux-lts.img
+: 1720882547:0;ls
+: 1720882547:0;cd
+: 1720882548:0;ls
+: 1720882549:0;cd /boot
+: 1720882557:0;lsinitrd initramfs-linux-lts.img| grep vmmon
+: 1720882566:0;sudo su
+: 1720882588:0;reboot
+: 1720882659:0;lsmod | grep vm
+: 1720882674:0;lsmod | grep vmw
+: 1720882797:0;systemctl status vmware-usbarbitrator.service
+: 1720882807:0;systemctl status vmware-networks.service
+: 1720882811:0;ls
+: 1720882814:0;clear
+: 1720882815:0;ls
+: 1720886800:0;free
+: 1720886801:0;free -h
+: 1720886815:0;ls
+: 1720886818:0;ps aux  | awk '{print $6/1024 " MB\t\t" $11}'  | sort -n
+: 1720886823:0;btop
+: 1720886839:0;clear
+: 1720886839:0;ls
+: 1720886842:0;exit
+: 1720886846:0;exit
+: 1720887489:0;hyprpm list
+: 1720890748:0;sudo nvim /etc/greetd/config.toml
+: 1720891013:0;exit
+: 1720892741:0;ls
+: 1720892751:0;nvim .config/waybar/modules.json
+: 1720892959:0;cd .config
+: 1720892961:0;cd wlogout
+: 1720892961:0;ls
+: 1720892964:0;nvim layout
+: 1720892973:0;wlogout --help
+: 1720892994:0;wlogout -l layout -C nova.css
+: 1720893033:0;cd ..
+: 1720893033:0;ls
+: 1720893043:0;nvim hypr/hyprland/settings.conf
+: 1720893052:0;nvim hypr/hyprland/userSettings.conf 
+: 1720893409:0;cd wlogout
+: 1720893409:0;ls
+: 1720893415:0;nvim style.css
+: 1720893429:0;ls
+: 1720893430:0;cd icons
+: 1720893430:0;ls
+: 1720893432:0;cd ..
+: 1720893433:0;ls
+: 1720893434:0;cd icons
+: 1720893434:0;ls
+: 1720893440:0;xdg-open .
+: 1720893465:0;cd ..
+: 1720893465:0;ls
+: 1720893471:0;nvim config
+: 1720893535:0;hyprlock --help
+: 1720893599:0;rm layout
+: 1720893600:0;ls
+: 1720893614:0;cd icons
+: 1720893615:0;ls
+: 1720893637:0;.
+: 1720893639:0;xdg-open .
+: 1720893678:0;cd ..
+: 1720893678:0;ls
+: 1720893680:0;nvim style.css
+: 1720893758:0;wlogout
+: 1720893818:0;ls
+: 1720893820:0;nvim style.css
+: 1720893879:0;wlogout
+: 1720893898:0;nvim style.css
+: 1720893923:0;wlogout
+: 1720893969:0;wlogout
+: 1720893997:0;wlogout
+: 1720894057:0;wlogout
+: 1720894094:0;wlogout
+: 1720894264:0;wlogout
+: 1720894325:0;wlogout
+: 1720894453:0;wlogout
+: 1720894504:0;wlogout
+: 1720894552:0;wlogout
+: 1720894583:0;wlogout
+: 1720894634:0;wlogout
+: 1720894655:0;wlogout
+: 1720894667:0;clear
+: 1720894668:0;ls
+: 1720894674:0;nvim config
+: 1720894689:0;exit
+: 1720894690:0;exit
+: 1720894691:0;exit
+: 1720894720:0;wlgout
+: 1720894723:0;wlogout
+: 1720894829:0;wlogout
+: 1720894882:0;ls
+: 1720894891:0;nvim .config/hypr
+: 1720894912:0;cd .config/hypr
+: 1720894913:0;nvim
+: 1720895061:0;cd .config/hypr
+: 1720895062:0;ls
+: 1720895070:0;nvim hyprland.conf
+: 1720895093:0;hyprctl dispatch moveworkspacetomonitor "2 0"
+: 1720895108:0;exit
+: 1720895112:0;exit
+: 1720895715:0;sudo nvim /etc/greetd/config.toml
+: 1720895755:0;exit
+: 1720895844:0;cd /root
+: 1720895845:0;ls
+: 1720895846:0;sudo su
+: 1720896349:0;cat /sys/module/spl/parameters/spl_hostid
+: 1720896624:0;ls
+: 1720896627:0;sudo nvim /etc/greetd/config.toml
+: 1720896639:0;sudo nvim /etc/greetd/config.toml
+: 1720896643:0;sudo nvim /etc/greetd/config.toml
+: 1720896646:0;sudo nvim /etc/greetd/config.toml
+: 1720896656:0;systemctl restart greetd
+: 1720896772:0;cd .config
+: 1720896773:0;ls
+: 1720896778:0;cd hypr
+: 1720896778:0;ls
+: 1720896782:0;nvim hyprland.conf
+: 1720896904:0;zfs get org.zfsbootmenu::commandline
+: 1720896919:0;zfs get org.zfsbootmenu::commandline rpool/ROOT/arch
+: 1720896929:0;zfs get org.zfsbootmenu:commandline rpool/ROOT/arch
+: 1720896954:0;sudo su
+: 1720897587:0;exit
+: 1720897674:0;sudo nvim /etc/greetd/config.toml
+: 1720897700:0;exit
+: 1720897800:0;hyprctl monitors
+: 1720897817:0;hyprctl monitors
+: 1720897829:0;hyprctl monitors
+: 1720897833:0;hyprctl monitors
+: 1720897834:0;hyprctl monitors
+: 1720897852:0;cd .config
+: 1720897852:0;ls
+: 1720897854:0;cd hypr
+: 1720897854:0;ls
+: 1720897860:0;nvim hyprpaper.conf
+: 1720897884:0;killall hyprpaper && hyprpaper&
+: 1720897898:0;ls
+: 1720897902:0;cd scripts
+: 1720897903:0;ls
+: 1720897907:0;./handle_monitor_connect.sh
+: 1720897915:0;nvim handle_monitor_connect.sh
+: 1720897934:0;cat handle_monitor_connect.sh
+: 1720897942:0;handle() {\
+    if [ -z "$connected_monitor" ]; then\
+        case $1 in monitoradded*)\
+            hyprctl dispatch moveworkspacetomonitor "2 1"\
+            hyprctl dispatch moveworkspacetomonitor "3 1"\
+        esac\
+    else\
+        case $1 in monitoradded*)\
+            hyprctl dispatch moveworkspacetomonitor "1 1"\
+            hyprctl dispatch moveworkspacetomonitor "3 1"\
+        esac\
+    fi\
+}
+: 1720897947:0;connected_monitor="hyprctl monitors | grep serial | grep -E '54TF193' | cut -d ':' -f 2 | tr -d ' '"\
+
+: 1720897958:0;echo $connected_monitor
+: 1720897969:0;nvim handle_monitor_connect.sh
+: 1720898037:0;connected_monitor="`hyprctl monitors | grep serial | grep -E '54TF193' | cut -d ':' -f 2 | tr -d ' '`"\
+
+: 1720898040:0;echo $connected_monitor
+: 1720898043:0;handle
+: 1720898047:0;handle
+: 1720898068:0;handle() {\
+    if [ -z connected_monitor ]; then\
+        case $1 in monitoradded*)\
+            hyprctl dispatch moveworkspacetomonitor "2 1"\
+            hyprctl dispatch moveworkspacetomonitor "3 1"\
+        esac\
+    else\
+        case $1 in monitoradded*)\
+            hyprctl dispatch moveworkspacetomonitor "1 1"\
+            hyprctl dispatch moveworkspacetomonitor "3 1"\
+        esac\
+    fi\
+}
+: 1720898070:0;handle
+: 1720898079:0;handle() {\
+    if [ -z connected_monitor ]; then\
+        case $1 in monitoradded*)\
+            hyprctl dispatch moveworkspacetomonitor "2 1"\
+            hyprctl dispatch moveworkspacetomonitor "3 1"\
+        esac\
+    else\
+        case $1 in monitoradded*)\
+            hyprctl dispatch moveworkspacetomonitor "1 1"\
+            hyprctl dispatch moveworkspacetomonitor "3 1"\
+        esac\
+    fi\
+}
+: 1720898122:0;handle() {\
+    if [ -z connected_monitor ]; then\
+        echo hello\
+        case $1 in monitoradded*)\
+            hyprctl dispatch moveworkspacetomonitor "2 1"\
+            hyprctl dispatch moveworkspacetomonitor "3 1"\
+        esac\
+    else\
+        echo hi\
+        case $1 in monitoradded*)\
+            hyprctl dispatch moveworkspacetomonitor "1 1"\
+            hyprctl dispatch moveworkspacetomonitor "3 1"\
+        esac\
+    fi\
+}
+: 1720898129:0;handle
+: 1720898145:0;handle
+: 1720898191:0;handle
+: 1720898192:0;handle
+: 1720898201:0;connected_monitor="`hyprctl monitors | grep serial | grep -E '54TF193' | cut -d ':' -f 2 | tr -d ' '`"\
+
+: 1720898203:0;handle
+: 1720898206:0;echo $connected_monitor
+: 1720898224:0;echo "$connected_monitor"
+: 1720898236:0;connected_monitor="`hyprctl monitors | grep serial | grep -E '54TF193' | cut -d ':' -f 2 | tr -d ' '`"\
+
+: 1720898238:0;echo "$connected_monitor"
+: 1720898244:0;echo
+: 1720898253:0;nvim handle_monitor_connect.sh
+: 1720898318:0;ls
+: 1720898322:0;ls
+: 1720898323:0;cat 1
+: 1720898332:0;rm 1
+: 1720898333:0;ls
+: 1720898359:0;ls
+: 1720898363:0;cd .config
+: 1720898364:0;ls
+: 1720898366:0;cd hypr
+: 1720898366:0;ls
+: 1720898371:0;btop
+: 1720898389:0;ls
+: 1720898391:0;cd scripts
+: 1720898391:0;ls
+: 1720898393:0;./handle_monitor_connect.sh
+: 1720898429:0;nvim handle_monitor_connect.sh
+: 1720898442:0;./handle_monitor_connect.sh
+: 1720898472:0;nvim handle_monitor_connect.sh
+: 1720898498:0;./handle_monitor_connect.sh
+: 1720898537:0;nvim handle_monitor_connect.sh
+: 1720898551:0;./handle_monitor_connect.sh
+: 1720898585:0;./handle_monitor_connect.sh
+: 1720898588:0;nvim handle_monitor_connect.sh
+: 1720898617:0;./handle_monitor_connect.sh
+: 1720898633:0;nvim handle_monitor_connect.sh
+: 1720898677:0;./handle_monitor_connect.sh
+: 1720898683:0;nvim handle_monitor_connect.sh
+: 1720898695:0;./handle_monitor_connect.sh
+: 1720898697:0;./handle_monitor_connect.sh
+: 1720898701:0;nvim handle_monitor_connect.sh
+: 1720898711:0;./handle_monitor_connect.sh
+: 1720898714:0;./handle_monitor_connect.sh
+: 1720898724:0;./handle_monitor_connect.sh
+: 1720898725:0;./handle_monitor_connect.sh
+: 1720898726:0;./handle_monitor_connect.sh
+: 1720898730:0;nvim handle_monitor_connect.sh
+: 1720898766:0;nvim handle_monitor_connect.sh
+: 1720898774:0;./handle_monitor_connect.sh
+: 1720898869:0;nvim handle_monitor_connect.sh
+: 1720898910:0;./handle_monitor_connect.sh
+: 1720899013:0;exit
+: 1720899034:0;distrobox
+: 1720899041:0;distrobox rm bazzite-arch
+: 1720899051:0;ls
+: 1720899055:0;distrobox list
+: 1720899240:0;clear
+: 1720899240:0;ls
+: 1720903083:0;ls
+: 1720903085:0;cd .config
+: 1720903085:0;sl
+: 1720903086:0;ls
+: 1720903089:0;cd hypr
+: 1720903089:0;ls
+: 1720903091:0;cd scripts
+: 1720903091:0;ls
+: 1720903094:0;nvim suspend.sh
+: 1720903137:0;hyprctl 
+: 1720903160:0;hyprctl splash
+: 1720903184:0;hyprctl workspace
+: 1720903186:0;hyprctl workspaces
+: 1720903195:0;hyprctl workspaces --json
+: 1720903199:0;hyprctl workspaces -j
+: 1720903214:0;hyprctl workspaces -j | jq
+: 1720903224:0;man jq
+: 1720903262:0;man '.monitor'
+: 1720903272:0;hyprctl workspaces -j | jq '.monitor'
+: 1720903319:0;hyprctl workspaces -j | jq '.[] | select(.hasfullscreen == true)'
+: 1720903323:0;hyprctl workspaces -j | jq '.[] | select(.hasfullscreen)'
+: 1720903331:0;hyprctl workspaces -j | jq '.[] | select(.hasfullscreen)'
+: 1720903336:0;hyprctl workspaces -j | jq '.[]'
+: 1720903346:0;hyprctl workspaces -j | jq '.[] | select(.name)'
+: 1720903435:0;hyprctl workspaces -j | jq 'select(.name)'
+: 1720903438:0;hyprctl workspaces -j | jq '.[] | select(.name)'
+: 1720903460:0;hyprctl workspaces -j | jq '.[] | .name'
+: 1720903471:0;hyprctl workspaces -j | jq '.[] | hasfullscreen'
+: 1720903476:0;hyprctl workspaces -j | jq '.[] | .hasfullscreen'
+: 1720903514:0;hyprctl workspaces -j | jq '.[] | .hasfullscreen' | grep false
+: 1720903518:0;hyprctl workspaces -j | jq '.[] | .hasfullscreen' | grep true
+: 1720903542:0;hyprctl workspaces -j | jq '.[] | select(.hasfullscreen == true)'
+: 1720903546:0;hyprctl workspaces -j | jq '.[] | select(.hasfullscreen == false)'
+: 1720903552:0;hyprctl workspaces -j | jq '.[] | select(.hasfullscreen == true)'
+: 1720903562:0;cd ..
+: 1720903562:0;ls
+: 1720903570:0;nvim hyprland/keyBinds.conf
+: 1720903650:0;exit
+: 1720903755:0;exit
+: 1720903776:0;exit
+: 1720903837:0;hyprctl reload
+: 1720903844:0;exit
+: 1720903867:0;exit
+: 1720903875:0;exit
+: 1720903948:0;ls
+: 1720903955:0;hyprctl reload
+: 1720903959:0;exit
+: 1720903960:0;exit
+: 1720903977:0;cd .config
+: 1720903978:0;ls
+: 1720903980:0;cd hypr
+: 1720903980:0;ls
+: 1720903986:0;nvim hyprland/keyBinds.conf
+: 1720904024:0;nvim hyprland/keyBinds.conf
+: 1720904034:0;ls
+: 1720904043:0;nvim hyprland/keyBinds.conf
+: 1720904172:0;cd .config/hypr
+: 1720904172:0;ls
+: 1720904174:0;nvim hyprland/keyBinds.conf
+: 1720904224:0;cd .config/hypr
+: 1720904225:0;nvim hyprland/keyBinds.conf
+: 1720904649:0;exit
+: 1720931351:0;nvim hyprland/keyBinds.conf
+: 1720931359:0;cd .config/hypr
+: 1720931359:0;ls
+: 1720931373:0;nvim hyprland/keyBinds.conf
+: 1720931621:0;sudo pacman -Sy atuin
+: 1720931631:0;ls
+: 1720931640:0;nvim .zshrc
+: 1720931661:0;atuin register
+: 1720931742:0;atuin import auto
+: 1720931753:0;atuin sync
+: 1720931762:0;exit
+: 1720931765:0;ls
+: 1720931768:0;atuin sync
+: 1720931831:0;nvim .zshrc
+: 1720931840:0;nvim .zshrc
+: 1720931853:0;atuin key
+: 1720931982:0;cd .config
+: 1720931982:0;ls
+: 1720931991:0;cd atuin
+: 1720931995:0;ls
+: 1720932005:0;ls
+: 1720932007:0;nvim config.toml
+: 1720932065:0;cat config.toml | head
+: 1720932077:0;mkdir -p ~/.local/share/atuin/database
+: 1720932079:0;ls
+: 1720932087:0;ls
+: 1720932089:0;ls
+: 1720932217:0;sa
+: 1720932224:0;nvim .zshrc
+: 1720932227:0;cd
+: 1720932228:0;ls
+: 1720932230:0;nvim .zshrc
+: 1720932236:0;exit
+: 1720932237:0;ls
+: 1720932238:0;ls
+: 1720932239:0;clear
+: 1720932239:0;ls
+: 1720932306:0;atuin store purge
+: 1720932309:0;ls
+: 1720932319:0;cd .local/share/atuin/database
+: 1720932319:0;ls
+: 1720932321:0;cd
+: 1720932322:0;ls
+: 1720932330:0;atuin sync
+: 1720932345:0;cd .config/atuin
+: 1720932345:0;ls
+: 1720932346:0;nvim config.toml
+: 1720932583:0;atuin daemon
+: 1720932592:0;nvim config.toml
+: 1720932603:0;atuin daemon
+: 1720932635:0;cd
+: 1720932636:0;la
+: 1720932639:0;atuin daemon
+: 1720932654:0;atuin doctor
+: 1720932687:0;nvim .zshrc
+: 1720932691:0;exit
+: 1720932696:0;atuin daemon
+: 1720932794:0;atuind
+: 1720932810:0;atuin daemon
+: 1720932833:0;ls
+: 1720932840:0;nvim .config/atuin/config.toml
+: 1720932863:0;ls
+: 1720932864:0;cd
+: 1720932864:0;ls
+: 1720932869:0;cd .config
+: 1720932870:0;ls
+: 1720932872:0;cd atuin
+: 1720932872:0;ls
+: 1720932877:0;nvim config.toml
+: 1720932884:0;cd 
+: 1720932888:0;cd .local/share/atuin/database
+: 1720932889:0;cd ..
+: 1720932890:0;ls
+: 1720932900:0;cd
+: 1720932901:0;ls
+: 1720932908:0;nvim .config/atuin/config.toml
+: 1720932925:0;atuin daemon
+: 1720932938:0;ls
+: 1720932942:0;cd .local/share/atuin
+: 1720932943:0;ls
+: 1720932945:0;exit
+: 1720932950:0;atuin
+: 1720932952:0;ls
+: 1720932953:0;clear
+: 1720932953:0;ls
+: 1720932954:0;ls
+: 1720932961:0;atuin import auto
+: 1720932965:0;atuin sync
+: 1720932980:0;ls
+: 1720932981:0;clear
+: 1720932982:0;ls
+: 1720932986:0;exit
+: 1720932992:0;cd .config
+: 1720932992:0;ls
+: 1720932994:0;cd hypr
+: 1720932994:0;ls
+: 1720932998:0;nvim hyprland.conf
+: 1720933033:0;ps aux  | awk '{print $6/1024 " MB\t\t" $11}'  | sort -n
+: 1720933034:0;btop
+: 1720933369:0;ls
+: 1720933371:0;atuin
+: 1720933431:0;ls
+: 1720933433:0;cd .config
+: 1720933433:0;ls
+: 1720933434:0;cd hypr
+: 1720933434:0;sl
+: 1720933436:0;ls
+: 1720933508:0;pulsemixer
+: 1720933517:0;sudo pacman -Sy pulsemixer
+: 1720933527:0;pulsemixer
+: 1720933579:0;cd .config
+: 1720933579:0;ls
+: 1720933588:0;mkdir wireplumber
+: 1720933589:0;ls
+: 1720933591:0;cd wireplumber
+: 1720933591:0;ls
+: 1720933596:0;mkdir main.lua.d
+: 1720933597:0;ls
+: 1720933598:0;cd main.lua.d
+: 1720933598:0;ls
+: 1720933678:0;pulsemixer
+: 1720933704:0;pw-cli list-object node
+: 1720933712:0;pw-cli list-objects node
+: 1720933716:0;pw-cli list-objects Node
+: 1720933745:0;pulsemixer
+: 1720933906:0;pw-cli list-objects Device
+: 1720933962:0;pw-cli list-objects Node
+: 1720934007:0;cd ..
+: 1720934008:0;sl
+: 1720934008:0;ls
+: 1720934010:0;rm -rf main.lua.d
+: 1720934010:0;ls
+: 1720934018:0;mkdir wireplumber.conf.d
+: 1720934019:0;cd wireplumber.conf.d
+: 1720934019:0;ls
+: 1720934035:0;nvim 51-nvidia_output-rename.conf
+: 1720934080:0;exit
+: 1720934083:0;ls
+: 1720934088:0;pw-cli list-objects Device
+: 1720934092:0;pw-cli list-objects Node
+: 1720934246:0;systemctl --user restart wireplumber
+: 1720934568:0;hyprctl monitors
+: 1720935592:0;pw-cli list-objects Node
+: 1720935681:0;ls
+: 1720935684:0;cd ..
+: 1720935684:0;ls
+: 1720935686:0;cd wireplumber/wireplumber.conf.d
+: 1720935686:0;ls
+: 1720935688:0;cat 51-nvidia_output-rename.conf
+: 1720935706:0;cp 51-nvidia_output-rename.conf 51-nvidia_typec_output-rename.conf
+: 1720935710:0;nvim 51-nvidia_typec_output-rename.conf
+: 1720935721:0;systemctl --user restart wireplumber
+: 1720935795:0;systemctl --user restart wireplumber
+: 1720935814:0;systemctl --user restart wireplumber
+: 1720935823:0;systemctl --user restart wireplumber
+: 1720935839:0;rm 51-nvidia_typec_output-rename.conf
+: 1720936125:0;wpctl status
+: 1720936165:0;wpctl inspect 197
+: 1720936177:0;ls
+: 1720936190:0;cp 51-nvidia_output-rename.conf 51-internal_speaker-rename.conf
+: 1720936195:0;nvim 51-internal_speaker-rename.conf
+: 1720936228:0;systemctl --user restart wireplumber
+: 1720936247:0;wpctl status
+: 1720936258:0;nvim 51-internal_speaker-rename.conf
+: 1720936269:0;systemctl --user restart wireplumber
+: 1720936272:0;wpctl status
+: 1720936289:0;wpctl inspect 187
+: 1720936308:0;nvim 51-internal_speaker-rename.conf
+: 1720936318:0;nvim 51-nvidia_output-rename.conf
+: 1720936325:0;systemctl --user restart wireplumber
+: 1720936348:0;cp 51-internal_speaker-rename.conf 51-internal_mic-rename.conf
+: 1720936352:0;nvim 51-internal_mic-rename.conf
+: 1720936366:0;systemctl --user restart wireplumber
+: 1720936420:0;wpctl status
+: 1720936444:0;wpctl inspect 85
+: 1720936457:0;cat 51-internal_mic-rename.conf
+: 1720936476:0;cp 51-internal_mic-rename.conf 51-internal_wired_mic-rename.conf
+: 1720936481:0;nvim 51-internal_wired_mic-rename.conf
+: 1720936538:0;nvim 51-internal_speaker-rename.conf
+: 1720936556:0;nvim 51-internal_mic-rename.conf
+: 1720936565:0;systemctl --user restart wireplumber
+: 1720936604:0;nvim 51-internal_mic-rename.conf
+: 1720936620:0;ls
+: 1720936766:0;wpctl status
+: 1720936781:0;exit
+: 1720936810:0;wpctl status
+: 1720936820:0;hyprctl monitors
+: 1720936865:0;wpctl inspect 149
+: 1720936886:0;ls
+: 1720936891:0;cd .config/wireplumber
+: 1720936891:0;ls
+: 1720936892:0;cd wireplumber.conf.d
+: 1720936892:0;ls
+: 1720936898:0;nvim 51-nvidia_output-rename.conf
+: 1720936930:0;cp 51-nvidia_output-rename.conf 51-nvidia_output-rename.conf
+: 1720936938:0;cp 51-nvidia_output-rename.conf 51-nvidia_output2-rename.conf
+: 1720936944:0;nvim 51-nvidia_output2-rename.conf
+: 1720936953:0;systemctl --user restart wireplumber
+: 1720936959:0;nvim 51-nvidia_output2-rename.conf
+: 1720936969:0;systemctl --user restart wireplumber
+: 1720937059:0;wpctl status
+: 1720937078:0;wpctl inspect 179
+: 1720937084:0;ls
+: 1720937104:0;cp 51-internal_speaker-rename.conf 51-internal_wired_speaker-rename.conf
+: 1720937111:0;nvim 51-internal_wired_speaker-rename.conf
+: 1720937138:0;systemctl --user restart wireplumber
+: 1720937166:0;wpctl status
+: 1720937201:0;wpctl inspect 43
+: 1720937213:0;ls
+: 1720937233:0;nvim 51-disabled_nvidia.conf
+: 1720937271:0;systemctl --user restart wireplumber
+: 1720937301:0;cp 51-disabled_nvidia.conf 51-disabled_nvidia2.conf
+: 1720937306:0;nvim 51-disabled_nvidia2.conf
+: 1720937314:0;systemctl --user restart wireplumber
+: 1720937419:0;wpctl status
+: 1720937466:0;wpctl status
+: 1720937469:0;wpctl status
+: 1720937511:0;pw-cli list-objects Device
+: 1720937532:0;pw-cli list-objects Node
+: 1720937614:0;ls
+: 1720937621:0;nvim 51-nvidia_output-rename.conf
+: 1720937640:0;nvim 51-nvidia_output-rename.conf
+: 1720937702:0;nvim 51-nvidia_output2-rename.conf
+: 1720937722:0;systemctl --user restart wireplumber
+: 1720938056:0;blueman-manager
+: 1720938937:0;blueman-manager
+: 1720940960:0;atuin
+: 1720940965:0;atuin sync
+: 1720940968:0;ls
+: 1720940969:0;clear
+: 1720940969:0;ls
+: 1720940973:0;atuin
+: 1720940985:0;atuin stats
+: 1720941000:0;atuin kv
+: 1720941102:0;atuin doctor
+: 1720941489:0;cd
+: 1720941490:0;sl
+: 1720941491:0;ls
+: 1720941491:0;clear
+: 1720941492:0;ls
+: 1720945553:0;cd .ssh
+: 1720945553:0;ls
+: 1720945554:0;ls
+: 1720945564:0;nvim id_ed25519
+: 1720945582:0;ls
+: 1720945588:0;chmod 600 id_ed25519
+: 1720945592:0;ls
+: 1720945628:0;ssh-keygen -o -p -f id_ed25519
+: 1720945632:0;cat id_ed25519
+: 1720945652:0;ssh-keygen -p -f id_ed25519
+: 1720945665:0;eval `ssh-agent`
+: 1720945669:0;ssh-add id_ed25519
+: 1720945685:0;1password
+: 1720945801:0;ls
+: 1720945803:0;cd Downloads
+: 1720945804:0;ls
+: 1720945806:0;cat id_ed25519
+: 1720945812:0;mv id_ed25519 ~/.ssh/id_ed25519
+: 1720945815:0;cd 
+: 1720945816:0;cd .ssh
+: 1720945816:0;ls
+: 1720945817:0;cd i
+: 1720945821:0;chmod 600 id_ed25519
+: 1720945825:0;ssh-keygen -p -f id_ed25519
+: 1720945976:0;cd /etc/pam.d
+: 1720945976:0;ls
+: 1720945990:0;cat login
+: 1720946000:0;nvim greetd
+: 1720946008:0;sudo nvim greetd
+: 1720946035:0;cd
+: 1720946035:0;sl
+: 1720946036:0;ls
+: 1720946043:0;nvim .config/hypr/hyprland.conf
+: 1720946065:0;man gnome-keyring-daemon
+: 1720946131:0;/usr/lib/gcr-ssh-agent
+: 1720946160:0;systemctl --user start gcr-ssh-agent.socket
+: 1720946174:0;echo $XDG_RUNTIME_DIR
+: 1720946192:0;file /run/user/1000/gcr/ssh
+: 1720946219:0;export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
+: 1720946225:0;ssh-add -L
+: 1720946241:0;ssh-add id_ed25519
+: 1720946249:0;ssh-add -L
+: 1720946326:0;ssh -T git@github.com
+: 1720946333:0;clear
+: 1720946334:0;ls
+: 1720946337:0;cd ..
+: 1720946337:0;ls
+: 1720946339:0;ssh dhaula
+: 1720946711:0;systemctl --user enable gcr-ssh-agent.socket
+: 1720946768:0;ls
+: 1720946771:0;cd .gnupg
+: 1720946771:0;ls
+: 1720946778:0;nvim gpg-agent.conf
+: 1720946853:0;systemctl --user status ssg-agent
+: 1720946857:0;systemctl --user status ssg-agent
+: 1720946861:0;systemctl --user status ssh-agent
+: 1720946885:0;echo $SSH_AUTH_SOCK
+: 1720946944:0;echo $SSH_AUTH_SOCK
+: 1720946964:0;/usr/lib/seahorse/ssh-askpass .ssh/id_ed25519
+: 1720947085:0;ls
+: 1720947086:0;ls
+: 1720947091:0;ssh -T git@github.com
+: 1720947104:0;ls
+: 1720947154:0;exit
+: 1720947275:0;htop
+: 1720947282:0;radeontop
+: 1720947293:0;nvidia-smi
+: 1720947295:0;clear
+: 1720973459:0;sudo pacman -Sy aylurs-gtk-shell
+: 1720973487:0;paru -Sy aylurs-gtk-shell
+: 1720973620:0;sudo pacman -Sy gnome-bluetooth-3.0
+: 1720973634:0;gnome-bluetooth
+: 1720973645:0;gsettings 
+: 1720973766:0;sudo pacman -Sy wf-recorder
+: 1720973787:0;git clone https://github.com/Aylur/dotfiles.git\
+cp -r dotfiles/ags $HOME/.config/ags
+: 1720973794:0;ags
+: 1720973961:0;sudo pacman -Sy dart-sass
+: 1720973965:0;bun
+: 1720973971:0;sudo pacman -Sy matugen
+: 1720974010:0;sudo pacman -Sy matugen-bin
+: 1720974018:0;paru -Sy matugen-bin
+: 1720974043:0;hyprctl reload
+: 1720974053:0;ags
+: 1720974149:0;ls
+: 1720974152:0;rm -rf dotfiles
+: 1720974152:0;ls
+: 1720974155:0;cd .config
+: 1720974157:0;cd ags
+: 1720974157:0;ls
+: 1720974158:0;clear
+: 1720974159:0;ls
+: 1720974163:0;cd greeter
+: 1720974163:0;ls
+: 1720974166:0;cd ..
+: 1720974166:0;ls
+: 1720974186:0;nvim main.ts
+: 1720974192:0;ls
+: 1720974194:0;cd style
+: 1720974194:0;ls
+: 1720974197:0;cd ..
+: 1720974197:0;ls
+: 1720974315:0;ags
+: 1720974751:0;hyprctl reload
+: 1720974753:0;clear
+: 1720974753:0;ls
+: 1720975593:0;cd ..
+: 1720975594:0;ls
+: 1720975847:0;ls
+: 1720975848:0;cd .icons
+: 1720975849:0;ls
+: 1720975850:0;cd default
+: 1720975850:0;ls
+: 1720975853:0;cd ..
+: 1720975853:0;ls
+: 1720975872:0;gsettings set org.gnome.desktop.interface cursor-theme default
+: 1720975939:0;gsettings get org.gnome.desktop.interface cursor-theme
+: 1720975940:0;ls
+: 1720975941:0;cd 
+: 1720975941:0;ls
+: 1720975943:0;cd .config
+: 1720975943:0;ls
+: 1720975947:0;cd gtk-4.0
+: 1720975947:0;ls
+: 1720975949:0;cat servers
+: 1720975977:0;ssh dhaula
+: 1720976266:0;cd ..
+: 1720976266:0;ls
+: 1720976269:0;cd waybar
+: 1720976269:0;ls
+: 1720976272:0;nvim config
+: 1720976294:0;killall waybar && waybar &
+: 1721017740:0;cllllear
+: 1721017742:0;clear
+: 1721017742:0;ls
+: 1721017744:0;rm running.config
+: 1721017745:0;ls
+: 1721017747:0;ls
+: 1721017751:0;nvim .config/hypr
+: 1721017754:0;ls
+: 1721017757:0;cd .config/hypr
+: 1721017757:0;ls
+: 1721017786:0;cd hyprland
+: 1721017786:0;ls
+: 1721017797:0;which z
+: 1721017802:0;ls
+: 1721018062:0;cd .config
+: 1721018063:0;ls
+: 1721018064:0;cd
+: 1721018064:0;ls
+: 1721018067:0;cd /etc
+: 1721018068:0;ls
+: 1721018072:0;sudo nvim dracut.conf
+: 1721018086:0;lsmod
+: 1721018093:0;lsmod| grep nvidia
+: 1721018111:0;sudo nvim dracut.conf
+: 1721018298:0;sudo nvim dracut.conf
+: 1721018551:0;sudo dracut
+: 1721018636:0;reboot
+: 1721018981:0;paru -Sy awf-gtk4
+: 1721019106:0;sudo nvim /etc/dracut.conf
+: 1721019414:0;cd Downloads
+: 1721019415:0;ls
+: 1721019423:0;rm Win10_22H2_English_x64v1.iso
+: 1721019424:0;ls
+: 1721019432:0;unzip gtk-master.zip
+: 1721019433:0;ls
+: 1721019470:0;mkdir -p ~/.local/share/themes
+: 1721019471:0;ls
+: 1721019488:0;ls
+: 1721019493:0;cd gtk-master
+: 1721019493:0;ls
+: 1721019501:0;cd ..
+: 1721019502:0;ls
+: 1721019514:0;mv gtk-master ~/.local/share/themes/dracula
+: 1721019516:0;exit
+: 1721028357:0;ls
+: 1721028357:0;clear
+: 1721028358:0;ls
+: 1721028359:0;cd .config
+: 1721028359:0;ls
+: 1721028361:0;cd hypr
+: 1721028361:0;ls
+: 1721028366:0;zeditor .
+: 1721028370:0;exit
+: 1721028519:0;hyprctl clients
+: 1721028582:0;hyprctl clients
+: 1721028778:0;ags
+: 1721028857:0;foot
+: 1721028859:0;ls
+: 1721028859:0;ls
+: 1721028860:0;clear
+: 1721028860:0;ls
+: 1721028875:0;alacritty
+: 1721028879:0;sudo pacman -Sy alacritty
+: 1721028901:0;alacritty
+: 1721028904:0;jfkdjfkj
+: 1721028905:0;fjdkjdkfj
+: 1721028906:0;fjdkfjdk
+: 1721028907:0;exit
+: 1721028908:0;fjdkfjdk
+: 1721028909:0;kfdjkfjdk
+: 1721028910:0;clear
+: 1721028910:0;ls
+: 1721028911:0;exit
+: 1721028912:0;exit
+: 1721028953:0;gsettings set org.gnome.desktop.interface gtk-theme "Dracula"\
+gsettings set org.gnome.desktop.wm.preferences theme "Dracula"\
+
+: 1721028975:0;cd .local/share/themes
+: 1721028976:0;ls
+: 1721028977:0;cd dracula
+: 1721028977:0;ls
+: 1721028981:0;cat INSTALL.md
+: 1721028997:0;exit
+: 1721028999:0;ls
+: 1721029002:0;cd .config/hypr
+: 1721029003:0;ls
+: 1721029010:0;killall waybar
+: 1721029014:0;ls
+: 1721029018:0;ags
+: 1721029044:0;ags
+: 1721029053:0;sudo pacman -Sy swww
+: 1721029061:0;ags
+: 1721029071:0;killall ags && ags &
+: 1721029083:0;clear
+: 1721029084:0;ls
+: 1721029086:0;cd .config
+: 1721029086:0;ls
+: 1721029088:0;cd ags
+: 1721029088:0;ls
+: 1721029090:0;code .
+: 1721029094:0;exit
+: 1721029262:0;sudo pacman -Sy gnome-control-center
+: 1721029271:0;sudo pacman -Sy
+: 1721029287:0;sudo pacman -Sy libnama
+: 1721029292:0;sudo pacman -Sy libnma
+: 1721029301:0;sudo pacman -Sy gnome-control-center
+: 1721029333:0;clear
+: 1721029334:0;ls
+: 1721029587:0;ls
+: 1721030118:0;powerprofilesctl set performance
+: 1721030123:0;powerprofilesctl 
+: 1721030194:0;powerprofilesctl  -h
+: 1721030203:0;powerprofilesctl list
+: 1721030213:0;powerprofilesctl list-holds
+: 1721030218:0;powerprofilesctl get
+: 1721030287:0;powerprofilesctl set Performance
+: 1721031065:0;killall ags
+: 1721031066:0;ls
+: 1721031134:0;hyprctl reload
+: 1721031141:0;waybar &
+: 1721031435:0;cd
+: 1721031435:0;ls
+: 1721031438:0;cd .config
+: 1721031438:0;ls
+: 1721031443:0;rm -rf ags
+: 1721031444:0;ls
+: 1721031504:0;cd Downloads
+: 1721031505:0;ls
+: 1721031508:0;rm gtk-master.zip
+: 1721031509:0;ls
+: 1721031511:0;ls
+: 1721031516:0;ls
+: 1721031518:0;unzip hyprland-dots-main.zip
+: 1721031520:0;ls
+: 1721031521:0;cd hyprland-dots-main
+: 1721031521:0;ls
+: 1721031523:0;cd backgrounds
+: 1721031524:0;ls
+: 1721031538:0;mv ./* ~/Pictures/Wallpapers/
+: 1721031539:0;ls
+: 1721031541:0;cd ..
+: 1721031541:0;ls
+: 1721031547:0;cd cfg
+: 1721031548:0;ls
+: 1721031650:0;cd ..
+: 1721031650:0;ls
+: 1721031652:0;cd nixos
+: 1721031652:0;sl
+: 1721031653:0;ls
+: 1721031659:0;cd hosts
+: 1721031659:0;ls
+: 1721031661:0;cd laptop
+: 1721031661:0;ls
+: 1721031668:0;cd home-dotfiles-laptop
+: 1721031668:0;ls
+: 1721031676:0;cp -r ags ~/.config/
+: 1721031677:0;ls
+: 1721031678:0;ags
+: 1721031879:0;sudo pacman -Sy gnome-control-center
+: 1721031924:0;ags
+: 1721031980:0;sudo pacman -R gnome-control-center
+: 1721031982:0;sudo su
+: 1721032039:0;exit
+: 1721032046:0;exit
+: 1721032096:0;ls
+: 1721032098:0;cd .config
+: 1721032098:0;ls
+: 1721032114:0;rm -rf ags
+: 1721032115:0;ls
+: 1721032117:0;cd hypr
+: 1721032117:0;ls
+: 1721032125:0;code .
+: 1721032132:0;hyprctl reload
+: 1721032136:0;exit
+: 1721033307:0;ls
+: 1721033309:0;xev
+: 1721033314:0;sudo pacman -Sy xev
+: 1721033345:0;sudo pacman -Sy xorg-xev
+: 1721033350:0;xev
+: 1721033470:0;xev
+: 1721033529:0;hyprctl reload
+: 1721033788:0;hyprctl globalshortcuts
+: 1721033801:0;hyprctl globalshortcuts
+: 1721034553:0;exit
+: 1721034565:0;exti
+: 1721034567:0;exit
+: 1721035105:0;ls
+: 1721035106:0;cd
+: 1721035107:0;ls
+: 1721035109:0;cd Downloads
+: 1721035109:0;ls
+: 1721035112:0;rm -rf ./*
+: 1721035114:0;ls
+: 1721035167:0;awf-gtk4
+: 1721035260:0;ls
+: 1721035262:0;cd Downloads
+: 1721035263:0;ls
+: 1721035268:0;unzip hyprland-material-you-main.zip
+: 1721035269:0;ls
+: 1721035270:0;cd hyprland-material-you-main
+: 1721035270:0;ls
+: 1721035279:0;mv ags ~/.config/
+: 1721035280:0;ls
+: 1721035281:0;ags
+: 1721035339:0;sudo pacman -Sy gtksourceview3
+: 1721035350:0;ags
+: 1721035360:0;cd
+: 1721035361:0;cd Pictures
+: 1721035361:0;ls
+: 1721035371:0;ln -s Wallpapers wallpaper
+: 1721035371:0;ls
+: 1721035373:0;cd wallpaper
+: 1721035373:0;ls
+: 1721035375:0;cd ..
+: 1721035375:0;ls
+: 1721035377:0;ags
+: 1721035386:0;ls
+: 1721035389:0;rm wallpaper
+: 1721035398:0;cp -r Wallpapers wallpaper
+: 1721035401:0;ags
+: 1721035410:0;ls
+: 1721035415:0;mv wallpaper ../
+: 1721035417:0;ags
+: 1721035424:0;killall waybar
+: 1721035426:0;ags
+: 1721035452:0;cd
+: 1721035452:0;ls
+: 1721035456:0;cd Downloads
+: 1721035456:0;ls
+: 1721035463:0;mv hyprland-material-you-main ../dotfiles
+: 1721035464:0;cd ..
+: 1721035464:0;ls
+: 1721035465:0;cd dotfiles
+: 1721035465:0;ls
+: 1721035476:0;cd material-colors
+: 1721035476:0;ls
+: 1721035479:0;cd ..
+: 1721035479:0;sl
+: 1721035481:0;cd ..
+: 1721035481:0;ls
+: 1721035485:0;rm -rf dotfiles wallpaper
+: 1721035486:0;ls
+: 1721035487:0;cd .config
+: 1721035488:0;ls
+: 1721035489:0;rm -rf ags
+: 1721035490:0;ls
+: 1721035511:0;cd
+: 1721035512:0;ls
+: 1721035514:0;mkdir .themes
+: 1721035514:0;ls
+: 1721035525:0;mv .local/share/themes/dracula .themes/
+: 1721035528:0;cd .themes
+: 1721035528:0;ls
+: 1721035541:0;nwg-look
+: 1721035564:0;waybar &
+: 1721035615:0;gsettings set org.gnome.desktop.interface gtk-theme "Dracula"\
+gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
+: 1721035843:0;gsettings set org.gnome.desktop.wm.preferences button-layout ':'
+: 1721035955:0;sensors-detect
+: 1721035958:0;sudo sensors-detect
+: 1721036097:0;sensors
+: 1721036112:0;sensors
+: 1721036172:0;cd
+: 1721036173:0;ls
+: 1721036174:0;cd .config
+: 1721036175:0;ls
+: 1721036180:0;cd ags_config
+: 1721036180:0;ls
+: 1721036182:0;cd ..
+: 1721036183:0;ls
+: 1721036184:0;ags
+: 1721036240:0;paru -Sy python-materialyoucolor-git
+: 1721036318:0;sudo pacman -Sy gtksourceviewmm
+: 1721036329:0;sudo pacman -Sy gtkmm3
+: 1721036342:0;sudo pacman -Sy fwupd
+: 1721036367:0;fwupdtool
+: 1721036370:0;sudo fwupdtool
+: 1721036380:0;sudo fwupdmgr
+: 1721036390:0;fwupdmgr --help
+: 1721036412:0;fwupd-dbxtool
+: 1721036427:0;fwupdmgr --show-aal
+: 1721036430:0;fwupdmgr --show-all
+: 1721036450:0;sudo pacman -Sy libdbusmenu-gtk3
+: 1721036468:0;sudo pacman -Sy adw-gtk3 adw-gtk-theme
+: 1721036475:0;paru -Sy adw-gtk3 adw-gtk-theme
+: 1721036520:0;sudo pacman -Sy hyprutils
+: 1721036530:0;sudo pacman -Sy hyprlang
+: 1721036658:0;clear
+: 1721036659:0;ls
+: 1721036662:0;exit
+: 1721036667:0;exit
+: 1721036678:0;cd
+: 1721036679:0;ls
+: 1721036680:0;cd .config
+: 1721036681:0;ls
+: 1721036688:0;ls
+: 1721036689:0;clear
+: 1721036689:0;ls
+: 1721036690:0;clera
+: 1721036690:0;ls
+: 1721036691:0;clera
+: 1721036692:0;ls
+: 1721036695:0;cd .config
+: 1721036695:0;ls
+: 1721036699:0;cd foot
+: 1721036699:0;sl
+: 1721036700:0;ls
+: 1721036702:0;nvim foot.ini
+: 1721036715:0;exit
+: 1721036719:0;ls
+: 1721036720:0;clear
+: 1721036720:0;ls
+: 1721036722:0;cd .config/foot
+: 1721036723:0;ls
+: 1721036724:0;nvim foot.ini
+: 1721036817:0;exit
+: 1721036821:0;ls
+: 1721036822:0;clear
+: 1721036822:0;ls
+: 1721036826:0;ls
+: 1721036827:0;clera
+: 1721036828:0;clear
+: 1721036829:0;ls
+: 1721036835:0;jfkldjkfd
+: 1721036835:0;ls
+: 1721036836:0;clear
+: 1721036837:0;ls
+: 1721036837:0;exit
+: 1721036847:0;ls
+: 1721036847:0;clear
+: 1721036848:0;ls
+: 1721036850:0;cd .config
+: 1721036850:0;ls
+: 1721036856:0;ls
+: 1721036858:0;exit
+: 1721036860:0;ls
+: 1721036862:0;clear
+: 1721036862:0;ls
+: 1721036867:0;ls
+: 1721036869:0;exit
+: 1721036873:0;ls
+: 1721036874:0;clear
+: 1721036874:0;ls
+: 1721036875:0;exit
+: 1721036877:0;exit
+: 1721039351:0;gsettings set org.gnome.desktop.interface gtk-theme "Dracula"\
+gsettings set org.gnome.desktop.wm.preferences theme "default"
+: 1721039362:0;gsettings set org.gnome.desktop.interface gtk-theme "default"\
+gsettings set org.gnome.desktop.wm.preferences theme "default"
+: 1721039372:0;cd .themes
+: 1721039372:0;ls
+: 1721039391:0;gsettings set org.gnome.desktop.interface gtk-theme "dracula"\
+gsettings set org.gnome.desktop.wm.preferences theme "dracula"
+: 1721039401:0;cd
+: 1721039401:0;ls
+: 1721039403:0;cd .config
+: 1721039403:0;sl
+: 1721039404:0;ls
+: 1721039408:0;cd waybar
+: 1721039408:0;ls
+: 1721039411:0;nvim modules.json
+: 1721039493:0;killall waybar && waybar &
+: 1721039497:0;nvim modules.json
+: 1721039515:0;killall waybar && waybar &
+: 1721039519:0;nvim modules.json
+: 1721039527:0;killall waybar && waybar &
+: 1721039602:0;ls
+: 1721039604:0;nvim config
+: 1721039609:0;nvim modules.json
+: 1721039628:0;killall waybar && waybar &
+: 1721039660:0;killall waybar && waybar &
+: 1721039666:0;nvim modules.json
+: 1721039732:0;ls
+: 1721039751:0;nvim config
+: 1721039843:0;killall waybar && waybar &
+: 1721039861:0;nvim modules.json
+: 1721039874:0;killall waybar && waybar &
+: 1721039882:0;nvim config
+: 1721039893:0;killall waybar && waybar &
+: 1721039902:0;nvim config
+: 1721039947:0;killall waybar && waybar &
+: 1721040027:0;nvim config
+: 1721040049:0;killall waybar && waybar &
+: 1721040055:0;nvim modules.json
+: 1721040071:0;killall waybar && waybar &
+: 1721040080:0;killall waybar && waybar &
+: 1721040088:0;cd scripts
+: 1721040088:0;ls
+: 1721040097:0;nvim change-power-profile.sh
+: 1721040180:0;chmod +x change-power-profile.sh
+: 1721040180:0;ls
+: 1721040184:0;./change-power-profile.sh
+: 1721040187:0;./change-power-profile.sh
+: 1721040190:0;./change-power-profile.sh
+: 1721040196:0;./change-power-profile.sh
+: 1721040209:0;nvim change-power-profile.sh
+: 1721040665:0;./change-power-profile.sh
+: 1721040670:0;./change-power-profile.sh
+: 1721040681:0;nvim change-power-profile.sh
+: 1721040803:0;./change-power-profile.sh
+: 1721040806:0;nvim change-power-profile.sh
+: 1721040814:0;nvim change-power-profile.sh
+: 1721040822:0;./change-power-profile.sh
+: 1721040828:0;./change-power-profile.sh
+: 1721040830:0;./change-power-profile.sh
+: 1721040836:0;nvim change-power-profile.sh
+: 1721040905:0;./change-power-profile.sh
+: 1721040908:0;nvim change-power-profile.sh
+: 1721040921:0;./change-power-profile.sh
+: 1721040925:0;nvim change-power-profile.sh
+: 1721040954:0;./change-power-profile.sh
+: 1721040958:0;./change-power-profile.sh
+: 1721040960:0;./change-power-profile.sh
+: 1721040965:0;nvim change-power-profile.sh
+: 1721040977:0;./change-power-profile.sh
+: 1721040980:0;./change-power-profile.sh
+: 1721040982:0;./change-power-profile.sh
+: 1721040985:0;nvim change-power-profile.sh
+: 1721041041:0;./change-power-profile.sh
+: 1721041049:0;nvim change-power-profile.sh
+: 1721041063:0;./change-power-profile.sh
+: 1721041067:0;nvim change-power-profile.sh
+: 1721041200:0;./change-power-profile.sh
+: 1721041203:0;./change-power-profile.sh
+: 1721041208:0;nvim change-power-profile.sh
+: 1721041237:0;./change-power-profile.sh
+: 1721041246:0;./change-power-profile.sh
+: 1721041248:0;./change-power-profile.sh
+: 1721041251:0;./change-power-profile.sh
+: 1721041254:0;./change-power-profile.sh
+: 1721041256:0;./change-power-profile.sh
+: 1721041260:0;./change-power-profile.sh
+: 1721041270:0;cat ~/.local/share/powerprofilestate
+: 1721041277:0;clear
+: 1721041278:0;ls
+: 1721041285:0;cd ..
+: 1721041285:0;ls
+: 1721041290:0;nvim modules.json
+: 1721041334:0;killall waybar && waybar &
+: 1721041356:0;ls
+: 1721041359:0;cd scripts
+: 1721041359:0;ls
+: 1721041361:0;./change-power-profile.sh
+: 1721041364:0;./change-power-profile.sh
+: 1721041367:0;./change-power-profile.sh
+: 1721041369:0;./change-power-profile.sh
+: 1721041371:0;./change-power-profile.sh
+: 1721041373:0;./change-power-profile.sh
+: 1721041389:0;nvim ../modules.json
+: 1721041427:0;killall waybar && waybar &
+: 1721041457:0;ls
+: 1721041459:0;rm change-power-profile.sh
+: 1721041460:0;ls
+: 1721041463:0;cd ..
+: 1721041463:0;ls
+: 1721041467:0;nvim modules.json
+: 1721041478:0;killall waybar && waybar &
+: 1721041510:0;exit
+: 1721041547:0;paru -Sy greetd-qtgreet
+: 1721041588:0;sudo pacman -Sy greetd-gtkgreet
+: 1721041630:0;ls
+: 1721041634:0;cd /etc/greetd
+: 1721041634:0;ls
+: 1721041638:0;sudo nvim hyprland.conf
+: 1721041662:0;sudo nvim hyprland.conf
+: 1721041668:0;ls
+: 1721041674:0;sudo nvim config.toml
+: 1721041925:0;sudo systemctl restart greetd
+: 1721041957:0;sudo nvim /etc/greetd/config.toml
+: 1721041978:0;atuin sync
+: 1721041982:0;ls
+: 1721041988:0;nvim .config/hypr/hyprland.conf
+: 1721042001:0;btop
+: 1721042014:0;atuin daemon
+: 1721042029:0;ls
+: 1721042120:0;ls
+: 1721042121:0;ls
+: 1721042126:0;atuin daemon
+: 1721042139:0;atuin daemon
+: 1721042148:0;nvim .config/atuin/config.toml
+: 1721042168:0;cd .local/share/atuin
+: 1721042168:0;ls
+: 1721042172:0;rm -rf atuin.sock
+: 1721042178:0;atuin daemon
+: 1721042189:0;ls
+: 1721042200:0;nvim ~/.config/atuin/config.toml
+: 1721042235:0;atuin daemon
+: 1721042242:0;sudo nvim config.toml
+: 1721042254:0;nvim ~/.config/atuin/config.toml
+: 1721042423:0;atuin daemon
+: 1721042437:0;nvim ~/.config/atuin/config.toml
+: 1721042446:0;atuin daemon
+: 1721042450:0;cd
+: 1721042450:0;ls
+: 1721042454:0;nvim .zshrc
+: 1721042460:0;exit
+: 1721042465:0;atuin daemon
+: 1721042470:0;nvim .config/atuin/config.toml
+: 1721042490:0;atuin daemon
+: 1721042492:0;ls
+: 1721042496:0;cd .local/share/atuin
+: 1721042498:0;ls
+: 1721042499:0;cd
+: 1721042500:0;ls
+: 1721042501:0;nvim .config/atuin/config.toml
+: 1721042515:0;atuin daemon
+: 1721042525:0;nvim .zshrc
+: 1721042544:0;ls
+: 1721042546:0;atuin import
+: 1721042550:0;atuin import auto
+: 1721042553:0;atuin sync
+: 1721042556:0;clear
+: 1721042556:0;ls
+: 1721042558:0;atuin
+: 1721042567:0;atuin status
+: 1721042598:0;atuin status
+: 1721042609:0;atuin stats
+: 1721042623:0;clear
+: 1721042623:0;ls
+: 1721042624:0;exit
+: 1721050246:0;sudo pacman -Sy xdg-ninja
+: 1721050390:0;ls
+: 1721050391:0;clear
+: 1721050391:0;ls
+: 1721050431:0;ls
+: 1721050440:0;sudo pacman -Sy xdg-ninja
+: 1721050457:0;paru -Sy xdg-ninja
+: 1721050507:0;ls
+: 1721050510:0;xdg-ninja
+: 1721050517:0;sudo pacman -Sy glow
+: 1721050524:0;xdg-ninja
+: 1721050532:0;xdg-ninja | less
+: 1721050545:0;xdg-ninja | glow
+: 1721050551:0;ls
+: 1721050556:0;xdg-ninja --help
+: 1721050569:0;htop
+: 1721050583:0;ls
+: 1721050593:0;ps aux  | awk '{print $6/1024 " MB\t\t" $11}'  | sort -n
+: 1721050603:0;clear
+: 1721050603:0;ls
+: 1721050614:0;exit
+: 1721050619:0;ls
+: 1721050620:0;clear
+: 1721050620:0;ls
+: 1721050624:0;ps aux  | awk '{print $6/1024 " MB\t\t" $11}'  | sort -n
+: 1721050635:0;ps aux  | awk '{print $6/1024 " MB\t\t" $11}'  | sort -n | grep "kitty|foot"
+: 1721050654:0;ls
+: 1721050655:0;ls
+: 1721050656:0;clear
+: 1721050656:0;ls
+: 1721050657:0;clear
+: 1721050658:0;ls
+: 1721050658:0;clear
+: 1721050659:0;ls
+: 1721050660:0;exit
+: 1721050661:0;clear
+: 1721050661:0;ls
+: 1721050662:0;exit
+: 1721050665:0;ls
+: 1721050666:0;clear
+: 1721050666:0;sl
+: 1721050668:0;ls
+: 1721050669:0;clear
+: 1721050669:0;ls
+: 1721050671:0;nvim .config
+: 1721050678:0;clear
+: 1721050679:0;sl
+: 1721050702:0;cd
+: 1721050706:0;cd .config/hypr
+: 1721050706:0;ls
+: 1721050709:0;nvim hyprland.conf
+: 1721050712:0;ls
+: 1721050716:0;nvim hyprland/userSettings.conf
+: 1721050735:0;nvim hyprland/userSettings.conf
+: 1721050766:0;clear
+: 1721050766:0;ls
+: 1721050775:0;xdg-open hyprland.conf
+: 1721050791:0;clear
+: 1721050791:0;ls
+: 1721050797:0;ls
+: 1721050798:0;clear
+: 1721050799:0;ls
+: 1721050804:0;ls
+: 1721050805:0;clear
+: 1721050805:0;ls
+: 1721050806:0;exit
+: 1721050806:0;clear
+: 1721050807:0;ls
+: 1721050981:0;sudo pacman -Sy notcurses
+: 1721050994:0;notcurses
+: 1721051000:0;exit
+: 1721051006:0;notcurses-demo
+: 1721051224:0;notcurses-demo
+: 1721051268:0;exit
+: 1721051276:0;notcurses-demo
+: 1721053142:0;eixt
+: 1721053143:0;exit
+: 1721053147:0;ls
+: 1721053147:0;clear
+: 1721053148:0;ls
+: 1721053158:0;sudo pacman -R notcurses
+: 1721054225:0;clear
+: 1721054226:0;ls
+: 1721054284:0;ls
+: 1721054287:0;cd .config
+: 1721054288:0;ls
+: 1721054308:0;cd
+: 1721054309:0;ls
+: 1721054310:0;cd way
+: 1721054433:0;cd .ls
+: 1721054434:0;ls
+: 1721054437:0;cd .config/waybar
+: 1721054437:0;sl
+: 1721054439:0;ls
+: 1721054446:0;nvim config
+: 1721054451:0;nvim style.css
+: 1721054476:0;ls
+: 1721054478:0;cd .config/waybar
+: 1721054479:0;nvim config
+: 1721054482:0;nvim modules.json
+: 1721054487:0;nvim style.css
+: 1721054491:0;ls
+: 1721054492:0;killall waybar && waybar &
+: 1721054533:0;killall waybar && waybar &
+: 1721054536:0;waybar &
+: 1721054545:0;ls
+: 1721054551:0;nvim style.css
+: 1721054558:0;nvim style.css
+: 1721054561:0;ls
+: 1721054562:0;rm style.css
+: 1721054563:0;ls
+: 1721054565:0;killall waybar && waybar &
+: 1721054573:0;nvim style.css
+: 1721054592:0;killall waybar && waybar &
+: 1721054637:0;nvim style.css
+: 1721054661:0;killall waybar && waybar &
+: 1721054679:0;killall waybar && waybar &
+: 1721055021:0;nvim style.css
+: 1721056411:0;killall waybar && waybar &
+: 1721056452:0;killall waybar && waybar &
+: 1721056454:0;waybar &
+: 1721056587:0;killall waybar && waybar &
+: 1721056631:0;killall waybar && waybar &
+: 1721056659:0;killall waybar && waybar &
+: 1721056689:0;killall waybar && waybar &
+: 1721056742:0;killall waybar && waybar &
+: 1721056751:0;killall waybar && waybar &
+: 1721056772:0;killall waybar && waybar &
+: 1721056813:0;cd /usr/share/applications
+: 1721056815:0;ls
+: 1721056823:0;ls | grep foot
+: 1721056829:0;cat org.codeberg.dnkl.foot.desktop
+: 1721056927:0;killall waybar && waybar &
+: 1721056937:0;killall waybar && waybar &
+: 1721056948:0;killall waybar && waybar &
+: 1721056961:0;killall waybar && waybar &
+: 1721056967:0;killall waybar && waybar &
+: 1721056982:0;killall waybar && waybar &
+: 1721056993:0;killall waybar && waybar &
+: 1721057006:0;killall waybar && waybar &
+: 1721057023:0;killall waybar && waybar &
+: 1721057115:0;killall waybar && waybar &
+: 1721057509:0;ls
+: 1721057510:0;cd .config
+: 1721057511:0;ls
+: 1721057520:0;ls
+: 1721057531:0;cd hypr
+: 1721057531:0;ls
+: 1721057533:0;cd hyprland
+: 1721057534:0;ls
+: 1721057538:0;nvim keyBinds.conf
+: 1721057822:0;exit
+: 1721057859:0;ls
+: 1721057860:0;cd ..
+: 1721057860:0;ls
+: 1721057861:0;cd ..
+: 1721057861:0;ls
+: 1721057862:0;clear
+: 1721057863:0;ls
+: 1721057863:0;clear
+: 1721057864:0;ls
+: 1721057866:0;cat gemini_history.json
+: 1721057868:0;ls
+: 1721057872:0;cat pavucontrol.ini
+: 1721057876:0;ls
+: 1721057880:0;cat mimeapps.list
+: 1721057888:0;ls
+: 1721057893:0;cd
+: 1721057894:0;ls
+: 1721057900:0;nvim .zshenv
+: 1721057996:0;ls
+: 1721057998:0;cd .config/foot
+: 1721057998:0;ls
+: 1721058000:0;nvim foot.ini
+: 1721058021:0;exit
+: 1721058070:0;ls
+: 1721058092:0;[ -z "$HOME" ]
+: 1721058102:0;[ -z "$HOME" ] && echo 1
+: 1721058187:0;which cargo
+: 1721058189:0;ls
+: 1721058191:0;cd .cargo
+: 1721058192:0;ls
+: 1721058193:0;cd
+: 1721058193:0;ls
+: 1721058195:0;cd .cargo
+: 1721058195:0;ls
+: 1721058196:0;cd bin
+: 1721058197:0;ls
+: 1721058199:0;cd ..
+: 1721058199:0;ls
+: 1721058222:0;exit
+: 1721058235:0;cd
+: 1721058239:0;nvim .zshenv
+: 1721058281:0;exit
+: 1721058287:0;nvim .zshenv
+: 1721058307:0;exit
+: 1721058309:0;ls
+: 1721058310:0;ls
+: 1721058312:0;echo $PATH
+: 1721058319:0;rustup update
+: 1721058328:0;rustup
+: 1721058335:0;rustup install
+: 1721058356:0;rustup install stable
+: 1721058403:0;ls
+: 1721058407:0;ls
+: 1721058420:0;ls
+: 1721058421:0;ls -a
+: 1721058426:0;rm -rf .rustup
+: 1721058430:0;ls
+: 1721058433:0;rm -rf .cargo
+: 1721058435:0;ls
+: 1721058438:0;rustup
+: 1721058441:0;rustc
+: 1721058443:0;which rustc
+: 1721058448:0;ls
+: 1721058449:0;clera
+: 1721058451:0;clear
+: 1721058452:0;ls
+: 1721058453:0;ls -a
+: 1721058470:0;xdg-ninja
+: 1721058480:0;# shellcheck shell=sh\
+\
+# /etc/profile.d/xdg-enforcer.sh - Enforces the use of the XDG Base Directory\
+#                                  spec. A lot of this was taken from\
+#                                  https://github.com/hyperupcall/dotfiles/blob/8bfc6159c355b03cb86517b22a2b0bbad963b090/os/unix/user/.config/shell/modules/xdg.sh\
+#                                  and https://github.com/briorg/custom-bluefin-dx/blob/38/root/etc/profile.d/xdg-enforcer.sh\
+\
+# Setup basic required envs\
+[ -z "$HOME" ] && return 0\
+\
+[ -z "$XDG_CONFIG_HOME" ] && XDG_CONFIG_HOME="$HOME/.config"\
+[ -z "$XDG_DATA_HOME" ] && XDG_DATA_HOME="$HOME/.local/share"\
+[ -z "$XDG_STATE_HOME" ] && XDG_STATE_HOME="$HOME/.local/state"\
+[ -z "$XDG_CACHE_HOME" ] && XDG_CACHE_HOME="$HOME/.cache"\
+\
+# Functions\
+_path_prepend() {\
+	if [ -n "$2" ]; then\
+		case ":$(eval "printf '%s' \"\$$1\""):" in\
+			*":$2:"*) :;;\
+			*) eval "export $1=$2\${$1:+\":\$$1\"}" ;;\
+		esac\
+		return\
+	fi\
+\
+	case ":$PATH:" in\
+		*":$1:"*) :;;\
+		*) export PATH="$1${PATH:+":$PATH"}"\
+	esac\
+}\
+\
+# aws\
+export AWS_SHARED_CREDENTIALS_FILE="$XDG_STATE_HOME/aws/credentials"\
+export AWS_CONFIG_FILE="$XDG_STATE_HOME/aws/config"\
+\
+# babel\
+export BABEL_CACHE_PATH="$XDG_CACHE_HOME/babel.json"\
+\
+# bash-completion\
+export BASH_COMPLETION_USER_DIR="$XDG_CONFIG_HOME/bash"\
+export BASH_COMPLETION_USER_FILE="$XDG_CONFIG_HOME/bash/bash_completion.sh"\
+\
+# ccache\
+export CCACHE_DIR="$XDG_CACHE_HOME/ccache"\
+export CCACHE_CONFIGPATH="$XDG_CONFIG_HOME/ccache/config"\
+\
+# curl\
+export CURL_HOME="$XDG_CONFIG_HOME/curl"\
+\
+# dart\
+export PUB_CACHE="$XDG_CACHE_HOME/pub-cache"\
+\
+# docker\
+export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"\
+\
+# docker-machine\
+export MACHINE_STORAGE_PATH="$XDG_DATA_HOME/docker-machine"\
+\
+# electrum\
+export ELECTRUMDIR="$XDG_DATA_HOME/electrum"\
+\
+# gdb\
+export GDBHISTFILE="$XDG_STATE_HOME/history/history"\
+\
+# gradle\
+export GRADLE_USER_HOME="$XDG_DATA_HOME/gradle"\
+\
+# grip\
+export GRIPHOME="$XDG_CONFIG_HOME/grip"\
+\
+# gtk\
+export GTK_RC_FILES="$XDG_CONFIG_HOME/gtk-1.0/gtkrc"\
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"\
+\
+# hledger\
+export LEDGER_FILE="$XDG_STATE_HOME/hledger/hledger.journal"\
+\
+# info\
+alias info='info --init-file $XDG_CONFIG_HOME/info/infokey'\
+\
+# ipython\
+export IPYTHONDIR="$XDG_CONFIG_HOME/jupyter"\
+\
+# java\
+export _JAVA_OPTIONS="-Djava.util.prefs.userRoot=$XDG_STATE_HOME/java"\
+export JAVA_TOOL_OPTIONS="-Djava.util.prefs.userRoot=$XDG_STATE_HOME/java"\
+\
+# jupyter\
+export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME/jupyter"\
+\
+# kde\
+export KDEHOME="$XDG_CONFIG_HOME/kde"\
+\
+# maven\
+alias mvn='mvn -gs "$XDG_CONFIG_HOME/maven/settings.xml"'\
+\
+# minikube\
+export MINIKUBE_HOME="$XDG_STATE_HOME/minikube"\
+\
+# mplayer\
+export MPLAYER_HOME="$XDG_STATE_HOME/mplayer"\
+\
+# mysql\
+export MYSQL_HISTFILE="$XDG_STATE_HOME/history/mysql_history"\
+\
+# node\
+export NODE_REPL_HISTORY="$XDG_STATE_HOME/history/node_repl_history"\
+export TS_NODE_HISTORY="$XDG_STATE_HOME/history/ts_node_repl_history"\
+\
+# node-gyp\
+export npm_config_devdir="$XDG_STATE_HOME/node-gyp"\
+\
+# node-spawn-wrap\
+export SPAWN_WRAP_SHIM_ROOT="$XDG_STATE_HOME/node-spawn-wrap"\
+\
+# npm\
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"\
+\
+# nuget\
+export NUGET_PACKAGES="$XDG_DATA_HOME/nuget/packages"\
+\
+# packer\
+export PACKER_CONFIG="$XDG_DATA_HOME/packer/packerconfig"\
+export PACKER_CONFIG_DIR="$XDG_DATA_HOME/packer/packer.d"\
+\
+# pass\
+export PASSWORD_STORE_DIR="$XDG_DATA_HOME/password-store"\
+\
+# pipx\
+export PIPX_HOME="$XDG_STATE_HOME/pipx/virtualenv"\
+export PIPX_BIN_DIR="$XDG_STATE_HOME/pipx/bin"\
+\
+# postgresql\
+export PSQLRC="$XDG_DATA_HOME/pg/psqlrc"\
+export PSQL_HISTORY="$XDG_STATE_HOME/history/psql_history"\
+export PGPASSFILE="$XDG_DATA_HOME/pg/pgpass"\
+export PGSERVICEFILE="$XDG_DATA_HOME/pg/pg_service.conf"\
+\
+# pylint\
+export PYLINTHOME="$XDG_CACHE_HOME/pylint"\
+export PYLINTRC="$XDG_CONFIG_HOME/pylint/config"\
+\
+# python\
+export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc.py" # https://github.com/python/cpython/pull/13208\
+export PYTHON_EGG_CACHE="$XDG_CACHE_HOME/python-eggs"\
+\
+# redis\
+export REDISCLI_RCFILE="$XDG_CONFIG_HOME/redis/redisclirc"\
+export REDISCLI_HISTFILE="$XDG_STATE_HOME/history/redis_history"\
+\
+# ripgrep\
+export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep/config"\
+\
+# rust\
+export CARGO_HOME="$XDG_DATA_HOME/cargo"\
+export RUSTUP_HOME="$XDG_DATA_HOME/rustup"\
+_path_prepend "$CARGO_HOME/bin"\
+\
+# ruby-build\
+export RUBY_BUILD_CACHE_PATH="$XDG_CACHE_HOME/ruby-build"\
+\
+# sqlite\
+export SQLITE_HISTORY="$XDG_STATE_HOME/history/sqlite_history"\
+\
+# tree-sitter\
+export TREE_SITTER_DIR="$XDG_CONFIG_HOME/tree-sitter"\
+\
+# vagrant\
+export VAGRANT_HOME="$XDG_DATA_HOME/vagrant"\
+export VAGRANT_ALIAS_FILE="$VAGRANT_HOME/aliases"\
+\
+# urxvt\
+export URXVT_PERL_LIB="$XDG_CONFIG_HOME/urxvt/ext"\
+export RXVT_SOCKET="$XDG_RUNTIME_DIR"/urxvtd\
+\
+# wasmer\
+export WASMER_DIR="$XDG_DATA_HOME/wasmer"\
+\
+# wasmtime\
+export WASMTIME_HOME="$XDG_DATA_HOME/wasmtime"\
+_path_prepend "$WASMTIME_HOME/bin"\
+\
+# wget\
+export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"\
+\
+# wine\
+export WINEPREFIX="$XDG_DATA_HOME/wine"\
+\
+# yarn\
+export YARN_CACHE_FOLDER="$XDG_CACHE_HOME/yarn"\
+_path_prepend "$HOME/.yarn/bin"\
+\
+# z\
+export _Z_DATA="$XDG_DATA_HOME/z"\
+\
+export ANDROID_SDK_HOME="$XDG_DATA_HOME/android-sdk"\
+_path_prepend "$ANDROID_SDK_HOME/SDK/platform-tools"\
+\
+export FLUTTER_HOME="$XDG_DATA_HOME/flutter"\
+_path_prepend "$FLUTTER_HOME/bin"\
+\
+export JLINK_HOME="/usr/lib/JLink"\
+_path_prepend "$JLINK_HOME"\
+\
+export OZONE_JLINK_HOME="$XDG_DATA_HOME/ozone-jlink"\
+\
+export RUST_EMBASSY="$XDG_DATA_HOME/embassy"\
+_path_prepend "$RUST_EMBASSY"\
+\
+unset -f _path_prepende
+: 1721058482:0;exit
+: 1721058485:0;ls
+: 1721058489:0;nvim .zshrc
+: 1721058496:0;exit
+: 1721058498:0;ls
+: 1721058500:0;ls
+: 1721058507:0;ls
+: 1721058515:0;xdg-ninja
+: 1721058535:0;echo $XDG_CONFIG_HOME
+: 1721058541:0;exit
+: 1721058542:0;ls
+: 1721058544:0;xdg-ninja
+: 1721058553:0;ls
+: 1721058555:0;cd .config
+: 1721058556:0;ls
+: 1721058557:0;mkdir zsh
+: 1721058558:0;ls
+: 1721058559:0;cd ..
+: 1721058560:0;ls
+: 1721058614:0;sudo nvim /etc/zsh/zshenv
+: 1721058635:0;cat /etc/zsh/zshenv
+: 1721058651:0;nvim .zshenv
+: 1721058738:0;cd .config
+: 1721058739:0;ls
+: 1721058742:0;cd pulse
+: 1721058743:0;ls
+: 1721058750:0;cd
+: 1721058753:0;rm .pulse-cookie
+: 1721058765:0;cat .profile
+: 1721058768:0;rm .profile
+: 1721058796:0;nvim .npmrc
+: 1721058820:0;rm .npm
+: 1721058826:0;rm -rf .npm
+: 1721058827:0;ls
+: 1721058853:0;rm .lyrics
+: 1721058858:0;rm -rf .lyrics
+: 1721059047:0;ls
+: 1721059051:0;cd /etc/profile.d
+: 1721059051:0;ls
+: 1721059056:0;cat rustup.sh
+: 1721059087:0;cat vte.
+: 1721059090:0;cat vte.sh
+: 1721059091:0;ls
+: 1721059136:0;sudo nvim xdg.sh
+: 1721059298:0;cd
+: 1721059298:0;ls
+: 1721059300:0;cd .config
+: 1721059300:0;ls
+: 1721059303:0;mkdir git
+: 1721059304:0;ls
+: 1721059305:0;cd git
+: 1721059305:0;ls
+: 1721059314:0;mv ~/.gitconfig ./
+: 1721059326:0;ls
+: 1721059327:0;clear
+: 1721059327:0;ls
+: 1721059354:0;sudo nvim /etc/profile.d/xdg.sh

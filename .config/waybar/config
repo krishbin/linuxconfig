@@ -1,98 +1,39 @@
+// vim: ft=jsonc
 {
-    "modules-left": ["sway/workspaces", "sway/mode"],
-    "modules-center": ["clock", "idle_inhibitor"],
-    "modules-right": ["network", "pulseaudio","tray","memory","backlight", "battery", "custom/power"],
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    "sway/window": {
-        "format": "{}",
-        "max-length": 50,
-        "rewrite": {
-            "(.*) - Mozilla Firefox": "🌎 $1",
-            "(.*) - nvim": " $1",
-            "(.*) - zsh": " [$1]"
-        }
-    },
-    "network": {
-        "interval": 60,
-        "format-wifi": "{essid}({signalStrength}%)直",
-        "format-ethernet": "{ifname} ",
-        "format-disconnected": "", 
-        "max-length": 50,
-        "on-click": "kitty -e 'iwctl'"
-    },
-    "idle_inhibitor": {
-        "format": "{icon} ",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
-        }
-    },
-    "tray": {
-        "icon-size": 15,
-        "spacing": 10
-    },
-    "backlight": {
-        "device": "amdgpu_bl0",
-        "format": " {percent}%{icon} ",
-        "format-icons": ["","","","","","",""]
-    },
-    "clock": {
-        "interval": 60,
-        "format": " {:%a %H:%M %d-%b}",
-        "max-length": 25
-    },
-    "cpu": {
-        "interval": 20,
-        "format": "{usage}% ",
-        "tooltip": false
-    },
-    "memory": {
-        "interval": 60,
-        "format": "{}%"
-    },
-    "temperature": {
-        "interval": 20,
-        "hwmon-path": "/sys/class/thermal/thermal_zone0/temp",
-        "critical-threshold": 82,
-        "format-critical": "{temperatureC}°C{icon}",
-        "format": "{temperatureC}°C {icon}",
-        "format-icons": [""]
-    },
-    "battery": {
-        "bat": "BAT0",
-        "interval": 60,
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{capacity}%{icon}",
-        "format-charging": "{capacity}% ",
-        "format-full": "",
-        "format-icons": ["","","", "", "", "", "", "", "", "", ""],
-        "max-length": 25
-    },
-    "pulseaudio": {
-        "format": "{volume}%{icon}",
-        "format-bluetooth": "{volume}%{icon}{format_source}",
-        "format-bluetooth-muted": " {icon}{format_source}",
-        "format-muted": "0% {icon} ",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol"
-    },
-    "custom/power": {
-        "format": "",
-        "on-click": "swaynag -t warning -m 'Power Menu Options' -b 'Logout' 'swaymsg exit' -b 'Restart' 'shutdown -r now' -b 'Shutdown'  'shutdown -h now' --background=#005566 --button-background=#009999 --button-border=#002b33 --border-bottom=#002b33"
-    }
+  "layer": "top",
+  "position": "bottom",
+  "margin": 0,
+  "include": [
+    "~/.config/waybar/modules.json"
+  ],
+  "modules-left": [
+    "custom/linux",
+    "group/hardware",
+    "power-profiles-daemon",
+    "bluetooth",
+    "network#wifi",
+    "network#ethernet",
+    "network#tailscale",
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "privacy",
+    "tray",
+    "custom/media",
+    "upower",
+    "pulseaudio",
+    "clock",
+    "idle_inhibitor",
+    "custom/notification"
+  ],
+  "group/hardware": {
+      "orientation": "horizontal",
+      "modules": [
+          "cpu",
+          "memory"
+      ]
+  }
 }
