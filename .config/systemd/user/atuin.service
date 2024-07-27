@@ -1,0 +1,11 @@
+# systemd service
+[Unit]
+Description=Atuin
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/home/krishbin/.local/bin/start_atuin.sh
+
+[Install]
+WantedBy=default.target

@@ -12,3 +12,4 @@ export HISTFILE="$XDG_STATE_HOME"/zsh/history
 eval "$(atuin init zsh)"
 eval "$(zoxide init zsh)"
 # eval "$(starship init zsh)"
+. "/home/krishbin/.local/share/cargo/env"

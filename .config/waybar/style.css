@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-    background: rgba(128, 135, 162, 0.3);
+    background: rgba(128, 135, 162, 0.4);
     color: #cdd6f4;
 }
 
@@ -109,6 +109,8 @@ tooltip {
     border-radius: 20px;
     margin-left: 5px;
     margin-right: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     color: #b7bdf8;
 }
 
