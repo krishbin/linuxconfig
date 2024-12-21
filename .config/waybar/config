@@ -1,6 +1,7 @@
 // vim: ft=jsonc
 {
   "layer": "top",
+  "output": "eDP-1",
   "position": "bottom",
   "margin": 0,
   "include": [

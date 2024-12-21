@@ -16,7 +16,7 @@
         "sort-by-number": true,
         "disable-scroll-wraparound": true,
         "disable-scroll": false,
-        "all-outputs": false,
+        "all-outputs": true,
         "enable-bar-scroll": true,
         "format": "<span font_family='JetBrainsMono Nerd Font'>{name}</span>"
     },
