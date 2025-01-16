@@ -1,0 +1,184 @@
+{
+    "upower": {
+        "tooltip": true
+    },
+    "custom/linux": {
+        "format": "<span font_family='JetBrainsMono Nerd Font'>{}</span> ",
+        "exec": "~/.config/waybar/scripts/systemIcon.sh",
+        "interval": "once",
+        "tooltip": false,
+        "return-type": "string",
+        "on-click": "kitty -e $SHELL -c 'fastfetch; read'",
+        "on-click-right": "kitty -e $SHELL -c '~/.config/waybar/scripts/update_system.sh'; pkill -SIGRTMIN+9 waybar",
+        "escape": true
+    },
+    "hyprland/workspaces": {
+        "sort-by-number": true,
+        "disable-scroll-wraparound": true,
+        "disable-scroll": false,
+        "all-outputs": true,
+        "enable-bar-scroll": true,
+        "format": "<span font_family='JetBrainsMono Nerd Font'>{name}</span>"
+    },
+    "tray": {
+        "reverse-direction": true,
+        "icon-size": 28,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+    "cpu": {
+        "format": " {usage:2}%",
+        "interval": 1
+    },
+    "memory": {
+        "interval": 10,
+        "format": " {used:0.2f}G"
+    },
+    "custom/media": {
+        "escape": true,
+        "format": " {icon}{}",
+        "return-type": "json",
+        "format-icons": {
+            "Playing": " ",
+            "Paused": " "
+        },
+        "max-length": 20,
+        "exec": "playerctl metadata --format '{\"text\": \"{{title}}\", \"tooltip\": \"{{playerName}} : {{title}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "on-click": "playerctl play-pause"
+    },
+    "hyprland/window": {
+        "format": "{title}",
+        "icon": false,
+        "icon-size": 28,
+        "max-length": 30,
+        "separate-outputs": true
+    },
+    "custom/notification": {
+        "tooltip": true,
+        "format": "{icon} ",
+        "format-icons": {
+            "notification": "",
+            "none": "",
+            "dnd-notification": "",
+            "dnd-none": "",
+            "inhibited-notification": "",
+            "inhibited-none": "",
+            "dnd-inhibited-notification": "",
+            "dnd-inhibited-none": ""
+        },
+        "return-type": "json",
+        "exec-if": "which swaync-client",
+        "exec": "swaync-client -swb",
+        "on-click": "swaync-client -t -sw",
+        "on-click-right": "swaync-client -d -sw",
+        "escape": true
+    },
+    "privacy": {
+        "icon-spacing": 2,
+        "icon-size": 28,
+        "modules": [
+            {
+                "type": "screenshare"
+            },
+            {
+                "type": "audio-out"
+            },
+            {
+                "type": "audio-in"
+            }
+        ]
+    },
+    "bluetooth": {
+        "format": "",
+        "format-on": "",
+        "format-connected": " {num_connections}",
+        "format-connected-battery": " {num_connections}",
+        "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+        "on-click": "kitty -e bluetoothctl"
+    },
+    "network#wifi": {
+        "interface": "wl*",
+        "interval": 30,
+        "format": "{icon}",
+        "format-wifi": "{icon}",
+        "format-linked": "󰤨",
+        "format-disconnected": "󰤮",
+        "format-disabled": "󰤭",
+        "format-icons": [
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
+        ],
+        "on-click": "nm-connection-editor",
+        "on-click-right": "~/.config/waybar/scripts/toggle-wifi.sh",
+        "tooltip-format": "{}",
+        "tooltip-format-wifi": "{signalStrength} {ipaddr}"
+    },
+    "network#ethernet": {
+        "interface": "eno*",
+        "interval": 30,
+        "format-ethernet": "󰈀",
+        "format-linked": "",
+        "format-disconnected": "",
+        "format-disabled": "",
+        "on-click": "nm-connection-editor", 
+        "tooltip-format": "{}",
+        "tooltip-format-ethernet": "{ipaddr}"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": " ",
+            "deactivated": " "
+        }
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{icon} {volume}%",
+        "format-bluetooth-muted": " {volume}%",
+        "format-muted": " {volume}%",
+        "format-icons": {
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "on-scroll-up": "~/.config/hypr/scripts/volume-ctrl.sh +",
+        "on-scroll-down": "~/.config/hypr/scripts/volume-ctrl.sh -",
+        "on-click": "pavucontrol",
+        "on-click-right": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+    },
+    "custom/ArchUpdates": {
+        "interval": 600,
+        "tooltip": false,
+        "signal": 9,
+        "exec": "~/.config/waybar/scripts/check-for-updates.sh",
+        "escape": true
+    },
+    "network#tailscale": {
+        "interface": "tailscale0",
+        "format": "󰌆",
+        "format-disconnected": "󰌊",
+        "tooltip-format": "{ipaddr}",
+        "tooltip-format-disconnected": "Disconnected"
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "performance": " ",
+            "balanced": " ",
+            "power-saver": " "
+        }
+    }
+}

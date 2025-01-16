@@ -5,7 +5,7 @@ Description=ROS2 Container for developing ROS2 applications
 Annotation=run.oci.keep_original_groups=1
 AutoUpdate=registry
 ContainerName=ros2
-Environment=SHELL=%s
+Environment=SHELL=bash
 Environment=HOME=%h
 Environment=container=podman
 Exec=--verbose --name %u --user %U --group %G --home %h --init "0" --nvidia "1" -- " "
@@ -32,21 +32,14 @@ Volume=/dev:/dev:rslave
 Volume=/sys:/sys:rslave
 Volume=/dev/pts
 Volume=/dev/null:/dev/ptmx
-Volume=/sys/fs/selinux
 Volume=/var/log/journal
-Volume=/var/home/%u:/var/home/%u:rslave
+Volume=/home/%u:/home/%u:rslave
 Volume=%t:%t:rslave
 Volume=/etc/hosts:/etc/hosts:ro
 Volume=/etc/resolv.conf:/etc/resolv.conf:ro
-Volume=/home/linuxbrew:/home/linuxbrew:rslave
-Volume=/usr/etc/profile.d/brew.sh:/etc/profile.d/brew.sh:ro
-Volume=/usr/share/fish/vendor_conf.d/brew.fish:/usr/share/fish/vendor_conf.d/brew.fish:ro
 
 
 [Service]
-ExecStartPre=-/usr/libexec/ptyxis-remove-profile.sh %N
-ExecStartPost=-/usr/libexec/ptyxis-create-profile.sh %N
-ExecStop=-/usr/libexec/ptyxis-remove-profile.sh %N
 
 
 [Install]

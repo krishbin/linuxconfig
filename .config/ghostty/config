@@ -1,0 +1,19 @@
+font-family = IosevkaTerm Nerd Font
+font-size = 14
+mouse-hide-while-typing = true
+window-decoration = false
+window-padding-y = 2
+copy-on-select = true
+desktop-notifications = true
+gtk-tabs-location = hidden
+auto-update = off
+shell-integration = zsh
+theme = OneHalfLight
+
+
+keybind = ctrl+a>n=new_window
+keybind = ctrl+a>w=toggle_window_decorations
+keybind = ctrl+a>m=toggle_quick_terminal
+keybind = ctrl+a>-=reset_font_size
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+v=paste_from_clipboard

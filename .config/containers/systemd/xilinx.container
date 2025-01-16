@@ -5,8 +5,10 @@ Description=Xilinx Container for running Xilinx applications
 Annotation=run.oci.keep_original_groups=1
 AutoUpdate=registry
 ContainerName=xilinx
-Environment=SHELL=%s
+Environment=SHELL=bash
 Environment=HOME=%h
+Environment="_JAVA_OPTIONS=-Dawt.useSystemAAFontSettings=lcd -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel" "_JAVA_AWT_WM_NONREPARENTING=1"
+Environment="DBUS_SESSION_BUS_ADDRESS=unix:path=/run/host/run/dbus/system_bus_socket"
 Environment=container=podman
 Exec=--verbose --name %u --user %U --group %G --home %h --init "0" --nvidia "1" -- " "
 Image=ghcr.io/krishbin/xilinx-container:latest
@@ -32,18 +34,14 @@ Volume=/dev:/dev:rslave
 Volume=/sys:/sys:rslave
 Volume=/dev/pts
 Volume=/dev/null:/dev/ptmx
-Volume=/sys/fs/selinux
 Volume=/var/log/journal
-Volume=/var/home/%u:/var/home/%u:rslave
+Volume=/home/%u:/home/%u:rslave
 Volume=%t:%t:rslave
 Volume=/etc/hosts:/etc/hosts:ro
 Volume=/etc/resolv.conf:/etc/resolv.conf:ro
 
 
 [Service]
-ExecStartPre=-/usr/libexec/ptyxis-remove-profile.sh %N
-ExecStartPost=-/usr/libexec/ptyxis-create-profile.sh %N
-ExecStop=-/usr/libexec/ptyxis-remove-profile.sh %N
 
 
 [Install]

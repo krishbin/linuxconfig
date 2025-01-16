@@ -1,0 +1,40 @@
+// vim: ft=jsonc
+{
+  "layer": "top",
+  "output": "HDMI-A-1",
+  "position": "bottom",
+  "margin": 0,
+  "include": [
+    "~/.config/waybar/modules.json"
+  ],
+  "modules-left": [
+    "custom/linux",
+    "group/hardware",
+    "power-profiles-daemon",
+    "bluetooth",
+    "network#wifi",
+    "network#ethernet",
+    "network#tailscale",
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "privacy",
+    "tray",
+    "custom/media",
+    "upower",
+    "pulseaudio",
+    "clock",
+    "idle_inhibitor",
+    "custom/notification"
+  ],
+  "group/hardware": {
+      "orientation": "horizontal",
+      "modules": [
+          "cpu",
+          "memory"
+      ]
+  }
+}
